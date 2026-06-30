@@ -77,8 +77,8 @@ export default function Footer() {
         .fb-right a:hover{color:var(--accent)}
         .fb-sep{color:var(--border)}
         .fb-social{display:flex;align-items:center;gap:12px;margin-left:16px}
-        .fb-social a{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--accent-soft);color:var(--accent);transition:all 0.2s}
-        .fb-social a:hover{background:var(--accent);color:white;transform:translateY(-2px)}
+        .fb-social a{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--accent);color:white;transition:all 0.2s}
+        .fb-social a:hover{background:var(--accent);color:white;transform:translateY(-2px);opacity:0.85}
         @media(max-width:1200px){.footer-newsletter{flex:1;min-width:260px}}
         @media(max-width:992px){.footer-links-grid{grid-template-columns:repeat(2,1fr)}.contact-col{grid-column:1/-1;margin-top:20px}.trust-companies{border-right:none;padding-right:0;border-bottom:1px solid var(--border);padding-bottom:28px}}
         @media(max-width:768px){.footer-top{flex-direction:column;gap:28px}.footer-newsletter{width:100%;padding:20px}.footer-links-grid{grid-template-columns:1fr;gap:18px}.footer-trust{flex-direction:column;gap:24px;padding:24px}.footer-bottom{flex-direction:column;align-items:flex-start;gap:10px}.fb-right{flex-wrap:wrap;width:100%}.fb-social{margin-left:0}}
@@ -204,13 +204,13 @@ export default function Footer() {
               <span className="fb-sep">|</span>
               <Link href="/sitemaps">Sitemap</Link>
               <div className="fb-social">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/company/jacksonandfrank/" target="_blank" rel="noopener noreferrer" aria-label="Jackson & Frank on LinkedIn">
                   <svg viewBox="0 0 24 24" fill="currentColor" stroke="none" width="16"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Jackson & Frank on Twitter">
                   <svg viewBox="0 0 24 24" fill="currentColor" stroke="none" width="16"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" /></svg>
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/@JacksonAndFrank" target="_blank" rel="noopener noreferrer" aria-label="Jackson & Frank on YouTube">
                   <svg viewBox="0 0 24 24" fill="currentColor" stroke="none" width="16"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" /></svg>
                 </a>
               </div>

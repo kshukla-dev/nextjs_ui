@@ -459,6 +459,28 @@
   display: none;
 }
 
+/* Page-scoped adjustments: increase vertical padding for FAQ controls
+   without affecting other places that reuse the same classes. */
+.eor-modern-page .faq-button {
+  padding: 0px; /* slightly larger tap/click target on EOR page */
+}
+
+.home-hero ~ .section.faq-section .faq-question {
+  padding: 32px 24px; /* larger vertical padding for home page FAQ */
+}
+
+/* Reduce the vertical space created by the hero image on Home and EOR pages only */
+.service-hero.home-hero {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.service-hero.eor-premium-hero,
+.eor-premium-hero.service-hero {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
 .faq-question {
   font-size: 18px;
   font-weight: 600;

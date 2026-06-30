@@ -222,14 +222,8 @@
 }
 
 .eps-bullets li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.75em;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--gh-tertiary-accent);
+  /* removed decorative blue dot in EOR process bullets per request */
+  display: none;
 }
 
 .eor-process-step:nth-child(1) {

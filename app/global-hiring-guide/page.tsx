@@ -302,7 +302,7 @@ export default function GlobalHiringGuidePage() {
 .trust-logos {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 25px;
   flex: 1;
   justify-content: space-between;
 }
@@ -1482,19 +1482,19 @@ export default function GlobalHiringGuidePage() {
               Get the guide <span className="arrow">→</span>
             </a>      </div>
         </div>
-        
+
         <div className="container trust-banner-wrap">
           <div className="trust-banner">
             <div className="trust-left">
               <span className="trust-tag">TRUSTED BY GLOBAL COMPANIES</span>
-              <h3>Join 500+ companies<br/>growing globally</h3>
+              <h3>Join 500+ companies<br />growing globally</h3>
             </div>
             <div className="trust-logos">
               <span className="t-logo klarna">Klarna.</span>
               <span className="t-logo hubspot">HubS<span>p</span>ot</span>
               <span className="t-logo scale">scale</span>
               <span className="t-logo rippling">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: '2px'}}><path d="M4 22V2"/><path d="M8 22V2"/><path d="M12 22v-8"/><path d="M16 22v-8"/><path d="M20 22V2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '2px' }}><path d="M4 22V2" /><path d="M8 22V2" /><path d="M12 22v-8" /><path d="M16 22v-8" /><path d="M20 22V2" /></svg>
                 RIPPLING
               </span>
               <span className="t-logo brex">BREX</span>
@@ -1511,16 +1511,16 @@ export default function GlobalHiringGuidePage() {
             <div className="borderless-header" style={{ marginBottom: '24px' }}>
               <h2>Why choose our global hiring solution?</h2>
             </div>
-            
+
             <p style={{ fontSize: '16px', color: 'var(--ink-soft)', lineHeight: 1.6, marginBottom: '48px' }}>
               Expand your business globally with confidence. Our platform makes international hiring seamless and compliant.
             </p>
-            
+
             <div className="borderless-grid">
               {/* Cross dividers */}
               <div className="bg-divider-v"></div>
               <div className="bg-divider-h"></div>
-              
+
               <div className="borderless-feature">
                 <div className="bf-icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
@@ -1530,7 +1530,7 @@ export default function GlobalHiringGuidePage() {
                   <p>Tap into talent pools from over 160+ countries worldwide</p>
                 </div>
               </div>
-              
+
               <div className="borderless-feature">
                 <div className="bf-icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
@@ -1540,7 +1540,7 @@ export default function GlobalHiringGuidePage() {
                   <p>We ensure all hiring is compliant with local employment laws</p>
                 </div>
               </div>
-              
+
               <div className="borderless-feature">
                 <div className="bf-icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
@@ -1550,7 +1550,7 @@ export default function GlobalHiringGuidePage() {
                   <p>Get dedicated HR support for all your global employees</p>
                 </div>
               </div>
-              
+
               <div className="borderless-feature">
                 <div className="bf-icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
@@ -1562,7 +1562,7 @@ export default function GlobalHiringGuidePage() {
               </div>
             </div>
           </div>
-          
+
           <div className="borderless-image">
             <img src="/case-study/BuiltForBorderlessTeams.png" alt="Built For Borderless Teams" />
           </div>
@@ -1573,10 +1573,10 @@ export default function GlobalHiringGuidePage() {
       <section className="container" style={{ marginBottom: '100px' }}>
         <div className="process-box">
           <h2 className="process-title">From candidate to compliant hire</h2>
-          
+
           <div className="process-flow">
             <div className="process-line"></div>
-            
+
             <div className="process-step">
               <div className="ps-icon-wrap">
                 <div className="ps-icon">
@@ -1644,7 +1644,7 @@ export default function GlobalHiringGuidePage() {
       <section className="entities-section container">
         <div className="entities-header-row">
           <div className="entities-title-block">
-            <h2 className="entities-main-title">A truly global presence.<br/><span className="gold-text">Built for borderless teams.</span></h2>
+            <h2 className="entities-main-title">A truly global presence.<br /><span className="gold-text">Built for borderless teams.</span></h2>
             <p className="entities-subtitle">Our own legal entities in 80+ countries allow you to hire, pay, and support talent compliantly-wherever your business grows.</p>
           </div>
           <Link href="/contact" className="btn-outline-gold">View all locations <span aria-hidden>→</span></Link>
@@ -1665,17 +1665,17 @@ export default function GlobalHiringGuidePage() {
                   </div>
                   <div className="map-stat-info">
                     <span className="map-stat-number">80+</span>
-                    <span className="map-stat-label">Countries<br/>Our entities</span>
+                    <span className="map-stat-label">Countries<br />Our entities</span>
                   </div>
                 </div>
-                
+
                 <div className="map-stat-item">
                   <div className="map-stat-icon-wrap">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="9" y1="22" x2="9" y2="16"></line><line x1="15" y1="22" x2="15" y2="16"></line><line x1="9" y1="16" x2="15" y2="16"></line><path d="M8 6h.01M16 6h.01M8 10h.01M16 10h.01M12 6h.01M12 10h.01"></path></svg>
                   </div>
                   <div className="map-stat-info">
                     <span className="map-stat-number">50+</span>
-                    <span className="map-stat-label">Legal entities<br/>Worldwide</span>
+                    <span className="map-stat-label">Legal entities<br />Worldwide</span>
                   </div>
                 </div>
 
@@ -1685,7 +1685,7 @@ export default function GlobalHiringGuidePage() {
                   </div>
                   <div className="map-stat-info">
                     <span className="map-stat-number">80+</span>
-                    <span className="map-stat-label">Countries supported<br/>for hiring</span>
+                    <span className="map-stat-label">Countries supported<br />for hiring</span>
                   </div>
                 </div>
 
@@ -1695,7 +1695,7 @@ export default function GlobalHiringGuidePage() {
                   </div>
                   <div className="map-stat-info">
                     <span className="map-stat-number">99.5%</span>
-                    <span className="map-stat-label">Client satisfaction<br/>rate</span>
+                    <span className="map-stat-label">Client satisfaction<br />rate</span>
                   </div>
                 </div>
               </div>
@@ -1728,12 +1728,12 @@ export default function GlobalHiringGuidePage() {
                       <div className="fe-info">
                         <span className="fe-name">{c.name}</span>
                         <span className="fe-desc">
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: '2px', verticalAlign: '-1px'}}><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '2px', verticalAlign: '-1px' }}><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                           {getShortAddress(c.name)}
                         </span>
                       </div>
                     </div>
-                    
+
                     <div className="fe-item-right-wrap">
                       <span className="fe-active-badge">Active</span>
                       <div className="fe-arrow">
@@ -1801,12 +1801,12 @@ export default function GlobalHiringGuidePage() {
                     </div>
                     <span className="cs-country-name">{c.name}</span>
                   </div>
-                  <p className="cs-card-text">Full country guide and<br/>local EOR details.</p>
+                  <p className="cs-card-text">Full country guide and<br />local EOR details.</p>
                   <div className="cs-location-pill">
-                  {c.address || c.name}
+                    {c.address || c.name}
                   </div>
                   <button className="btn-notify">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: '6px'}}><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '6px' }}><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
                     Notify me
                   </button>
                 </div>
@@ -1831,11 +1831,11 @@ export default function GlobalHiringGuidePage() {
               </div>
               <span className="hiw-card-number">01</span>
             </div>
-            <h3 className="hiw-card-title">Company or<br/>individual</h3>
+            <h3 className="hiw-card-title">Company or<br />individual</h3>
             <div className="hiw-divider"></div>
             <p className="hiw-card-desc">You&apos;ve found a candidate in a country where you don&apos;t have a local entity, or you&apos;re a freelancer working for global clients without &apos;employed&apos; status.</p>
           </div>
-          
+
           <div className="hiw-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></div>
 
           <div className="hiw-card">
@@ -1845,7 +1845,7 @@ export default function GlobalHiringGuidePage() {
               </div>
               <span className="hiw-card-number">02</span>
             </div>
-            <h3 className="hiw-card-title">Onboarding<br/>and admin</h3>
+            <h3 className="hiw-card-title">Onboarding<br />and admin</h3>
             <div className="hiw-divider"></div>
             <p className="hiw-card-desc">We handle onboarding, contracts, local compliance, and all admin work.</p>
           </div>
@@ -1859,7 +1859,7 @@ export default function GlobalHiringGuidePage() {
               </div>
               <span className="hiw-card-number">03</span>
             </div>
-            <h3 className="hiw-card-title">Proper<br/>employment</h3>
+            <h3 className="hiw-card-title">Proper<br />employment</h3>
             <div className="hiw-divider"></div>
             <p className="hiw-card-desc">You (or your new team member) are officially employed through Jackson &amp; Franks EOR service with all the benefits of traditional employment.</p>
           </div>
@@ -1873,7 +1873,7 @@ export default function GlobalHiringGuidePage() {
               </div>
               <span className="hiw-card-number">04</span>
             </div>
-            <h3 className="hiw-card-title">Get started<br/>&nbsp;</h3>
+            <h3 className="hiw-card-title">Get started<br />&nbsp;</h3>
             <div className="hiw-divider"></div>
             <p className="hiw-card-desc">Start building your global team with confidence and full compliance.</p>
           </div>

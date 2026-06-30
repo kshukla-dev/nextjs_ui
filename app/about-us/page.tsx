@@ -176,16 +176,30 @@ export default function AboutPage() {
 /* Offices Premium UI */
 .offices-premium-section {
   background: #fdfdfd;
-  padding: 64px 40px;
+  padding: 40px 16px;
   border-radius: 24px;
   margin-bottom: 64px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.02);
 }
+@media (min-width: 768px) {
+  .offices-premium-section {
+    padding: 64px 40px;
+  }
+}
 .offices-header-wrap {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: flex-start;
+  gap: 16px;
   margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .offices-header-wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 .offices-header-badge {
   display: flex;
@@ -206,9 +220,14 @@ export default function AboutPage() {
 }
 .map-and-featured {
   display: grid;
-  grid-template-columns: 1fr 340px;
+  grid-template-columns: 1fr;
   gap: 32px;
   margin-bottom: 48px;
+}
+@media (min-width: 900px) {
+  .map-and-featured {
+    grid-template-columns: 1fr 340px;
+  }
 }
 .dotted-map-area {
   position: relative;
@@ -359,7 +378,7 @@ export default function AboutPage() {
 
 .offices-stats-bar {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 16px;
   background: #fff;
   border: 1px solid #e2e8f0;
@@ -367,6 +386,11 @@ export default function AboutPage() {
   padding: 24px;
   margin-bottom: 48px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.02);
+}
+@media (min-width: 900px) {
+  .offices-stats-bar {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .stat-item {
   display: flex;
@@ -666,7 +690,12 @@ export default function AboutPage() {
 .values-strip {
   background: #0E0F3B;
   color: var(--bg);
-  padding: 100px 0;
+  padding: 60px 0;
+}
+@media (min-width: 768px) {
+  .values-strip {
+    padding: 100px 0;
+  }
 }
 .values-strip .tag { color: var(--accent-warm); }
 .values-strip .section-title { color: var(--bg); }
@@ -720,7 +749,12 @@ export default function AboutPage() {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 56px 48px;
+  padding: 32px 24px;
+}
+@media (min-width: 768px) {
+  .vm-card {
+    padding: 56px 48px;
+  }
 }
 .vm-card .tag { margin-bottom: 20px; }
 .vm-card p {
@@ -840,7 +874,7 @@ export default function AboutPage() {
 
 @media (max-width: 1280px) {
   .about-premium-hero {
-    background-size: 70% auto;
+    background-size: 85% auto;
     background-position: right -5% center;
   }
 }
@@ -866,7 +900,7 @@ export default function AboutPage() {
 @media (max-width: 640px) {
   .about-premium-hero {
     min-height: auto;
-    padding: 260px 20px 60px;
+    padding: 160px 20px 60px;
     background-image: none;
     background-color: #0E0F3B;
   }
@@ -1152,10 +1186,15 @@ export default function AboutPage() {
 .vm-content {
   position: relative;
   z-index: 3;
-  padding: 48px;
+  padding: 28px 24px;
   color: var(--ink);
   transform: translateY(16px);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@media (min-width: 768px) {
+  .vm-content {
+    padding: 48px;
+  }
 }
 
 .vm-card-premium:hover .vm-content {

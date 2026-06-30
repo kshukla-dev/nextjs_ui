@@ -2133,7 +2133,7 @@ export default function HomePage() {
 .lac-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 10px;
 }
 
 .article-item {

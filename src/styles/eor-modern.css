@@ -141,7 +141,7 @@
   font-family: var(--serif);
   font-size: clamp(31px, 4vw, 52px);
   line-height: 1.1;
-  
+
   letter-spacing: -0.02em;
   margin-bottom: 20px;
   color: var(--ink);
@@ -151,7 +151,7 @@
   font-family: var(--sans);
   font-size: 18px;
   line-height: 1.7;
-  
+
   max-width: 560px;
   margin: 0 auto 0;
   color: var(--gh-on-surface-variant);
@@ -200,7 +200,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 64px;
   align-items: center;
-  margin-top: -280px;
+  margin-top: -160px;
   /* Pull it up deeply over the hero image */
   position: relative;
   z-index: 10;
@@ -210,7 +210,7 @@
   font-family: var(--serif);
   font-size: clamp(25px, 4vw, 42px);
   line-height: 1.15;
-  
+
   margin-bottom: 24px;
   color: var(--ink);
 }
@@ -244,7 +244,8 @@
   border-radius: 50%;
   border: 2px solid var(--ink);
   display: flex;
-    padding: 8px 24px; /* further reduced vertical padding for home page FAQ */
+  padding: 8px 24px;
+  /* further reduced vertical padding for home page FAQ */
   justify-content: center;
   font-size: clamp(22px, 4vw, 32px);
   background: white;
@@ -469,11 +470,13 @@
 /* Page-scoped adjustments: increase vertical padding for FAQ controls
    without affecting other places that reuse the same classes. */
 .eor-modern-page .faq-button {
-  padding: 0px; /* slightly larger tap/click target on EOR page */
+  padding: 0px;
+  /* slightly larger tap/click target on EOR page */
 }
 
-.home-hero ~ .section.faq-section .faq-question {
-  padding: 0px 24px; /* larger vertical padding for home page FAQ */
+.home-hero~.section.faq-section .faq-question {
+  padding: 0px 24px;
+  /* larger vertical padding for home page FAQ */
 }
 
 /* Reduce the vertical space created by the hero image on Home and EOR pages only */
@@ -748,7 +751,7 @@
   .faq-question {
     font-family: var(--serif);
     font-size: 20px;
-    
+
     line-height: 1.3;
     color: var(--ink);
   }
@@ -859,7 +862,7 @@
 .cta-card-subtitle {
   font-family: var(--sans);
   font-size: 11px;
-  
+
   text-transform: uppercase;
   color: var(--accent);
   letter-spacing: 0.08em;

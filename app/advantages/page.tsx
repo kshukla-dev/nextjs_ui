@@ -179,7 +179,6 @@ export default function AdvantagesPage() {
       <section className="cert-strip">
         <div className="container">
           <div className="section-head">
-            <span className="tag">Trust &amp; compliance</span>
             <h2 className="section-title">{(advantages as any).certifications?.title}</h2>
           </div>
           <div className="cert-grid">

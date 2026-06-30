@@ -1145,7 +1145,7 @@ form.was-validated .custom-checkbox input:invalid + .checkmark {
 @media (min-width: 900px) {
   .stats-overlay-card {
     position: absolute;
-    right: 40px;
+    right: 140px;
     top: 50%;
     transform: translateY(-50%);
     margin: 0;

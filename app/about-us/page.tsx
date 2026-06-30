@@ -373,7 +373,6 @@ export default function AboutPage() {
   align-items: center;
   gap: 16px;
   justify-content: center;
-  border-right: 1px solid #e2e8f0;
 }
 .stat-item:last-child {
   border-right: none;
@@ -632,7 +631,6 @@ export default function AboutPage() {
   }
   .stat-item {
     border-right: none;
-    border-bottom: 1px solid #e2e8f0;
     padding-bottom: 16px;
   }
 }
@@ -1298,18 +1296,18 @@ export default function AboutPage() {
       <header className="service-hero about-premium-hero">
         <div className="about-premium-hero-inner">
           <div className="service-hero-copy">
-           <h1>Global hiring,<br />made <em>human</em></h1>
+            <h1>Global hiring,<br />made <em>human</em></h1>
             <p className="service-hero-lede">{about.definition.description}</p>
-            
+
             <div className="service-hero-features" style={{ display: 'flex', gap: '24px', marginTop: '32px', flexWrap: 'wrap' }}>
               {about.definition.keyFeatures.map((f: string, i: number) => (
                 <div key={i} className="hero-feature" style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 500, fontSize: '15px', color: 'rgba(255,255,255,0.85)' }}>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" style={{ color: '#7FCDEE' }}><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/><path d="M2 12H22"/><path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z"/></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" style={{ color: '#7FCDEE' }}><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" /><path d="M2 12H22" /><path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z" /></svg>
                   {f}
                 </div>
               ))}
             </div>
-            
+
             <div className="cta-row" style={{ marginTop: '40px', display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
               <Link href="/contact" className="btn-primary">
                 {about.definition.primaryButtonText} <span className="arrow">→</span>
@@ -1345,35 +1343,35 @@ export default function AboutPage() {
         </div>
         <div className="milestone-carousel">
           <div className="mc-bg" style={{ backgroundImage: "url('/world-map-dark.png')" }}></div>
-          
+
           <div className="mc-progress">
             {milestones.map((m, i) => (
-              <button 
-                key={`dot-${i}`} 
+              <button
+                key={`dot-${i}`}
                 className={`mc-dot ${i === activeMilestone ? 'active' : ''}`}
                 onClick={() => setMilestone(i)}
                 aria-label={`Go to milestone ${m.year}`}
               ></button>
             ))}
           </div>
-          
+
           <div className="mc-content-wrapper">
             <button className="mc-nav-btn prev" onClick={prevMilestone} aria-label="Previous milestone">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M15 18l-6-6 6-6"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M15 18l-6-6 6-6" /></svg>
             </button>
-            
+
             <div className="mc-content">
               <div key={activeMilestone} className="mc-slide fade-slide-enter-active">
                 <div className="mc-badge">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><circle cx="12" cy="12" r="3"/></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /><circle cx="12" cy="12" r="3" /></svg>
                   {milestones[activeMilestone].year}
                 </div>
                 <p className="mc-desc">{milestones[activeMilestone].description}</p>
               </div>
             </div>
-            
+
             <button className="mc-nav-btn next" onClick={nextMilestone} aria-label="Next milestone">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 18l6-6-6-6"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 18l6-6-6-6" /></svg>
             </button>
           </div>
         </div>
@@ -1384,7 +1382,7 @@ export default function AboutPage() {
           <div className="section-head">
             <h2 className="section-title">We operate by <em>W.O.R.L.D</em></h2>
             <p className="section-lead">
-             At Jackson &amp; Frank, We operate by the values that make us and our clients successful, represented by W.O.R.L.D:
+              At Jackson &amp; Frank, We operate by the values that make us and our clients successful, represented by W.O.R.L.D:
             </p>
           </div>
           <div className="values-grid">
@@ -1409,7 +1407,7 @@ export default function AboutPage() {
               <p>A world in which international employability has no barriers.</p>
             </div>
           </div>
-          
+
           <div className="vm-card-premium vm-mission">
             <div className="vm-bg" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80')" }}></div>
             <div className="vm-overlay"></div>

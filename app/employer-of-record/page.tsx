@@ -94,7 +94,7 @@ export default function EORPage() {
 .eor-hero-checklist {
   list-style: none;
   padding: 0;
-  margin: 32px 0 48px 0;
+  margin: 10px 0 8px 0;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -183,7 +183,7 @@ export default function EORPage() {
 .eor-premium-hero .cta-row {
   display: flex;
   gap: 16px;
-  margin-top: 40px;
+  margin-top: 10px;
   flex-wrap: wrap;
 }
 
@@ -289,10 +289,10 @@ export default function EORPage() {
         <div className="eor-premium-hero-inner">
           <div className="service-hero-copy">
             <h1>
-              Hire <em>employees<br/>globally</em><br/>without entities
+              Hire <em>employees<br />globally</em><br />without entities
             </h1>
             <p className="service-hero-lede">Quickly expand your global workforce across 80+ countries without establishing a local entity. We become your local HR partner.</p>
-            
+
             <ul className="eor-hero-checklist">
               <li>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="check-icon"><circle cx="12" cy="12" r="10"></circle><path d="M9 12l2 2 4-4"></path></svg>
@@ -329,25 +329,25 @@ export default function EORPage() {
           </div>
           <div className="what-is-eor-diagram">
             <svg width="100%" viewBox="0 0 400 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M 330 40 Q 200 0 100 40" stroke="#F7931E" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-              <path d="M 100 40 L 110 32 M 100 40 L 110 48" stroke="#F7931E" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-              
+              <path d="M 330 40 Q 200 0 100 40" stroke="#F7931E" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+              <path d="M 100 40 L 110 32 M 100 40 L 110 48" stroke="#F7931E" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+
               <path d="M 50 120 L 50 80 M 150 120 L 150 60 M 250 120 L 250 60 M 350 120 L 350 80" stroke="#c5c6cf" strokeWidth="2" />
-              <path d="M 50 80 Q 100 120 150 60 Q 200 120 250 60 Q 300 120 350 80" stroke="#c5c6cf" strokeWidth="2" fill="none"/>
+              <path d="M 50 80 Q 100 120 150 60 Q 200 120 250 60 Q 300 120 350 80" stroke="#c5c6cf" strokeWidth="2" fill="none" />
               <path d="M 40 120 L 360 120" stroke="#c5c6cf" strokeWidth="6" strokeLinecap="round" />
               <path d="M 40 124 L 360 124" stroke="#75777f" strokeWidth="1" />
-              
-              <rect x="20" y="80" width="40" height="40" fill="white" stroke="#061639" strokeWidth="2"/>
-              <rect x="30" y="70" width="20" height="10" fill="white" stroke="#061639" strokeWidth="2"/>
-              <path d="M 28 90 h 4 v 4 h -4 z M 38 90 h 4 v 4 h -4 z M 48 90 h 4 v 4 h -4 z" fill="#061639"/>
-              <path d="M 28 100 h 4 v 4 h -4 z M 38 100 h 4 v 4 h -4 z M 48 100 h 4 v 4 h -4 z" fill="#061639"/>
-              <rect x="34" y="110" width="12" height="10" fill="none" stroke="#061639" strokeWidth="2"/>
-              
+
+              <rect x="20" y="80" width="40" height="40" fill="white" stroke="#061639" strokeWidth="2" />
+              <rect x="30" y="70" width="20" height="10" fill="white" stroke="#061639" strokeWidth="2" />
+              <path d="M 28 90 h 4 v 4 h -4 z M 38 90 h 4 v 4 h -4 z M 48 90 h 4 v 4 h -4 z" fill="#061639" />
+              <path d="M 28 100 h 4 v 4 h -4 z M 38 100 h 4 v 4 h -4 z M 48 100 h 4 v 4 h -4 z" fill="#061639" />
+              <rect x="34" y="110" width="12" height="10" fill="none" stroke="#061639" strokeWidth="2" />
+
               <circle cx="200" cy="110" r="30" fill="#061639" />
               <text x="200" y="116" fill="#F7931E" fontFamily="'DM Serif Display', serif" fontSize="20" fontWeight="bold" fontStyle="italic" textAnchor="middle">JF</text>
-              
-              <circle cx="350" cy="100" r="20" fill="white" stroke="#061639" strokeWidth="2"/>
-              <path d="M 330 100 A 20 20 0 0 0 370 100 M 350 80 A 10 20 0 0 0 350 120 M 350 80 A 10 20 0 0 1 350 120 M 332 90 L 368 90 M 332 110 L 368 110" stroke="#061639" strokeWidth="1" fill="none"/>
+
+              <circle cx="350" cy="100" r="20" fill="white" stroke="#061639" strokeWidth="2" />
+              <path d="M 330 100 A 20 20 0 0 0 370 100 M 350 80 A 10 20 0 0 0 350 120 M 350 80 A 10 20 0 0 1 350 120 M 332 90 L 368 90 M 332 110 L 368 110" stroke="#061639" strokeWidth="1" fill="none" />
 
               <text x="40" y="145" fill="#061639" fontFamily="'DM Sans', sans-serif" fontSize="12" fontWeight="600" textAnchor="middle">Your Company</text>
               <text x="200" y="150" fill="#061639" fontFamily="'DM Sans', sans-serif" fontSize="12" fontWeight="600" textAnchor="middle">Jackson &amp; Frank</text>
@@ -418,8 +418,8 @@ export default function EORPage() {
               </div>
               <div className="how-arrow">
                 <svg width="60" height="12" viewBox="0 0 60 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 6L56 6" stroke="#c5c6cf" strokeWidth="1"/>
-                  <path d="M52 2L58 6L52 10" stroke="#c5c6cf" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M0 6L56 6" stroke="#c5c6cf" strokeWidth="1" />
+                  <path d="M52 2L58 6L52 10" stroke="#c5c6cf" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
             </div>
@@ -438,8 +438,8 @@ export default function EORPage() {
               </div>
               <div className="how-arrow">
                 <svg width="60" height="12" viewBox="0 0 60 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 6L56 6" stroke="#c5c6cf" strokeWidth="1"/>
-                  <path d="M52 2L58 6L52 10" stroke="#c5c6cf" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M0 6L56 6" stroke="#c5c6cf" strokeWidth="1" />
+                  <path d="M52 2L58 6L52 10" stroke="#c5c6cf" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
             </div>
@@ -457,8 +457,8 @@ export default function EORPage() {
               </div>
               <div className="how-arrow">
                 <svg width="60" height="12" viewBox="0 0 60 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 6L56 6" stroke="#c5c6cf" strokeWidth="1"/>
-                  <path d="M52 2L58 6L52 10" stroke="#c5c6cf" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M0 6L56 6" stroke="#c5c6cf" strokeWidth="1" />
+                  <path d="M52 2L58 6L52 10" stroke="#c5c6cf" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
             </div>
@@ -478,8 +478,8 @@ export default function EORPage() {
               </div>
               <div className="how-arrow">
                 <svg width="60" height="12" viewBox="0 0 60 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 6L56 6" stroke="#c5c6cf" strokeWidth="1"/>
-                  <path d="M52 2L58 6L52 10" stroke="#c5c6cf" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M0 6L56 6" stroke="#c5c6cf" strokeWidth="1" />
+                  <path d="M52 2L58 6L52 10" stroke="#c5c6cf" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
             </div>
@@ -499,8 +499,8 @@ export default function EORPage() {
               </div>
               <div className="how-arrow">
                 <svg width="60" height="12" viewBox="0 0 60 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 6L56 6" stroke="#c5c6cf" strokeWidth="1"/>
-                  <path d="M52 2L58 6L52 10" stroke="#c5c6cf" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M0 6L56 6" stroke="#c5c6cf" strokeWidth="1" />
+                  <path d="M52 2L58 6L52 10" stroke="#c5c6cf" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
             </div>
@@ -530,7 +530,7 @@ export default function EORPage() {
           <h2 className="benefits-title" style={{ textAlign: 'left', marginBottom: '16px' }}>Perfect for every scenario</h2>
           <p style={{ textAlign: 'left', fontSize: '18px', color: 'var(--gh-on-surface-variant)', marginBottom: '48px' }}>Whether you&apos;re testing new markets or scaling globally, our Employer of Record (EOR) services adapt to your needs with a practical approach to global hiring and international payroll.</p>
           <div className="benefits-grid">
-            
+
             <div className="benefit-card">
               <div className="benefit-icon">
                 <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#143369" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -714,7 +714,7 @@ export default function EORPage() {
           <p style={{ marginTop: '12px', color: 'var(--gh-on-surface-variant)', fontSize: '18px', maxWidth: '600px', marginInline: 'auto' }}>Same talent goal, different legal setups. Use this to see when Employer of Record fits global hiring without a local company.</p>
         </div>
         <div className="eor-audience-grid">
-          
+
           <div className="eor-audience-card" style={{ border: '2px solid #143369', position: 'relative', paddingTop: '40px' }}>
             <div style={{ position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)', background: '#143369', color: 'white', padding: '4px 16px', borderRadius: '16px', fontSize: '12px', fontWeight: 'bold' }}>Recommended</div>
             <div className="eac-icon">
@@ -742,10 +742,10 @@ export default function EORPage() {
           <div className="eor-audience-card">
             <div className="eac-icon">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
               </svg>
             </div>
             <h3>PEO</h3>

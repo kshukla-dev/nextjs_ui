@@ -341,9 +341,7 @@ export default function GlobalHiringGuidePage() {
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-bottom: 48px;
-
-  padding-inline: clamp(32px, 8vw, 96px);}
+  margin-bottom: 48px;}
 
 .borderless-header-icon {
   width: 64px;

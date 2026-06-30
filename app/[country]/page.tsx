@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useEffect } from 'react'
 import Link from 'next/link'
-import { useParams } from 'next/navigation'
+import { useParams, notFound } from 'next/navigation'
 import { COUNTRY_CONFIG, loadCountryData } from '@/data/country-config'
 import type { CountryData, ServiceType } from '@/data/country-config'
 
@@ -12,6 +12,10 @@ export default function CountryPage() {
   const routePath = `/${countryParam}`
 
   const config = useMemo(() => COUNTRY_CONFIG[routePath], [routePath])
+  if (!config) {
+    notFound()
+  }
+
   const [data, setData] = useState<CountryData | null>(null)
   const [openFaq, setOpenFaq] = useState(0)
 

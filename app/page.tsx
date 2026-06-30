@@ -155,7 +155,7 @@ export default function HomePage() {
   margin-right: -50vw;
   width: 100vw;
   box-sizing: border-box;
-  padding: 20px 0 96px;
+  padding: 120px 0 96px;
   display: block;
   background-color: #0E0F3B;
   background-image: linear-gradient(90deg, #0e0f3b 0%, rgb(14 15 59 / 52%) 40%, rgb(14 15 59 / 0%) 70%, transparent 100%), url(/services/service-page/about2.png);
@@ -224,6 +224,16 @@ export default function HomePage() {
   gap: 16px;
   margin-top: 20px;
   flex-wrap: wrap;
+}
+@media (max-width: 640px) {
+  .home-hero .cta-row {
+    flex-direction: column;
+    width: 100%;
+  }
+  .home-hero .btn-primary, .home-hero .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .home-hero .btn-primary {
@@ -2540,6 +2550,7 @@ export default function HomePage() {
   margin-bottom: 48px;
 }
 .faq-item {
+  display: block;
   background: white;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);

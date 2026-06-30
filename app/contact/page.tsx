@@ -172,7 +172,7 @@ export default function ContactPage() {
 .contact-hero-section {
   position: relative;
   min-height: auto;
-  padding: 160px 20px 60px;
+  padding: 100px 20px 60px;
   background-color: #0E0F3B;
   overflow: hidden;
 }
@@ -346,9 +346,11 @@ export default function ContactPage() {
 }
 
 .info-card-text .value {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   color: #ffffff;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 /* Form block */
@@ -806,10 +808,16 @@ form.was-validated .custom-checkbox input:invalid + .checkmark {
 
 /* ============= OUR OFFICES ============= */
 .offices-section {
-  padding: 120px 0;
+  padding: 60px 0;
   background-color: #ffffff;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
+}
+
+@media (min-width: 768px) {
+  .offices-section {
+    padding: 120px 0;
+  }
 }
 
 .offices-header-row {
@@ -1273,8 +1281,19 @@ form.was-validated .custom-checkbox input:invalid + .checkmark {
 }
 .coming-soon-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 20px;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+@media (min-width: 580px) {
+  .coming-soon-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .coming-soon-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+  }
 }
 .coming-soon-card {
   position: relative;
@@ -1437,27 +1456,31 @@ form.was-validated .custom-checkbox input:invalid + .checkmark {
   background: transparent;
   border: none;
   border-top: 1px solid var(--border);
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: start;
-  gap: 16px;
+  display: block;
   cursor: pointer;
   font-family: inherit;
   width: 100%;
+  padding: 20px 0;
 }
 .faq-item:last-child {
   border-bottom: 1px solid var(--border);
 }
+.faq-q-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
 .faq-q {
   font-family: var(--serif);
-  font-size: 22px;
+  font-size: clamp(17px, 3vw, 22px);
   line-height: 1.3;
   color: var(--ink);
-  transition: color 0.2s, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: color 0.2s;
+  flex: 1;
 }
 .faq-item:hover .faq-q {
   color: var(--accent);
-  transform: translateX(6px);
 }
 .faq-item.open .faq-q {
   color: var(--accent);
@@ -1466,13 +1489,13 @@ form.was-validated .custom-checkbox input:invalid + .checkmark {
   font-size: 24px;
   color: var(--ink-muted);
   line-height: 1;
+  flex-shrink: 0;
   transition: color 0.2s;
 }
 .faq-item.open .faq-toggle {
   color: var(--accent);
 }
 .faq-a {
-  grid-column: 1 / -1;
   margin-top: 14px;
   font-size: 15px;
   color: var(--ink-soft);
@@ -1791,9 +1814,11 @@ form.was-validated .custom-checkbox input:invalid + .checkmark {
                 onClick={() => toggleFaq(i)}
                 aria-expanded={openFaq === i}
               >
-                <span className="faq-q">{item.question}</span>
-                <span className="faq-toggle" aria-hidden>{openFaq === i ? '−' : '+'}</span>
-                <p style={{ display: openFaq === i ? 'block' : 'none' }} className="faq-a">{item.answer}</p>
+                <div className="faq-q-row">
+                  <span className="faq-q">{item.question}</span>
+                  <span className="faq-toggle" aria-hidden>{openFaq === i ? '−' : '+'}</span>
+                </div>
+                {openFaq === i && <p className="faq-a">{item.answer}</p>}
               </button>
             ))}
           </div>

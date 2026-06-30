@@ -73,7 +73,7 @@ export default function HomePage() {
       let metricText = "Handled operations with 100% compliance"
       let metricIcon = "shield"
       let metricTheme = "blue"
-      
+
       if (t.name.includes("Priya")) {
         metricText = "Handled operations in <strong>5+ countries</strong> with <strong>100% compliance</strong>"
         metricIcon = "shield"
@@ -102,7 +102,7 @@ export default function HomePage() {
         metricIcon = icons[idx % icons.length]
         metricTheme = themes[idx % themes.length]
       }
-      
+
       return { ...t, metricText, metricIcon, metricTheme }
     })
   }, [])
@@ -295,9 +295,9 @@ export default function HomePage() {
 }
 
 .home-hero .hero-trust {
-  margin-top: 64px;
+  margin-top: 20px;
   border-top: 1px solid rgba(255,255,255,0.15);
-  padding-top: 32px;
+  padding-top: 20px;
 }
 .home-hero .hero-trust-label {
   display: block;
@@ -333,7 +333,7 @@ export default function HomePage() {
 }
 @media (max-width: 1280px) {
   .home-hero {
-    background-size: 75% auto;
+    background-size: 85% auto;
     background-position: right -5% center;
   }
 }
@@ -401,7 +401,7 @@ export default function HomePage() {
   font-size: 28px;
   line-height: 1.35;
   color: var(--ink);
-  max-width: 800px;
+  max-width: 1200px;
 }
 .intro-blurb p em {
   font-style: italic;
@@ -427,11 +427,11 @@ export default function HomePage() {
   padding-inline: clamp(32px, 8vw, 96px);
 }
 .brand-label {
-  font-size: 11px;
+  font-size: 16px;
   letter-spacing: 0.18em;
-  color: var(--ink-muted);
   text-transform: uppercase;
   flex-shrink: 0;
+  font-weight: 800;
 }
 
 /* === Infinite marquee === */
@@ -670,6 +670,7 @@ export default function HomePage() {
   gap: 40px;
   width: max-content;
   z-index: 2;
+  border: 1px solid #80808082;
 }
 .sa-stat {
   display: flex;
@@ -724,7 +725,7 @@ export default function HomePage() {
   padding: 32px 24px;
   box-shadow: 0 10px 30px -10px rgba(0,0,0,0.05);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
   transition: transform 0.2s, box-shadow 0.2s;
   align-items: flex-start;
@@ -2102,7 +2103,7 @@ export default function HomePage() {
   border-radius: 20px;
   border: 1px solid #dcdfe4;
   box-shadow: 0 8px 30px -10px rgba(0,0,0,0.08);
-  padding: 32px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
 }
@@ -3129,15 +3130,15 @@ export default function HomePage() {
 
             <div className="hero-features-inline">
               <div className="hf-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/><path d="M2 12H22"/><path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" /><path d="M2 12H22" /><path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z" /></svg>
                 Hire in 80+ countries
               </div>
               <div className="hf-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="M9 12l2 2 4-4" /></svg>
                 Compliant with local laws
               </div>
               <div className="hf-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M16 8H8V16H16"/><path d="M12 8V16"/><path d="M8 12H16"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10" /><path d="M16 8H8V16H16" /><path d="M12 8V16" /><path d="M8 12H16" /></svg>
                 Payroll in 150+ currencies
               </div>
             </div>
@@ -3288,15 +3289,15 @@ export default function HomePage() {
       <section className="section container">
         <div className="structure-about">
           <div className="sa-left">
-            <h2 className="sa-title">Why choose <br/> <span className="sa-highlight">Jackson &amp; Frank?</span></h2>
+            <h2 className="sa-title">Why choose <br /> <span className="sa-highlight">Jackson &amp; Frank?</span></h2>
             <p className="sa-body">
               We provide a complete and safe path to global expansion. Work in any country without setting up a local office, with full compliance for employment, payroll, tax, and immigration.
             </p>
             <div className="sa-cta-row">
               <Link href="/advantages" className="btn-primary">
-                More about us 
+                More about us
                 <div className="sa-play-icon">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
                 </div>
               </Link>
             </div>
@@ -3307,7 +3308,7 @@ export default function HomePage() {
               <div className="sa-stats-pill">
                 <div className="sa-stat">
                   <div className="sa-stat-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/><path d="M2 12H22"/><path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" /><path d="M2 12H22" /><path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z" /></svg>
                   </div>
                   <div>
                     <strong>80+</strong>
@@ -3318,7 +3319,7 @@ export default function HomePage() {
                 <div className="sa-stat-divider"></div>
                 <div className="sa-stat">
                   <div className="sa-stat-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21"/><path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z"/><path d="M23 21V19C23 17.671 22.327 16.495 21.2825 15.8018"/><path d="M16 3.13C17.5348 3.5594 18.6659 4.96602 18.6659 6.66102C18.6659 8.35602 17.5348 9.76263 16 10.192"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21" /><path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" /><path d="M23 21V19C23 17.671 22.327 16.495 21.2825 15.8018" /><path d="M16 3.13C17.5348 3.5594 18.6659 4.96602 18.6659 6.66102C18.6659 8.35602 17.5348 9.76263 16 10.192" /></svg>
                   </div>
                   <div>
                     <strong>700+</strong>
@@ -3329,7 +3330,7 @@ export default function HomePage() {
                 <div className="sa-stat-divider"></div>
                 <div className="sa-stat">
                   <div className="sa-stat-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="M9 12l2 2 4-4" /></svg>
                   </div>
                   <div>
                     <strong>99.5%</strong>
@@ -3341,11 +3342,11 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        
+
         <div className="sa-features-grid">
           <div className="sa-feat-card">
             <div className="sa-feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="M9 12l2 2 4-4" /></svg>
             </div>
             <div className="sa-feat-content">
               <h4>Expert compliance and legal support</h4>
@@ -3354,7 +3355,7 @@ export default function HomePage() {
           </div>
           <div className="sa-feat-card">
             <div className="sa-feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21"/><path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21" /><path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" /></svg>
             </div>
             <div className="sa-feat-content">
               <h4>Tailored global expansion consulting</h4>
@@ -3363,7 +3364,7 @@ export default function HomePage() {
           </div>
           <div className="sa-feat-card">
             <div className="sa-feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z"/><path d="M14 2V8H20"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z" /><path d="M14 2V8H20" /><path d="M16 13H8" /><path d="M16 17H8" /><path d="M10 9H8" /></svg>
             </div>
             <div className="sa-feat-content">
               <h4>End-to-end EOR and administrative support</h4>
@@ -3372,7 +3373,7 @@ export default function HomePage() {
           </div>
           <div className="sa-feat-card">
             <div className="sa-feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M22 2L11 13" /><path d="M22 2L15 22L11 13L2 9L22 2Z" /></svg>
             </div>
             <div className="sa-feat-content">
               <h4>Fast setup and compliance assurance</h4>
@@ -3401,7 +3402,7 @@ export default function HomePage() {
               <div className="frc-bg"></div>
               <div className="frc-content">
                 <Link href="/resources/events/china-europe-2026">
-                    <h3><span className="highlight">China to Europe</span> 2026:<br/>Scaling Beyond Borders</h3>
+                  <h3><span className="highlight">China to Europe</span> 2026:<br />Scaling Beyond Borders</h3>
                 </Link>
                 <p>A comprehensive guide to managing compliance, payroll, and cultural shifts when expanding into the European market.</p>
               </div>
@@ -3423,7 +3424,7 @@ export default function HomePage() {
                   <Link key={article.slug} href={'/blog/' + article.slug} className="article-item">
                     <img src={article.image_url} alt={article.title} className="article-thumb" />
                     <div className="article-info">
-                      <span className="article-tag" style={{ textTransform: 'uppercase' }}>{article.category}</span>
+                      {/* <span className="article-tag" style={{ textTransform: 'uppercase' }}>{article.category}</span> */}
                       <h5>{article.title}</h5>
                       <span className="article-meta">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="12" height="12"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
@@ -3501,9 +3502,9 @@ export default function HomePage() {
 
         <div className="testimonials-carousel" style={{ '--card-width': '380px', '--card-gap': '32px' } as any}>
           <button className="carousel-btn prev" onClick={prevSlide} aria-label="Previous testimonial">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
           </button>
-          
+
           <div className="carousel-viewport">
             <div className="carousel-track" style={{ transform: `translateX(calc(50% - (var(--card-width) / 2) - (${activeIndex} * (var(--card-width) + var(--card-gap)))))` }}>
               {testimonialsWithMetrics.map((t: any, idx: number) => (
@@ -3519,16 +3520,16 @@ export default function HomePage() {
                       </div>
                       <div className={`cc-quote-badge ${t.metricTheme}`}>“</div>
                     </div>
-                    
+
                     <p className="cc-body">&quot;{t.review}&quot;</p>
-                    
+
                     <div className={`cc-metric-badge ${t.metricTheme}`}>
                       {t.metricIcon === 'shield' ? (
-                        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+                        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg></span>
                       ) : t.metricIcon === 'chart' ? (
-                        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M23 6l-9.5 9.5-5-5L1 18"/><polyline points="17 6 23 6 23 12"/></svg></span>
+                        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M23 6l-9.5 9.5-5-5L1 18" /><polyline points="17 6 23 6 23 12" /></svg></span>
                       ) : (
-                        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg></span>
                       )}
                       <span dangerouslySetInnerHTML={{ __html: t.metricText }}></span>
                     </div>
@@ -3539,7 +3540,7 @@ export default function HomePage() {
           </div>
 
           <button className="carousel-btn next" onClick={nextSlide} aria-label="Next testimonial">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6" /></svg>
           </button>
 
           <div className="carousel-pagination">
@@ -3593,13 +3594,13 @@ export default function HomePage() {
               <div className="faq-question" onClick={() => toggleFaq(index)}>
                 <div className="faq-icon">
                   {faq.category === 'About EOR' ? (
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg>
                   ) : faq.category === 'Hiring & Onboarding' ? (
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
                   ) : faq.category === 'Payroll & Compliance' ? (
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><polyline points="9 12 11 14 15 10" /></svg>
                   ) : (
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6" /><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" /></svg>
                   )}
                 </div>
                 <h3>{faq.question}</h3>

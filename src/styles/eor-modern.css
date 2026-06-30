@@ -420,6 +420,13 @@
   margin: 0 auto;
 }
 
+/* Blog page needs the FAQ to use the full container/grid layout
+   override the narrow max-width when inside the blog page wrapper */
+.blog-page-wrapper .faq-section {
+  max-width: none;
+  margin: 0;
+}
+
 .faq-title {
   text-align: center;
   font-family: var(--serif);

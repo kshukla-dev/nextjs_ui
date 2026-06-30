@@ -434,6 +434,7 @@
 }
 
 .faq-item {
+  display: block !important;
   border-bottom: 1px solid #6b728078;
 }
 

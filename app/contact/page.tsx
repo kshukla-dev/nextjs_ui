@@ -1437,7 +1437,6 @@ form.was-validated .custom-checkbox input:invalid + .checkmark {
   background: transparent;
   border: none;
   border-top: 1px solid var(--border);
-  padding: 24px 0;
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: start;
@@ -1480,7 +1479,7 @@ form.was-validated .custom-checkbox input:invalid + .checkmark {
   line-height: 1.65;
 }
 `}</style>
-      
+
       {/* ============= HERO & FORM SECTION ============= */}
       <section className="contact-hero-section">
         <div className="hero-bg-map"></div>
@@ -1488,7 +1487,7 @@ form.was-validated .custom-checkbox input:invalid + .checkmark {
         <div className="container hero-grid">
           {/* Left Content */}
           <div className="hero-left-content">
-            <h1>Let&apos;s build your<br/>global success <span className="highlight-gold">together.</span></h1>
+            <h1>Let&apos;s build your<br />global success <span className="highlight-gold">together.</span></h1>
             <p className="hero-desc">Have questions about global employment, expansion, or our services? Our experts are here to help.</p>
 
             <div className="contact-info-cards">
@@ -1540,28 +1539,28 @@ form.was-validated .custom-checkbox input:invalid + .checkmark {
                   <>
                     <div className="form-grid-row">
                       <div className="form-field">
-                        <input value={form.firstName} onChange={e => setForm({...form, firstName: e.target.value})} type="text" placeholder="First name" required aria-label="First Name" />
+                        <input value={form.firstName} onChange={e => setForm({ ...form, firstName: e.target.value })} type="text" placeholder="First name" required aria-label="First Name" />
                       </div>
                       <div className="form-field">
-                        <input value={form.lastName} onChange={e => setForm({...form, lastName: e.target.value})} type="text" placeholder="Last name" required aria-label="Last Name" />
+                        <input value={form.lastName} onChange={e => setForm({ ...form, lastName: e.target.value })} type="text" placeholder="Last name" required aria-label="Last Name" />
                       </div>
                     </div>
 
                     <div className="form-field">
-                      <input value={form.email} onChange={e => setForm({...form, email: e.target.value})} type="email" placeholder="Work email" required aria-label="Work Email" />
+                      <input value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} type="email" placeholder="Work email" required aria-label="Work Email" />
                     </div>
 
                     <div className="form-grid-row">
                       <div className="form-field">
-                        <input value={form.phone} onChange={e => setForm({...form, phone: e.target.value})} type="tel" placeholder="Phone number" aria-label="Phone Number" />
+                        <input value={form.phone} onChange={e => setForm({ ...form, phone: e.target.value })} type="tel" placeholder="Phone number" aria-label="Phone Number" />
                       </div>
                       <div className="form-field">
-                        <input value={form.company} onChange={e => setForm({...form, company: e.target.value})} type="text" placeholder="Company name" aria-label="Company Name" />
+                        <input value={form.company} onChange={e => setForm({ ...form, company: e.target.value })} type="text" placeholder="Company name" aria-label="Company Name" />
                       </div>
                     </div>
 
                     <div className="form-field select-field">
-                      <select value={form.reason} onChange={e => setForm({...form, reason: e.target.value})} required aria-label="What can we help you with?">
+                      <select value={form.reason} onChange={e => setForm({ ...form, reason: e.target.value })} required aria-label="What can we help you with?">
                         <option value="" disabled>How can we help you?</option>
                         {contactData.form.contactReasons.map((r: any) => (
                           <option key={r.value} value={r.value}>{r.label}</option>
@@ -1573,12 +1572,12 @@ form.was-validated .custom-checkbox input:invalid + .checkmark {
                     </div>
 
                     <div className="form-field">
-                      <textarea value={form.message} onChange={e => setForm({...form, message: e.target.value})} placeholder="Your message" rows={4} required aria-label="Your Message"></textarea>
+                      <textarea value={form.message} onChange={e => setForm({ ...form, message: e.target.value })} placeholder="Your message" rows={4} required aria-label="Your Message"></textarea>
                     </div>
 
                     <div className="form-consent-row">
                       <label className="custom-checkbox">
-                        <input checked={form.consent} onChange={e => setForm({...form, consent: e.target.checked})} type="checkbox" required />
+                        <input checked={form.consent} onChange={e => setForm({ ...form, consent: e.target.checked })} type="checkbox" required />
                         <span className="checkmark"></span>
                       </label>
                       <span className="consent-text">
@@ -1613,7 +1612,7 @@ form.was-validated .custom-checkbox input:invalid + .checkmark {
             <div className="why-us-grid">
               <div className="why-us-left-col">
                 <span className="tag-eyebrow">WHY GET IN TOUCH WITH JACKSON &amp; FRANK</span>
-                <h2>Your trusted partner<br/>for <span className="highlight-gold">global expansion</span></h2>
+                <h2>Your trusted partner<br />for <span className="highlight-gold">global expansion</span></h2>
                 <p>We combine local expertise with global experience to make your expansion simple, compliant, and successful.</p>
                 <Link href="/about-us" className="learn-more-btn">
                   Learn more about us <span className="arrow">→</span>
@@ -1743,7 +1742,7 @@ form.was-validated .custom-checkbox input:invalid + .checkmark {
                       </span>
                       <span className="cs-country-name">{country.name}</span>
                     </div>
-                    <p className="cs-desc">Full country guide and local EOR details:<br/>Launching soon. Contact us to plan ahead.</p>
+                    <p className="cs-desc">Full country guide and local EOR details:<br />Launching soon. Contact us to plan ahead.</p>
                     <Link href="/#contact" className="cs-contact-link">
                       Contact us to plan ahead <span>→</span>
                     </Link>
@@ -1767,7 +1766,7 @@ form.was-validated .custom-checkbox input:invalid + .checkmark {
             <div className="map-pin pin-in" style={{ top: '52%', left: '68%' }}></div>
             <div className="map-pin pin-sg" style={{ top: '66%', left: '74%' }}></div>
           </div>
-          
+
           <div className="stats-overlay-card">
             <span className="operating-label">Operating in</span>
             <div className="countries-count">80+</div>

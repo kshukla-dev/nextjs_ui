@@ -1,3 +1,5 @@
+'use server'
+
 import type { BlogPost, Category, Tag } from '@/types/blog'
 import { mergeManualBlogPosts, getManualBlogBySlug } from '@/data/manual-blog-posts'
 import { sanityClient } from './sanity'

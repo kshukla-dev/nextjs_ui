@@ -1,0 +1,579 @@
+'use client'
+
+import { useState } from 'react'
+import Link from 'next/link'
+import GlobalCTA from '@/components/sections/GlobalCTA'
+import ghg from '@/data/global-hiring.json'
+
+interface Country {
+  name: string
+  status?: string
+  address: string
+  href: string
+}
+
+export default function GlobalHiringGuidePage() {
+  const [activeEntity, setActiveEntity] = useState(0)
+  const [openFaq, setOpenFaq] = useState(0)
+
+  function toggleFaq(i: number) {
+    setOpenFaq(prev => prev === i ? -1 : i)
+  }
+
+  const allCountries = ghg.countries as Country[]
+  const available = allCountries.filter((c) => c.status?.toLowerCase() !== 'coming soon')
+  const comingSoon = allCountries.filter((c) => c.status?.toLowerCase() === 'coming soon')
+
+  const getFlag = (name: string) => {
+    const map: Record<string, string> = {
+      'The Netherlands': '🇳🇱',
+      'India': '🇮🇳',
+      'Poland': '🇵🇱',
+      'United Kingdom': '🇬🇧',
+      'Germany': '🇩🇪',
+      'Italy': '🇮🇹',
+      'Czech Republic': '🇨🇿',
+      'France': '🇫🇷',
+      'Belgium': '🇧🇪',
+      'Spain': '🇪🇸',
+      'UAE': '🇦🇪',
+      'Hong Kong': '🇭🇰',
+      'China': '🇨🇳',
+      'Portugal': '🇵🇹',
+      'Sweden': '🇸🇪',
+      'Hungary': '🇭🇺',
+      'Romania': '🇷🇴',
+      'Mexico': '🇲🇽'
+    }
+    return map[name] || '🌍'
+  }
+
+  const getFlagUrl = (name: string) => {
+    const map: Record<string, string> = {
+      'The Netherlands': '/countries/flag/Flag_of_the_Netherlands.svg.webp',
+      'India': '/countries/flag/Flag_of_India.svg.webp',
+      'Poland': '/countries/flag/Flag_of_Poland.svg.png',
+      'United Kingdom': '/countries/flag/Flag-United-Kingdom.webp',
+      'Germany': '/countries/flag/Flag_of_Germany_(3-2).svg.png',
+      'Italy': '/countries/flag/Flag_of_Italy.svg.png',
+      'Czech Republic': '/countries/flag/Flag_of_the_Czech_Republic.svg.webp',
+      'France': '/countries/flag/Flag_of_France.svg.webp',
+      'Belgium': '/countries/flag/Flag_of_Belgium.svg.png',
+      'Spain': '/countries/flag/Flag_of_Spain.svg.png',
+      'UAE': '/countries/flag/Flag_of_the_United_Arab_Emirates.svg',
+      'Hong Kong': '/countries/flag/Flag_of_Hong_Kong.svg (1).png',
+      'China': '/countries/flag/Flag_of_the_People\'s_Republic_of_China.svg.webp',
+    }
+    return map[name] || ''
+  }
+
+  const getCountryImage = (name: string) => {
+    const map: Record<string, string> = {
+      'The Netherlands': '/countries/eor-netherlands.webp',
+      'India': '/countries/eor-india.webp',
+      'Poland': '/countries/eor-poland.webp',
+      'United Kingdom': '/countries/eor-uk.webp',
+      'Germany': '/countries/eor-germany.webp',
+      'Italy': '/countries/eor-Italy.webp',
+      'Czech Republic': '/countries/eor-czech.webp',
+      'France': '/countries/eor-france.webp',
+      'Belgium': '/countries/eor-belgium.webp',
+      'Spain': '/countries/eor-spain.webp',
+      'UAE': '/countries/eor-uae.webp',
+      'Hong Kong': '/countries/eor-hong-kong.webp',
+      'China': '/countries/eor-china.webp',
+      'Portugal': '/countries/eor-spain.webp',
+      'Sweden': '/countries/eor-uk.webp',
+      'Hungary': '/countries/eor-czech.webp',
+      'Romania': '/countries/eor-poland.webp',
+      'Mexico': '/countries/eor-spain.webp'
+    }
+    return map[name] || '/countries/eor-spain.webp'
+  }
+
+  const getShortAddress = (name: string) => {
+    const map: Record<string, string> = {
+      'The Netherlands': 'Amsterdam, Netherlands',
+      'India': 'Bengaluru, Karnataka, India',
+      'Poland': 'Poznań, Poland',
+      'United Kingdom': 'London, United Kingdom',
+      'Germany': 'Berlin, Germany',
+      'Italy': 'Milan, Italy',
+      'Czech Republic': 'Prague, Czech Republic',
+      'France': 'Paris, France',
+      'Belgium': 'Sint-Agatha-Berchem, Belgium',
+      'Spain': 'Seville, Spain',
+      'UAE': 'Sharjah, UAE',
+      'Hong Kong': 'Tsim Sha Tsui, Hong Kong',
+      'China': 'Shanghai, China'
+    }
+    return map[name] || name
+  }
+
+  const getCountryDetails = (name: string) => {
+    const defaults = { type: 'Private Limited', currency: 'USD', time: '2-4 weeks' }
+    const map: Record<string, { type: string, currency: string, time: string }> = {
+      'The Netherlands': { type: 'B.V.', currency: 'EUR', time: '2-4 weeks' },
+      'India': { type: 'Private Limited', currency: 'INR', time: '3-6 weeks' },
+      'Poland': { type: 'Sp. z o.o.', currency: 'PLN', time: '2-4 weeks' },
+      'United Kingdom': { type: 'LTD', currency: 'GBP', time: '1-3 weeks' },
+      'Germany': { type: 'GmbH', currency: 'EUR', time: '3-5 weeks' },
+      'Italy': { type: 'S.r.l.', currency: 'EUR', time: '2-4 weeks' },
+      'Czech Republic': { type: 's.r.o.', currency: 'CZK', time: '2-4 weeks' },
+      'France': { type: 'SAS', currency: 'EUR', time: '2-4 weeks' },
+      'Belgium': { type: 'BV', currency: 'EUR', time: '2-4 weeks' },
+      'Spain': { type: 'S.L.', currency: 'EUR', time: '2-4 weeks' },
+      'UAE': { type: 'LLC', currency: 'AED', time: '2-4 weeks' },
+      'Hong Kong': { type: 'Limited', currency: 'HKD', time: '1-3 weeks' },
+      'China': { type: 'WFOE', currency: 'CNY', time: '4-8 weeks' }
+    }
+    return map[name] || defaults
+  }
+
+  return (
+    <>
+      {/* VUE_CSS_PLACEHOLDER */}
+
+      <header className="ghg-hero">
+        <div className="ghg-hero-inner container">
+          <div className="ghg-hero-copy">
+            <h1 className="hero-title">Global <br /><em>hiring guide</em></h1>
+            <p className="hero-desc">
+              Streamline global operations by managing payroll in over 80+ countries under one roof, thereby eliminating the ongoing administrative burdens of local compliance, taxes, benefits, and other complexities.
+            </p>
+            <ul className="hero-checklist">
+              <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9 12l2 2 4-4"></path></svg> Global compliance</li>
+              <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9 12l2 2 4-4"></path></svg> Local expertise</li>
+              <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9 12l2 2 4-4"></path></svg> Fast setup</li>
+            </ul>
+            <a href="https://calendly.com/jacksonandfrank/discover-us" target="_blank" rel="noopener noreferrer" className="btn-primary-gold" style={{ display: 'inline-flex' }}>
+              Get the guide <span className="arrow">→</span>
+            </a>      </div>
+        </div>
+        
+        <div className="container trust-banner-wrap">
+          <div className="trust-banner">
+            <div className="trust-left">
+              <span className="trust-tag">TRUSTED BY GLOBAL COMPANIES</span>
+              <h3>Join 500+ companies<br/>growing globally</h3>
+            </div>
+            <div className="trust-logos">
+              <span className="t-logo klarna">Klarna.</span>
+              <span className="t-logo hubspot">HubS<span>p</span>ot</span>
+              <span className="t-logo scale">scale</span>
+              <span className="t-logo rippling">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: '2px'}}><path d="M4 22V2"/><path d="M8 22V2"/><path d="M12 22v-8"/><path d="M16 22v-8"/><path d="M20 22V2"/></svg>
+                RIPPLING
+              </span>
+              <span className="t-logo brex">BREX</span>
+              <span className="t-logo dlocal">dlocal</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* Why choose our global hiring solution? */}
+      <section className="container">
+        <div className="borderless-teams-wrap">
+          <div className="borderless-card">
+            <div className="borderless-header" style={{ marginBottom: '24px' }}>
+              <h2>Why choose our global hiring solution?</h2>
+            </div>
+            
+            <p style={{ fontSize: '16px', color: 'var(--ink-soft)', lineHeight: 1.6, marginBottom: '48px' }}>
+              Expand your business globally with confidence. Our platform makes international hiring seamless and compliant.
+            </p>
+            
+            <div className="borderless-grid">
+              {/* Cross dividers */}
+              <div className="bg-divider-v"></div>
+              <div className="bg-divider-h"></div>
+              
+              <div className="borderless-feature">
+                <div className="bf-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                </div>
+                <div className="bf-text">
+                  <h3>Access global talent</h3>
+                  <p>Tap into talent pools from over 160+ countries worldwide</p>
+                </div>
+              </div>
+              
+              <div className="borderless-feature">
+                <div className="bf-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                </div>
+                <div className="bf-text">
+                  <h3>Full legal compliance</h3>
+                  <p>We ensure all hiring is compliant with local employment laws</p>
+                </div>
+              </div>
+              
+              <div className="borderless-feature">
+                <div className="bf-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div className="bf-text">
+                  <h3>Dedicated support</h3>
+                  <p>Get dedicated HR support for all your global employees</p>
+                </div>
+              </div>
+              
+              <div className="borderless-feature">
+                <div className="bf-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                </div>
+                <div className="bf-text">
+                  <h3>Quick setup</h3>
+                  <p>Start hiring in new countries in as little as 48 hours</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="borderless-image">
+            <img src="/case-study/BuiltForBorderlessTeams.png" alt="Built For Borderless Teams" />
+          </div>
+        </div>
+      </section>
+
+      {/* Process */}
+      <section className="container" style={{ marginBottom: '100px' }}>
+        <div className="process-box">
+          <h2 className="process-title">From candidate to compliant hire</h2>
+          
+          <div className="process-flow">
+            <div className="process-line"></div>
+            
+            <div className="process-step">
+              <div className="ps-icon-wrap">
+                <div className="ps-icon">
+                  {/* Briefcase SVG */}
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                </div>
+              </div>
+              <span className="ps-num">01</span>
+              <h3>Job Posted</h3>
+              <p>You find the right talent.</p>
+            </div>
+
+            <div className="process-step">
+              <div className="ps-icon-wrap">
+                <div className="ps-icon">
+                  {/* Person Add SVG */}
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+                </div>
+              </div>
+              <span className="ps-num">02</span>
+              <h3>We Onboard</h3>
+              <p>We handle contracts and documentation.</p>
+            </div>
+
+            <div className="process-step">
+              <div className="ps-icon-wrap">
+                <div className="ps-icon">
+                  {/* Shield SVG */}
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg>
+                </div>
+              </div>
+              <span className="ps-num">03</span>
+              <h3>We Employ</h3>
+              <p>We become the legal employer.</p>
+            </div>
+
+            <div className="process-step">
+              <div className="ps-icon-wrap">
+                <div className="ps-icon">
+                  {/* Card SVG */}
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+                </div>
+              </div>
+              <span className="ps-num">04</span>
+              <h3>We Manage</h3>
+              <p>Payroll, benefits, taxes, and compliance.</p>
+            </div>
+
+            <div className="process-step">
+              <div className="ps-icon-wrap">
+                <div className="ps-icon">
+                  {/* Chart SVG */}
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="16" width="4" height="4"></rect><rect x="9" y="12" width="4" height="8"></rect><rect x="15" y="6" width="4" height="14"></rect><line x1="3" y1="9" x2="21" y2="3"></line><polyline points="16 3 21 3 21 8"></polyline></svg>
+                </div>
+              </div>
+              <span className="ps-num">05</span>
+              <h3>You Scale</h3>
+              <p>Focus on growth while we handle the rest.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Entities & locations */}
+      <section className="entities-section container">
+        <div className="entities-header-row">
+          <div className="entities-title-block">
+            <h2 className="entities-main-title">A truly global presence.<br/><span className="gold-text">Built for borderless teams.</span></h2>
+            <p className="entities-subtitle">Our own legal entities in 80+ countries allow you to hire, pay, and support talent compliantly-wherever your business grows.</p>
+          </div>
+          <Link href="/contact" className="btn-outline-gold">View all locations <span aria-hidden>→</span></Link>
+        </div>
+
+        {/* Main Grid: Left is Map/Stats, Right is Featured Entities */}
+        <div className="entities-main-grid">
+          {/* Left side: Map & Stats */}
+          <div className="map-stats-card">
+            {/* Dotted pattern background is styled via CSS radial-gradient */}
+            <div className="map-dotted-bg"></div>
+            <div className="map-card-content">
+              {/* Stats Row at bottom of map card */}
+              <div className="map-stats-row">
+                <div className="map-stat-item">
+                  <div className="map-stat-icon-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                  </div>
+                  <div className="map-stat-info">
+                    <span className="map-stat-number">80+</span>
+                    <span className="map-stat-label">Countries<br/>Our entities</span>
+                  </div>
+                </div>
+                
+                <div className="map-stat-item">
+                  <div className="map-stat-icon-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="9" y1="22" x2="9" y2="16"></line><line x1="15" y1="22" x2="15" y2="16"></line><line x1="9" y1="16" x2="15" y2="16"></line><path d="M8 6h.01M16 6h.01M8 10h.01M16 10h.01M12 6h.01M12 10h.01"></path></svg>
+                  </div>
+                  <div className="map-stat-info">
+                    <span className="map-stat-number">50+</span>
+                    <span className="map-stat-label">Legal entities<br/>Worldwide</span>
+                  </div>
+                </div>
+
+                <div className="map-stat-item">
+                  <div className="map-stat-icon-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                  </div>
+                  <div className="map-stat-info">
+                    <span className="map-stat-number">80+</span>
+                    <span className="map-stat-label">Countries supported<br/>for hiring</span>
+                  </div>
+                </div>
+
+                <div className="map-stat-item">
+                  <div className="map-stat-icon-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg>
+                  </div>
+                  <div className="map-stat-info">
+                    <span className="map-stat-number">99.5%</span>
+                    <span className="map-stat-label">Client satisfaction<br/>rate</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right side: Featured Entities Card */}
+          <div className="featured-entities-card">
+            <div className="fe-card-header">
+              <h3 className="fe-card-title">Featured entities</h3>
+              <Link href="/contact" className="fe-see-all">See all <span aria-hidden>→</span></Link>
+            </div>
+            <div className="fe-list">
+              {available.map((c: any, index: number) => (
+                <Link
+                  key={c.name}
+                  href={c.href || '/contact'}
+                  className={`fe-item ${activeEntity === index ? 'is-open' : ''}`}
+                  onMouseEnter={() => setActiveEntity(index)}
+                >
+                  <div className="fe-item-header">
+                    <div className="fe-item-left">
+                      <div className="fe-flag-wrap">
+                        {getFlagUrl(c.name) ? (
+                          <img src={getFlagUrl(c.name)} alt={c.name + ' flag'} className="fe-flag-img" />
+                        ) : (
+                          <span className="fe-flag-emoji">{getFlag(c.name)}</span>
+                        )}
+                      </div>
+                      <div className="fe-info">
+                        <span className="fe-name">{c.name}</span>
+                        <span className="fe-desc">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: '2px', verticalAlign: '-1px'}}><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                          {getShortAddress(c.name)}
+                        </span>
+                      </div>
+                    </div>
+                    
+                    <div className="fe-item-right-wrap">
+                      <span className="fe-active-badge">Active</span>
+                      <div className="fe-arrow">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="fe-item-details">
+                    <div className="fe-details-stats">
+                      <div className="fe-detail-box">
+                        <div className="fe-detail-icon">
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+                        </div>
+                        <div className="fe-detail-text">
+                          <span className="fe-detail-label">Entity type</span>
+                          <span className="fe-detail-val">{getCountryDetails(c.name).type}</span>
+                        </div>
+                      </div>
+                      <div className="fe-detail-box">
+                        <div className="fe-detail-icon">
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path><line x1="12" y1="18" x2="12" y2="22"></line><line x1="12" y1="2" x2="12" y2="6"></line></svg>
+                        </div>
+                        <div className="fe-detail-text">
+                          <span className="fe-detail-label">Currency</span>
+                          <span className="fe-detail-val">{getCountryDetails(c.name).currency}</span>
+                        </div>
+                      </div>
+                      <div className="fe-detail-box">
+                        <div className="fe-detail-icon">
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        </div>
+                        <div className="fe-detail-text">
+                          <span className="fe-detail-label">Setup time</span>
+                          <span className="fe-detail-val">{getCountryDetails(c.name).time}</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="fe-details-address">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="fe-pin-icon-address"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                      <p>{c.address}</p>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom section: Coming soon locations */}
+        <div className="coming-soon-section">
+          <h3 className="cs-title">COMING SOON LOCATIONS</h3>
+          <div className="cs-grid">
+            {comingSoon.map((c: any) => (
+              <div key={c.name} className="cs-card" style={{ backgroundImage: `url(${getCountryImage(c.name)})` }}>
+                <div className="cs-card-overlay"></div>
+                <div className="cs-card-content">
+                  <div className="cs-card-header">
+                    <div className="cs-flag-wrap">
+                      {getFlagUrl(c.name) ? (
+                        <img src={getFlagUrl(c.name)} alt={c.name + ' flag'} className="cs-flag-img" />
+                      ) : (
+                        <span className="cs-flag-emoji">{getFlag(c.name)}</span>
+                      )}
+                    </div>
+                    <span className="cs-country-name">{c.name}</span>
+                  </div>
+                  <p className="cs-card-text">Full country guide and<br/>local EOR details.</p>
+                  <div className="cs-location-pill">
+                  {c.address || c.name}
+                  </div>
+                  <button className="btn-notify">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: '6px'}}><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                    Notify me
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="hiw-section container">
+        <div className="hiw-header">
+          <h2 className="hiw-title">How it works</h2>
+          <p className="hiw-subtitle">Get started with global hiring in four simple steps</p>
+        </div>
+
+        <div className="hiw-cards-container">
+          <div className="hiw-card">
+            <div className="hiw-card-top">
+              <div className="hiw-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><path d="M9 22v-4h6v4"></path><path d="M8 6h.01"></path><path d="M16 6h.01"></path><path d="M12 6h.01"></path><path d="M12 10h.01"></path><path d="M12 14h.01"></path><path d="M16 10h.01"></path><path d="M16 14h.01"></path><path d="M8 10h.01"></path><path d="M8 14h.01"></path></svg>
+              </div>
+              <span className="hiw-card-number">01</span>
+            </div>
+            <h3 className="hiw-card-title">Company or<br/>individual</h3>
+            <div className="hiw-divider"></div>
+            <p className="hiw-card-desc">You&apos;ve found a candidate in a country where you don&apos;t have a local entity, or you&apos;re a freelancer working for global clients without &apos;employed&apos; status.</p>
+          </div>
+          
+          <div className="hiw-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></div>
+
+          <div className="hiw-card">
+            <div className="hiw-card-top">
+              <div className="hiw-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><polyline points="9 15 11 17 15 13"></polyline></svg>
+              </div>
+              <span className="hiw-card-number">02</span>
+            </div>
+            <h3 className="hiw-card-title">Onboarding<br/>and admin</h3>
+            <div className="hiw-divider"></div>
+            <p className="hiw-card-desc">We handle onboarding, contracts, local compliance, and all admin work.</p>
+          </div>
+
+          <div className="hiw-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></div>
+
+          <div className="hiw-card">
+            <div className="hiw-card-top">
+              <div className="hiw-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+              </div>
+              <span className="hiw-card-number">03</span>
+            </div>
+            <h3 className="hiw-card-title">Proper<br/>employment</h3>
+            <div className="hiw-divider"></div>
+            <p className="hiw-card-desc">You (or your new team member) are officially employed through Jackson &amp; Franks EOR service with all the benefits of traditional employment.</p>
+          </div>
+
+          <div className="hiw-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></div>
+
+          <div className="hiw-card">
+            <div className="hiw-card-top">
+              <div className="hiw-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2l.5-.5a5.4 5.4 0 0 0 1-4.5c.35-1.5 1.77-2.92 3.25-3.32a5.4 5.4 0 0 0-4.5 1L7 16l-2.5.5z"></path><path d="M12 15.5l5.5-5.5a2.12 2.12 0 0 0-3-3l-5.5 5.5"></path><circle cx="15" cy="9" r="1"></circle></svg>
+              </div>
+              <span className="hiw-card-number">04</span>
+            </div>
+            <h3 className="hiw-card-title">Get started<br/>&nbsp;</h3>
+            <div className="hiw-divider"></div>
+            <p className="hiw-card-desc">Start building your global team with confidence and full compliance.</p>
+          </div>
+        </div>
+
+      </section>
+
+      {/* FAQ */}
+      <section className="section container">
+        <div className="faq-block">
+          <div className="faq-head">
+            <h2 className="section-title">{ghg.faqs.title}</h2>
+            <p className="section-lead">{ghg.faqs.subtitle}</p>
+          </div>
+          <div className="faq-list">
+            {ghg.faqs.items.map((item: any, i: number) => (
+              <button
+                key={i}
+                className={`faq-item ${openFaq === i ? 'open' : ''}`}
+                onClick={() => toggleFaq(i)}
+                aria-expanded={openFaq === i}
+              >
+                <span className="faq-q">{item.question}</span>
+                <span className="faq-toggle" aria-hidden>{openFaq === i ? '−' : '+'}</span>
+                <p style={{ display: openFaq === i ? 'block' : 'none' }} className="faq-a">{item.answer}</p>
+              </button>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <GlobalCTA title="Start hiring globally today" />
+    </>
+  )
+}

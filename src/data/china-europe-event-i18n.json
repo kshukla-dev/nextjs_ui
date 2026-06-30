@@ -1,0 +1,133 @@
+{
+  "en": {
+    "metadata": {
+      "title": "China to Europe: Scaling Beyond Borders | Jackson & Frank",
+      "description": "Workforce, compliance, and leadership challenges presented & explained by local experts. The Sukhothai Shanghai.",
+      "path": "/en/china-europe-2026"
+    },
+    "hero": {
+      "tagline": "China to Europe: Scaling Beyond Borders",
+      "title": "China to Europe: Scaling Beyond Borders",
+      "subtitle": "Workforce, compliance, and leadership challenges presented & explained by local experts.",
+      "eventTitle": "China to Europe: Scaling Beyond Borders",
+      "eventSubline": "Workforce, compliance, and leadership challenges presented & explained by local experts.",
+      "date": "March 18, 2026",
+      "time": "13:00 – 18:00",
+      "venue": "The Sukhothai Shanghai",
+      "ctaText": "Join Now",
+      "ctaHref": "#register"
+    },
+    "eventBackground": {
+      "title": "Event Background",
+      "paragraphs": [
+        "In recent years, the European market has become the destination of choice for countless Chinese companies going global, thanks to its mature consumer base, stable business environment, and huge growth potential. Yet the journey from \"going out\" to \"going in\" and then \"going up\" is far harder than it seems.",
+        "Many companies cross the border with confidence only to hit a \"Waterloo\" at the first step: poor tax planning erodes profits, compliance gaps lead to heavy fines, misaligned HR causes internal friction, and a single issue like opening a bank account can stall the whole project.",
+        "Why is your path to Europe so difficult?",
+        "To help Chinese companies truly scale beyond borders, JACKSON & FRANK is hosting the \"China to Europe: Scaling Beyond Borders\" forum. We have invited seasoned experts with years of experience in Europe to walk you through the three phases - PLAN, SETUP, SCALE - and unpack the hidden obstacles few talk about."
+      ],
+      "frameworkTitle": "Three-step strategy framework: PLAN → SETUP → SCALE",
+      "frameworkSteps": ["PLAN", "SETUP", "SCALE"],
+      "cards": [
+        { "icon": "finance", "title": "Plan", "content": "Define your European market strategy, assess opportunities, and align with local regulatory and commercial requirements." },
+        { "icon": "trade", "title": "Setup", "content": "Establish entities, governance, and operational structures with the support of legal, tax, and HR experts." },
+        { "icon": "strategy", "title": "Scale", "content": "Grow your presence with compliance, talent mobility, and integration best practices for long-term success." }
+      ]
+    },
+    "agendaTitle": "Event Agenda",
+    "agenda": [
+      { "time": "13:00 – 13:30", "title": "Event Check-in", "description": "" },
+      { "time": "13:30 – 14:00", "title": "Opening Remarks | Jingan GOV.", "description": "" },
+      { "time": "14:00 – 14:30", "title": "Overview - Your 3-Stage Path to Europe", "description": "Speaker: Pawel Michalkiewicz" },
+      { "time": "14:30 – 14:40", "title": "Group Photo", "description": "" },
+      { "time": "14:40 – 15:00", "title": "Tea Break", "description": "" },
+      { "time": "15:00 – 15:30", "title": "Tax Compliance: Aligning Your Tax Structure with Business Growth", "description": "" },
+      { "time": "15:30 – 16:00", "title": "EU Competition & HR-Cartels", "description": "" },
+      { "time": "16:00 – 16:30", "title": "Sailing Towards Expansion: Leveraging a Decade of Experience to Ensure Every Step is Solid", "description": "" },
+      { "time": "16:30 – 17:30", "title": "Panel Discussion", "description": "" },
+      { "time": "17:30 – 18:00", "title": "Closing Remarks & Open Networking", "description": "" }
+    ],
+    "speakersTitle": "Featured Speakers",
+    "speakers": [
+      { "name": "Pawel Michalkiewicz", "company": "Jackson & Frank", "role": "Founder & Chief Strategy Officer", "bio": "Pawel Michalkiewicz has extensive international market experience and corporate consulting expertise. He previously worked at Randstad, a global leader in HR services. After founding Jackson & Frank, he has helped numerous multinational companies successfully expand into the European market. His expertise focuses on international expansion strategy, talent mobility, and organizational development, helping companies build scalable global operations.", "image": "/speakers/pawel-michalkiewicz.png" },
+      { "name": "Paul Halprin", "company": "Halprin Law", "role": "Founder", "bio": "Paul Halprin is an experienced international tax lawyer specializing in cross-border taxation and corporate restructuring. Before founding Halprin Law, he was partner at Dentons Europe (part of Dentons Dacheng), one of the world's largest law firms, advising multinational corporations on international tax matters. Paul has deep expertise in cross-border corporate taxation, international tax planning, and global compliance, and has advised numerous multinational businesses.", "image": "/speakers/paul-halprin.png" },
+      { "name": "Martijn van de Hel", "company": "Maverick Advocate", "role": "Co-Founder", "bio": "Martijn van de Hel is the co-founder of Maverick Advocate and a well-known international lawyer specializing in corporate law, mergers & acquisitions, and cross-border transactions. Previously, he worked at leading international law firms and has advised major global companies on complex cross-border deals. Martijn has been recognized as a \"Top 500 Leading Lawyer\" and is widely respected for his expertise in international business law.", "image": "/speakers/Martijn-van-de-hel.png" },
+      { "name": "Xin Shi", "company": "Amice Advocaten", "role": "Partner", "bio": "Xin Shi is a partner at Amice Advocaten and focuses on cross-border legal services between China and Europe. He has more than 15 years of legal experience, specializing in helping Chinese enterprises navigate European regulatory systems, legal frameworks, and market entry strategies. Xin Shi has helped many Chinese companies successfully establish and expand their business operations in Europe.", "image": "/speakers/xin-shi.png" }
+    ],
+    "footerCta": {
+      "heading": "Join Now",
+      "subheading": "Scan the QR Code to Register and Secure Your Spot",
+      "registerButtonText": "Join Now",
+      "registerHref": "#register",
+      "speakersButtonText": "Meet the Speakers",
+      "speakersHref": "#speakers",
+      "wechatQrLabel": "Scan to register",
+      "wechatQrImage": "/assets/event.jpeg",
+      "registerOrSpeakers": "Register now or meet our speakers below."
+    }
+  },
+  "cn": {
+    "metadata": {
+      "title": "中国至欧洲：跨越国界的拓展之路 | Jackson & Frank",
+      "description": "中国企业走向海外的实践洞察--劳动力、合规与领导力挑战解析。上海素凯泰酒店。",
+      "path": "/cn/china-europe-2026"
+    },
+    "hero": {
+      "tagline": "中国至欧洲：跨越国界的拓展之路",
+      "title": "中国至欧洲：跨越国界的拓展之路",
+      "subtitle": "中国企业走向海外的实践洞察 --劳动力、合规与领导力挑战解析",
+      "eventTitle": "中国至欧洲：跨越国界的拓展之路",
+      "eventSubline": "中国企业走向海外的实践洞察 --劳动力、合规与领导力挑战解析",
+      "date": "2026年3月18日",
+      "time": "13:00 – 18:00",
+      "venue": "上海素凯泰酒店",
+      "ctaText": "立即报名",
+      "ctaHref": "#register"
+    },
+    "eventBackground": {
+      "title": "活动背景",
+      "paragraphs": [
+        "近年来，欧洲市场以其成熟的消费能力、稳定的营商环境和巨大的增长潜力，成为了无数中国企业出海的首选目的地。然而，从\"走出去\"到\"走进去\"，再到\"走上去\"，这条路远比想象中艰难。很多企业满怀信心地跨过国界，却在落地的第一步就遭遇了\"滑铁卢\"：税务筹划不当导致利润被吞噬，法律合规缺失引发巨额罚款，人力资源配置不合理导致团队内耗严重，甚至因为一个小小的银行开户问题，让整个项目停滞不前。",
+        "为什么你的欧洲拓展之路走得如此艰难？",
+        "为了帮助中国企业真正跨越国界，JACKSON & FRANK 特别举办\"中国至欧洲：跨越国界的拓展之路\"出海论坛。我们邀请了多位欧洲深耕多年的实战专家，他们将从规划（PLAN）- 搭建（SETUP）- 扩张（SCALE）三大阶段，为您拆解那些鲜为人知的\"暗礁\"。"
+      ],
+      "frameworkTitle": "三步战略框架：规划 → 搭建 → 扩张",
+      "frameworkSteps": ["规划", "搭建", "扩张"],
+      "cards": [
+        { "icon": "finance", "title": "规划", "content": "明确欧洲市场战略、评估机遇，并与当地监管与商业要求对齐。" },
+        { "icon": "trade", "title": "搭建", "content": "在法律、税务与人力资源专家支持下，建立实体、治理与运营架构。" },
+        { "icon": "strategy", "title": "扩张", "content": "依托合规、人才流动与整合最佳实践，实现长期可持续增长。" }
+      ]
+    },
+    "agendaTitle": "活动议程",
+    "agenda": [
+      { "time": "13:00 – 13:30", "title": "签到与入场", "description": "" },
+      { "time": "13:30 – 14:00", "title": "静安区领导致辞", "description": "" },
+      { "time": "14:00 – 14:30", "title": "战略规划：从0到1的欧洲合规路径", "description": "演讲人：Pawel Michalkiewicz" },
+      { "time": "14:30 – 14:40", "title": "合影留念", "description": "" },
+      { "time": "14:40 – 15:00", "title": "茶歇", "description": "" },
+      { "time": "15:00 – 15:30", "title": "税务合规：让税务结构跟上业务发展", "description": "" },
+      { "time": "15:30 – 16:00", "title": "法律风控：人力资源领域合规", "description": "" },
+      { "time": "16:00 – 16:30", "title": "扬帆扩张：用十年经验，把每一步都走稳", "description": "" },
+      { "time": "16:30 – 17:30", "title": "专题讨论：破局欧洲", "description": "" },
+      { "time": "17:30 – 18:00", "title": "闭幕致辞、自由交流", "description": "" }
+    ],
+    "speakersTitle": "主讲嘉宾",
+    "speakers": [
+      { "name": "Pawel Michalkiewicz", "company": "Jackson & Frank", "role": "创始人兼首席战略官", "bio": "Pawel Michalkiewicz 拥有丰富的国际市场经验与企业咨询专长，曾任职于全球人力资源服务领军企业 Randstad。创立 Jackson & Frank 后，已助力多家跨国企业成功拓展欧洲市场。他专注于国际扩张战略、人才流动与组织发展，帮助企业构建可扩展的全球运营体系。", "image": "/speakers/pawel-michalkiewicz.png" },
+      { "name": "Paul Halprin", "company": "Halprin Law", "role": "创始人", "bio": "Paul Halprin 为资深国际税务律师，专注跨境税务与企业重组。在创立 Halprin Law 之前，他曾任全球最大律所之一 Dentons Europe（大成 Dentons 成员所）合伙人，为跨国企业提供国际税务顾问服务。Paul 在跨境企业税务、国际税务筹划与全球合规领域经验深厚，已为众多跨国企业提供顾问服务。", "image": "/speakers/paul-halprin.png" },
+      { "name": "Martijn van de Hel", "company": "Maverick Advocate", "role": "联合创始人", "bio": "Martijn van de Hel 为 Maverick Advocate 联合创始人，知名国际律师，专注公司法、并购与跨境交易。他曾任职于多家领先国际律所，为大型全球企业提供复杂跨境交易顾问。Martijn 获评「全球 500 领先律师」，在国际商法领域广受认可。", "image": "/speakers/Martijn-van-de-hel.png" },
+      { "name": "石馨 (Xin Shi)", "company": "Amice Advocaten", "role": "合伙人", "bio": "石馨为 Amice Advocaten 合伙人，专注中欧跨境法律服务。他拥有逾 15 年法律经验，擅长协助中国企业应对欧洲监管体系、法律框架与市场进入策略。石馨已帮助多家中国企业在欧洲成功设立并拓展业务。", "image": "/speakers/xin-shi.png" }
+    ],
+    "footerCta": {
+      "heading": "立即报名",
+      "subheading": "扫码报名，锁定席位",
+      "registerButtonText": "立即报名",
+      "registerHref": "#register",
+      "speakersButtonText": "了解嘉宾",
+      "speakersHref": "#speakers",
+      "wechatQrLabel": "扫码报名",
+      "wechatQrImage": "/assets/event.jpeg",
+      "registerOrSpeakers": "立即报名或了解下方嘉宾。"
+    }
+  }
+}

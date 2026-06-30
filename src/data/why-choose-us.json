@@ -1,0 +1,46 @@
+{
+  "title": "Why choose Jackson & Frank?",
+  "description": "We provide a complete and safe path to global expansion. Work in any country without setting up a local office, with full compliance for employment, payroll, tax, and immigration.",
+  "ctaButton": {
+    "label": "Contact us",
+    "href": "/contact?reason=general_inquiry"
+  },
+  "items": [
+    {
+      "id": "compliance-legal-challenges",
+      "problem": "Complex compliance and legal requirements",
+      "problemDescription": "Different labor laws, taxes, and immigration rules in each country can lead to costly penalties.",
+      "solution": "Expert compliance and legal support",
+      "solutionDescription": "We guide you through all international laws and help you avoid legal issues and compliance risks.",
+      "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&h=400&fit=crop",
+      "imageAlt": "Legal compliance and documentation"
+    },
+    {
+      "id": "one-size-fits-all-approach",
+      "problem": "Generic solutions don't fit your needs",
+      "problemDescription": "Cookie-cutter solutions lead to poor decisions about entity structures and compliance strategies.",
+      "solution": "Tailored global expansion consulting",
+      "solutionDescription": "We create custom strategies for your global growth with country-specific guidance.",
+      "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&h=400&fit=crop",
+      "imageAlt": "Custom business strategy and consulting"
+    },
+    {
+      "id": "administrative-burden",
+      "problem": "Overwhelming paperwork burden",
+      "problemDescription": "Endless paperwork, contracts, payroll, and immigration processes distract from your core business.",
+      "solution": "End-to-end EOR and administrative support",
+      "solutionDescription": "We manage everything contracts, payroll, benefits, and immigration. You focus on your business.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+      "imageAlt": "Streamlined administrative processes"
+    },
+    {
+      "id": "slow-setup-process",
+      "problem": "Slow setup process delays expansion",
+      "problemDescription": "Setting up in new countries takes weeks or months, causing missed opportunities.",
+      "solution": "Fast setup and compliance assurance",
+      "solutionDescription": "Start hiring in 48-72 hours with full compliance assurance and expert support.",
+      "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop",
+      "imageAlt": "Fast business setup and growth"
+    }
+  ]
+}

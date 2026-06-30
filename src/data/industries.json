@@ -1,0 +1,60 @@
+{
+  "title": "Tailored solutions for every industry",
+  "description": "We provide comprehensive global workforce solutions designed to meet the unique needs of your industry, from startups to enterprises.",
+  "industries": [
+    {
+      "id": "fmcg",
+      "title": "FMCG",
+      "description": "Support fast-moving consumer goods companies with global workforce management, enabling rapid expansion and efficient operations across multiple markets.",
+      "icon": "Package",
+      "iconBgColor": "bg-blue-500",
+      "image": "/industries/fmcg.webp",
+      "href": "/industries/fmcg"
+    },
+    {
+      "id": "logistics",
+      "title": "Logistics",
+      "description": "Enable logistics companies to manage international teams seamlessly, ensuring compliance and efficient operations across global supply chains.",
+      "icon": "Truck",
+      "iconBgColor": "bg-orange-500",
+      "image": "/industries/logistics.webp",
+      "href": "/industries/logistics"
+    },
+    {
+      "id": "new-energies",
+      "title": "New energies",
+      "description": "Empower renewable energy companies to access global talent and scale operations while maintaining compliance with international employment regulations.",
+      "icon": "Zap",
+      "iconBgColor": "bg-yellow-500",
+      "image": "/industries/new-energies.webp",
+      "href": "/industries/new-energies"
+    },
+    {
+      "id": "ai-finance",
+      "title": "AI finance",
+      "description": "Support AI-driven financial services with global workforce solutions, enabling innovation and expansion while ensuring regulatory compliance.",
+      "icon": "TrendingUp",
+      "iconBgColor": "bg-emerald-500",
+      "image": "/industries/ai-finance.webp",
+      "href": "/industries/ai-finance"
+    },
+    {
+      "id": "automotive",
+      "title": "Automotive",
+      "description": "Help automotive companies manage international teams and operations, facilitating global expansion with compliant workforce solutions.",
+      "icon": "Car",
+      "iconBgColor": "bg-red-500",
+      "image": "/industries/automotive.webp",
+      "href": "/industries/automotive"
+    },
+    {
+      "id": "it",
+      "title": "IT",
+      "description": "Enable IT companies to access global talent pools and scale rapidly with compliant EOR services across 80+ countries.",
+      "icon": "Code",
+      "iconBgColor": "bg-purple-500",
+      "image": "/industries/it.webp",
+      "href": "/industries/it"
+    }
+  ]
+}

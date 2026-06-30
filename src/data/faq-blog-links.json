@@ -1,0 +1,197 @@
+{
+  "description": "Canonical list of blog titles and slugs for linking from the FAQ page. Keep in sync with actual blog routes.",
+  "blogs": [
+    {
+      "title": "EU Blue Card for U.S. Citizens: Pick the Right Country in 15 Minutes",
+      "slug": "eu-blue-card-guide-us-citizens"
+    },
+    {
+      "title": "Contractor to employee in Italy: compliance essentials for 2026",
+      "slug": "contractor-to-employee-in-italy-compliance-essentials-for-2026"
+    },
+    {
+      "title": "How to prepare your workforce setup for 2026?",
+      "slug": "how-to-prepare-your-workforce-setup-for-2026"
+    },
+    {
+      "title": "Permanent establishment risk: 3 questions for remote hires",
+      "slug": "permanent-establishment-risk-3-questions-remote-hire"
+    },
+    {
+      "title": "Hire in the Netherlands Without an Entity | EOR Netherlands",
+      "slug": "hire-in-the-netherlands-without-an-entity-eor-netherlands"
+    },
+    {
+      "title": "Step-by-Step Guide to Getting a Work Visa in Europe (2026 Update)",
+      "slug": "work-visa-europe-guide"
+    },
+    {
+      "title": "Payroll Solutions for Small Businesses: Answering Common Questions",
+      "slug": "payroll-solutions-small-business"
+    },
+    {
+      "title": "How to recruit Gen Z?",
+      "slug": "recruiting-generation-z"
+    },
+    {
+      "title": "Remote Work as an Independent Contractor in 2025",
+      "slug": "remote-work-independent-contractor-2025"
+    },
+    {
+      "title": "7 Common Global Payroll Errors and How to Avoid Them",
+      "slug": "common-global-payroll-errors-and-how-to-avoid-them"
+    },
+    {
+      "title": "A Simple Guide to Maternity and Paternity Leave in France",
+      "slug": "maternity-and-paternity-leave-in-france"
+    },
+    {
+      "title": "Global HR Solutions: Simplify Your International Expansion with EOR Services",
+      "slug": "global-hr-solutions"
+    },
+    {
+      "title": "Payroll Services vs. Payroll Software: Simplifying Payroll Management for Growing Businesses",
+      "slug": "payroll-services-vs-payroll-software-simplyfing-payroll-management"
+    },
+    {
+      "title": "EOR vs. Payroll Outsourcing: What's the Difference?",
+      "slug": "payroll-outsourcing-vs-eor-europe"
+    },
+    {
+      "title": "Your Guide to Payroll in the Netherlands",
+      "slug": "payroll-guide-netherlands"
+    },
+    {
+      "title": "Payroll Changes in Spain 2025",
+      "slug": "payroll-changes-spain-2025"
+    },
+    {
+      "title": "Paternity Leave Spain: Manage Remote Employees",
+      "slug": "paternity-leave-spain-manage-remote-employee"
+    },
+    {
+      "title": "Maternity and Paternity Leave in Spain: 2025 Guide for Global HR Teams",
+      "slug": "maternity-and-paternity-leave-in-spain"
+    },
+    {
+      "title": "Managing Paid and Unpaid Holidays in Hybrid Work: Europe vs the US",
+      "slug": "managing-payroll-hybrid-workforces-us-europe"
+    },
+    {
+      "title": "How to Become an Independent Contractor in 5 Steps",
+      "slug": "how-to-become-independent-contractor"
+    },
+    {
+      "title": "Choosing the Right MSP: What to Look for and How to Get Started",
+      "slug": "managed-service-providers-msp"
+    },
+    {
+      "title": "Key Payroll Updates in the Netherlands for 2025",
+      "slug": "key-payroll-updates-netherlands-2025"
+    },
+    {
+      "title": "How to Land a Job in Europe with Visa Sponsorship",
+      "slug": "job-europe-visa-sponsorship"
+    },
+    {
+      "title": "How to Decide Between In-House and EOR for Global Hiring?",
+      "slug": "in-house-vs-eor-comparison"
+    },
+    {
+      "title": "How Effective Payroll Drives Job Satisfaction",
+      "slug": "effective-payroll-drives-job-satisfaction"
+    },
+    {
+      "title": "How International Recruitment Works",
+      "slug": "how-international-recruitment-works"
+    },
+    {
+      "title": "How to Hire Non-EU Employees Without a Sponsorship License in Europe",
+      "slug": "hire-non-eu-employees-europ"
+    },
+    {
+      "title": "Hiring Contractors in the Czech Republic",
+      "slug": "hire-contractors-in-czech-republic"
+    },
+    {
+      "title": "How to Hire Contractors in Belgium: A Comprehensive Guide",
+      "slug": "how-to-hire-contractors-in-belgium"
+    },
+    {
+      "title": "Global Mobility: Understanding Employee Relocation Services",
+      "slug": "global-mobility-services"
+    },
+    {
+      "title": "Global Hiring Models Explained",
+      "slug": "global-hiring-models-guide"
+    },
+    {
+      "title": "EOR Software vs. EOR Service: Why a Human Touch is Essential",
+      "slug": "eor-software-vs-eor-service"
+    },
+    {
+      "title": "Unlock Global Hiring Success with Employer of Record (EOR) Services",
+      "slug": "employer-of-record-services"
+    },
+    {
+      "title": "How Employer of Record Services Work in Belgium",
+      "slug": "eor-services-in-belgium"
+    },
+    {
+      "title": "Why are EOR Solutions Ideal for Small and Medium Businesses?",
+      "slug": "eor-solutions-are-ideal-for-small-and-medium-businesses"
+    },
+    {
+      "title": "Expansion Mistakes Chinese Companies Make in Europe",
+      "slug": "chinese-companies-europe-expansion-mistakes"
+    },
+    {
+      "title": "Key Changes in Germany for 2025: Social Security, Tax, and Healthcare",
+      "slug": "key-changes-germany-2025"
+    },
+    {
+      "title": "Germany's Skilled Immigration Act 2024: New Pathways for Global Talent in 2025",
+      "slug": "germany-skilled-immigration-act-2024"
+    },
+    {
+      "title": "5 Employee Benefits to Boost Team Satisfaction Globally",
+      "slug": "employee-benefits-global-satisfaction"
+    },
+    {
+      "title": "Your Guide to Contractor Management: Best Practices & Compliance",
+      "slug": "contractor-management-guide"
+    },
+    {
+      "title": "Expanding Overseas? 40 Questions for Your EOR Provider",
+      "slug": "eor-compliance-europe-expansion"
+    },
+    {
+      "title": "Belgium Immigration Update: Key Salary and Payroll Changes for 2025",
+      "slug": "belgium-immigration-update-2025"
+    },
+    {
+      "title": "Bank Holidays in UK 2025: Planning Your Next Holiday",
+      "slug": "bank-holidays-uk-2025"
+    },
+    {
+      "title": "Public Holidays in Italy for 2025",
+      "slug": "bank-holidays-italy-2025"
+    },
+    {
+      "title": "How to Apply for Paternity Leave in Spain: Step-by-Step Guide",
+      "slug": "apply-for-paternity-leave-in-spain-guide"
+    },
+    {
+      "title": "Bank Holidays in the Netherlands 2025: Complete Guide",
+      "slug": "bank-holidays-in-the-netherlands"
+    },
+    {
+      "title": "Bank Holidays in Spain 2025: Full List of Public & Regional Holidays",
+      "slug": "bank-holidays-spain-2025"
+    },
+    {
+      "title": "Bank Holidays in France in 2024 and 2025",
+      "slug": "france-bank-holidays-2024-2025"
+    }
+  ]
+}

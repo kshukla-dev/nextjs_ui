@@ -1,0 +1,110 @@
+{
+  "title": "Expand your business globally",
+  "description": "We provide EOR and contractor services across multiple countries with local expertise and compliance support.",
+  "countries": [
+    {
+      "id": "uae",
+      "name": "United Arab Emirates",
+      "image": "/countries/eor-uae.webp",
+      "flag": "/countries/flag/Flag_of_the_United_Arab_Emirates.svg",
+      "href": "/uae",
+      "hrefContractor": "/uae-contractor"
+    },
+    {
+      "id": "netherlands",
+      "name": "Netherlands",
+      "image": "/countries/eor-netherlands.webp",
+      "flag": "/countries/flag/Flag_of_the_Netherlands.svg.webp",
+      "href": "/netherlands",
+      "hrefContractor": "/netherlands-contractor"
+    },
+    {
+      "id": "united-kingdom",
+      "name": "United Kingdom",
+      "image": "/countries/eor-uk.webp",
+      "flag": "/countries/flag/Flag-United-Kingdom.webp",
+      "href": "/united-kingdom",
+      "hrefContractor": "/united-kingdom-contractor"
+    },
+    {
+      "id": "poland",
+      "name": "Poland",
+      "image": "/countries/eor-poland.webp",
+      "flag": "/countries/flag/Flag_of_Poland.svg.png",
+      "href": "/poland",
+      "hrefContractor": "/poland-contractor"
+    },
+    {
+      "id": "germany",
+      "name": "Germany",
+      "image": "/countries/eor-germany.webp",
+      "flag": "/countries/flag/Flag_of_Germany_(3-2).svg.png",
+      "href": "/germany",
+      "hrefContractor": "/germany-contractor"
+    },
+    {
+      "id": "italy",
+      "name": "Italy",
+      "image": "/countries/eor-Italy.webp",
+      "flag": "/countries/flag/Flag_of_Italy.svg.png",
+      "href": "/italy",
+      "hrefContractor": "/italy-contractor"
+    },
+    {
+      "id": "czech-republic",
+      "name": "Czech Republic",
+      "image": "/countries/eor-czech.webp",
+      "flag": "/countries/flag/Flag_of_the_Czech_Republic.svg.webp",
+      "href": "/czech-republic",
+      "hrefContractor": "/czech-republic-contractor"
+    },
+    {
+      "id": "france",
+      "name": "France",
+      "image": "/countries/eor-france.webp",
+      "flag": "/countries/flag/Flag_of_France.svg.webp",
+      "href": "/france",
+      "hrefContractor": "/france-contractor"
+    },
+    {
+      "id": "belgium",
+      "name": "Belgium",
+      "image": "/countries/eor-belgium.webp",
+      "flag": "/countries/flag/Flag_of_Belgium.svg.png",
+      "href": "/belgium",
+      "hrefContractor": "/belgium-contractor"
+    },
+    {
+      "id": "spain",
+      "name": "Spain",
+      "image": "/countries/eor-spain.webp",
+      "flag": "/countries/flag/Flag_of_Spain.svg.png",
+      "href": "/spain",
+      "hrefContractor": "/spain-contractor"
+    },
+    {
+      "id": "india",
+      "name": "India",
+      "image": "/countries/eor-india.webp",
+      "flag": "/countries/flag/Flag_of_India.svg.webp",
+      "href": "/india",
+      "hrefContractor": "/india-contractor"
+    },
+    {
+      "id": "hong-kong",
+      "name": "Hong Kong",
+      "image": "/countries/eor-hong-kong.webp",
+      "flag": "/countries/flag/Flag_of_Hong_Kong.svg (1).png",
+      "href": "/hong-kong",
+      "hrefContractor": "/hong-kong"
+    },
+    {
+      "id": "china",
+      "name": "China",
+      "image": "/countries/eor-china.webp",
+      "flag": "/countries/flag/Flag_of_the_People's_Republic_of_China.svg.webp",
+      "href": "/china",
+      "hrefContractor": "/china"
+    }
+  ]
+}

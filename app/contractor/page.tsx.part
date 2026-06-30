@@ -1,0 +1,179 @@
+'use client'
+
+import { useState } from 'react'
+import Link from 'next/link'
+import GlobalCTA from '@/components/sections/GlobalCTA'
+import contractor from '@/data/contractor.json'
+
+export default function ContractorPage() {
+  const [openFaq, setOpenFaq] = useState(0)
+
+  function toggleFaq(i: number) {
+    setOpenFaq(prev => prev === i ? -1 : i)
+  }
+
+  const trustAvatars = [
+    '/testimonials/lina.jpg',
+    '/testimonials/Anya.jpg',
+    '/testimonials/priya.jpg',
+  ]
+
+  return (
+    <>
+      {/* VUE_CSS_PLACEHOLDER */}
+
+      <header className="service-hero contractor-hero">
+        <div className="contractor-hero-inner">
+          <div className="service-hero-copy">
+            <h1>
+              Global <em>contractors</em>,<br />compliantly managed
+            </h1>
+            <p className="service-hero-lede">{contractor.definition.description}</p>
+            <div className="service-hero-features">
+              {contractor.definition.keyFeatures.map((f: string, i: number) => (
+                <div key={i} className="hero-feature">
+                  <span className="hero-feature-dot" />
+                  {f}
+                </div>
+              ))}
+            </div>
+            <div className="cta-row">
+              <Link href="/contact?reason=contractor_management" className="btn-primary">
+                {contractor.definition.primaryButtonText} <span className="arrow">→</span>
+              </Link>
+              <a href="https://calendly.com/jacksonandfrank/discover-us" target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                {contractor.definition.secondaryButtonText.trim()}
+              </a>
+            </div>
+            <div className="trust-row">
+              <div className="avatars">
+                {trustAvatars.map((src: string, i: number) => (
+                  <div
+                    key={i}
+                    className="avatar"
+                    style={{ backgroundImage: `url('${src}')` }}
+                  />
+                ))}
+              </div>
+              <span className="trust-text">
+                Pay contractors in <strong>50+</strong> currencies, across 80+ countries
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section className="section container">
+        <div className="definition-block">
+          <div>
+            <h2 className="section-title">{contractor.mainDescription.title}</h2>
+          </div>
+          <div className="definition-text">
+            <p>{contractor.mainDescription.description}</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="stats-strip">
+        <div className="container stats-strip-inner">
+          {contractor.definition.trustSignals.stats.map((s: any, i: number) => (
+            <div key={i} className="stat-item">
+              <strong>{s.value}</strong>
+              {s.label && <span className="stat-label">{s.label}</span>}
+              <span className="stat-desc">{s.description}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="section container">
+        <div className="section-head">
+         <h2 className="section-title">{contractor.benefits.title}</h2>
+          <p className="section-lead">{contractor.benefits.subtitle}</p>
+        </div>
+        <div className="benefits-grid">
+          {contractor.benefits.items.map((b: any, i: number) => (
+            <div key={i} className="benefit-card">
+              <span className="benefit-mark">{String(i + 1).padStart(2, '0')}</span>
+              <h3>{b.title}</h3>
+              <p>{b.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="solutions-strip">
+        <div className="container">
+          <div className="section-head">
+            <span className="tag">{contractor.solutions.subtitle}</span>
+            <h2 className="section-title">{contractor.solutions.title}</h2>
+            <p className="section-lead">{contractor.solutions.description}</p>
+          </div>
+          <div className="solutions-grid">
+            <div className="solution-block">
+              <div className="solution-head">
+                <span className="solution-tag">Management</span>
+                <h3>{contractor.solutions.management.title}</h3>
+                <p>{contractor.solutions.management.description}</p>
+              </div>
+              <ul>
+                {contractor.solutions.management.items.map((item: any) => (
+                  <li key={item.title}>
+                    <span className="li-check" aria-hidden>✓</span>
+                    <div>
+                      <strong>{item.title}</strong>
+                      <span>{item.description}</span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="solution-block solution-block-dark">
+              <div className="solution-head">
+                <span className="solution-tag">Compliance</span>
+                <h3>{contractor.solutions.compliance.title}</h3>
+                <p>{contractor.solutions.compliance.description}</p>
+              </div>
+              <ul>
+                {contractor.solutions.compliance.items.map((item: any) => (
+                  <li key={item.title}>
+                    <span className="li-check" aria-hidden>✓</span>
+                    <div>
+                      <strong>{item.title}</strong>
+                      <span>{item.description}</span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section container">
+        <div className="faq-block">
+          <div className="faq-head">
+            <h2 className="section-title">{contractor.faqs.title}</h2>
+            {contractor.faqs.subtitle && <p className="section-lead">{contractor.faqs.subtitle}</p>}
+          </div>
+          <div className="faq-list">
+            {contractor.faqs.items.map((item: any, i: number) => (
+              <button
+                key={i}
+                className={`faq-item ${openFaq === i ? 'open' : ''}`}
+                onClick={() => toggleFaq(i)}
+                aria-expanded={openFaq === i}
+              >
+                <span className="faq-q">{item.question}</span>
+                <span className="faq-toggle" aria-hidden>{openFaq === i ? '−' : '+'}</span>
+                <p style={{ display: openFaq === i ? 'block' : 'none' }} className="faq-a">{item.answer}</p>
+              </button>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <GlobalCTA title="Ready to simplify contractor management?" />
+    </>
+  )
+}

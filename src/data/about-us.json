@@ -1,0 +1,125 @@
+{
+  "metadata": {
+    "title": "About Us - Global Workforce Solutions ",
+    "description": "Learn about Jackson & Frank's mission, values, and global workforce solutions. EOR, payroll, and compliance services across 80+ countries worldwide.",
+    "keywords": [
+      "about Jackson & Frank",
+      "global workforce provider",
+      "EOR company",
+      "international HR company",
+      "global employment services",
+      "workforce solutions provider",
+      "international business partner",
+      "global expansion services",
+      "worldwide HR provider",
+      "international employment company"
+    ],
+    "openGraph": {
+      "title": "About Us - Global Workforce Solutions",
+      "description": "Learn about Jackson & Frank's mission, values, and global workforce solutions. EOR, payroll, and compliance services across 80+ countries worldwide.",
+      "url": "/about-us",
+      "siteName": "Jackson & Frank",
+      "images": [
+        {
+          "url": "/services/service-page/about.webp",
+          "width": 1200,
+          "height": 630,
+          "alt": "About Jackson & Frank - Global Workforce Solutions"
+        }
+      ],
+      "locale": "en_US",
+      "type": "website"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "About Us - Global Workforce Solutions",
+      "description": "Learn about Jackson & Frank's mission, values, and global workforce solutions. EOR, payroll, and compliance services across 80+ countries worldwide.",
+      "images": [
+        "/services/service-page/about.webp"
+      ]
+    },
+    "alternates": {
+      "canonical": "/about-us"
+    }
+  },
+  "definition": {
+    "title": "About us",
+    "subtitle": "Your trusted partner in global workforce solutions",
+    "description": "We're on a mission to make global hiring simple, compliant, and accessible for businesses of all sizes. Your trusted partner in building world-class international teams.",
+    "image": "/services/service-page/about.webp",
+    "imageAlt": "Global Community - Jackson & Frank",
+    "keyFeatures": [
+      "Global compliance",
+      "Local expertise",
+      "Fast setup"
+    ],
+    "primaryButtonText": "Get started today",
+    "secondaryButtonText": "Book a call",
+    "primaryButtonReason": "general",
+    "secondaryButtonReason": "consultation",
+    "trustSignals": {
+      "title": "Trusted by companies worldwide",
+      "subtitle": "Numbers that reflect our commitment to excellence and client success.",
+      "stats": [
+        {
+          "value": "80+",
+          "label": "countries",
+          "description": "in our network"
+        },
+        {
+          "value": "700+",
+          "label": "companies",
+          "description": "trust us"
+        },
+        {
+          "value": "1,400+",
+          "label": "employees",
+          "description": "across multiple countries"
+        },
+        {
+          "value": "2013",
+          "label": "founded",
+          "description": "over a decade of experience"
+        }
+      ]
+    }
+  },
+  "faqs": {
+    "title": "Frequently asked questions",
+    "subtitle": "Learn more about Jackson & Frank and our global workforce solutions",
+    "items": [
+      {
+        "question": "Where is Jackson & Frank headquartered?",
+        "answer": "Jackson & Frank is headquartered in Arnhem, The Netherlands, with offices at 15+ countries and partners in 80+ countries and the ability to employ and pay talent in 80+ countries worldwide."
+      },
+      {
+        "question": "How long has Jackson & Frank been in business?",
+        "answer": "Our holding company was founded in 2013. We have over a decade of experience in global HR, payroll, and compliance, with specialized expertise in European labor laws and tax."
+      },
+      {
+        "question": "What makes Jackson & Frank different from other EOR providers?",
+        "answer": "We combine 50+ years of combined HR expertise with high-touch service: real experts, full compliance and licensing (e.g. AÜG, NeN, GDPR), and 24/7 local support. We offer end-to-end solutions from immigration and onboarding to payroll and offboarding."
+      },
+      {
+        "question": "Can Jackson & Frank help with compliance and legal requirements?",
+        "answer": "Yes. We are fully licensed and compliant in the jurisdictions we operate in, including GDPR, employee leasing authorizations, and local labor and tax regulations. We handle contracts, payroll, and statutory requirements so you stay compliant."
+      },
+      {
+        "question": "What industries do you serve?",
+        "answer": "We serve a wide range of industries including technology, retail, professional services, automotive, and more. Our EOR, payroll, and compliance solutions are industry-agnostic and tailored to each client's needs."
+      },
+      {
+        "question": "Do you have local offices or only partners?",
+        "answer": "We have offices in 15+ countries and a partner network across 80+ countries. Where we have an office, you get direct local support; elsewhere we work with vetted local partners to ensure the same quality."
+      },
+      {
+        "question": "How do you ensure data security and privacy?",
+        "answer": "We are GDPR-compliant and follow strict data security practices. Employee and client data is stored securely, with access controls and encryption. We can provide more detail on request and in our data processing agreements."
+      },
+      {
+        "question": "What makes your team different?",
+        "answer": "Our team combines 50+ years of HR expertise with 19+ years in tax and compliance. We focus on high-touch service with real experts no SaaS-only approach. You work with people who understand local laws and your business."
+      }
+    ]
+  }
+}

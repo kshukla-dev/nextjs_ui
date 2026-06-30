@@ -1,0 +1,41 @@
+{
+  "features": [
+    {
+      "id": "speed",
+      "title": "Rapid deployment",
+      "description": "Get your global team up and running in days, not months. No need to establish local entities.",
+      "icon": "Zap"
+    },
+    {
+      "id": "compliance",
+      "title": "Full compliance",
+      "description": "Stay compliant with local labor laws, tax regulations, and employment requirements across all countries.",
+      "icon": "Shield"
+    },
+    {
+      "id": "expertise",
+      "title": "Local expertise",
+      "description": "Benefit from our deep understanding of local markets, regulations, and business practices.",
+      "icon": "Users"
+    },
+    {
+      "id": "technology",
+      "title": "Advanced technology",
+      "description": "Leverage our modern platform for seamless workforce management and real-time insights.",
+      "icon": "Laptop"
+    },
+    {
+      "id": "support",
+      "title": "24/7 support",
+      "description": "Get dedicated support whenever you need it, with local teams ready to assist your workforce.",
+      "icon": "Headphones"
+    },
+    {
+      "id": "scalability",
+      "title": "Scalable solutions",
+      "description": "Scale your global operations effortlessly, from a single hire to thousands of employees worldwide.",
+      "icon": "TrendingUp"
+    }
+  ]
+}
+

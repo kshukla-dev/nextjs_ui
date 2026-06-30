@@ -1,0 +1,394 @@
+{
+  "metadata": {
+    "title": "Global Employment Compliance Services",
+    "description": "Comprehensive employment compliance solutions for labor laws, tax regulations, and employment standards across 80+ countries.",
+    "keywords": [
+      "Employment compliance",
+      "Labor law compliance",
+      "Tax compliance",
+      "Compliance services",
+      "Global compliance",
+      "Regulatory compliance",
+      "Compliance monitoring",
+      "Legal compliance",
+      "HR compliance",
+      "International compliance",
+      "Employment law",
+      "Compliance management",
+      "Compliance consulting",
+      "Regulatory risk"
+    ],
+    "openGraph": {
+      "title": "Global Employment Compliance Services",
+      "description": "Comprehensive employment compliance solutions for labor laws, tax regulations, and employment standards across 80+ countries. Expert compliance management and monitoring.",
+      "url": "/compliance",
+      "siteName": "Jackson & Frank",
+      "images": [
+        {
+          "url": "/services/service-page/compliances.webp",
+          "width": 1200,
+          "height": 630,
+          "alt": "Global Employment Compliance Services - Jackson & Frank"
+        }
+      ],
+      "locale": "en_US",
+      "type": "website"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Global Employment Compliance Services",
+      "description": "Comprehensive employment compliance solutions for labor laws, tax regulations, and employment standards across 80+ countries. Expert compliance management and monitoring.",
+      "images": [
+        "/services/service-page/compliances.webp"
+      ]
+    },
+    "alternates": {
+      "canonical": "/compliance"
+    }
+  },
+  "definition": {
+    "title": "Stay compliant wherever you operate",
+    "subtitle": "Understanding global employment compliance",
+    "description": "Ensure your business adheres to all local labor laws, tax regulations, and employment standards across 80+ countries with expert compliance management and monitoring.",
+    "image": "/services/service-page/compliances.webp",
+    "imageAlt": "Global employment compliance and regulatory services",
+    "keyFeatures": [
+      "80+ countries covered",
+      "Real-time monitoring",
+      "Expert legal guidance"
+    ],
+    "primaryButtonText": "Get compliance support",
+    "secondaryButtonText": "Book a call",
+    "primaryButtonReason": "compliance",
+    "secondaryButtonReason": "consultation",
+    "trustSignals": {
+      "title": "Trusted by companies worldwide",
+      "subtitle": "Numbers that reflect our commitment to excellence and client success.",
+      "stats": [
+        {
+          "value": "99.9%",
+          "label": "",
+          "description": "Compliance rate"
+        },
+        {
+          "value": "80+",
+          "label": "countries",
+          "description": "in our network"
+        },
+        {
+          "value": "24/7",
+          "label": "",
+          "description": "Real-time monitoring"
+        },
+        {
+          "value": "50+",
+          "label": "experts",
+          "description": "dedicated team"
+        }
+      ]
+    },
+    "keyPoints": [
+      {
+        "title": "Labor law compliance",
+        "description": "Full compliance with local labor laws including working hours, leave entitlements, termination procedures, and employee rights. We ensure all employment practices meet legal requirements.",
+        "icon": "Scale"
+      },
+      {
+        "title": "Tax compliance",
+        "description": "Complete tax compliance including income tax, social security, payroll taxes, and all required tax filings. We handle all tax obligations and ensure timely submissions.",
+        "icon": "Receipt"
+      },
+      {
+        "title": "Regulatory monitoring",
+        "description": "Continuous monitoring of regulatory changes and proactive updates to ensure ongoing compliance. We track changes in real-time and notify you immediately.",
+        "icon": "Bell"
+      },
+      {
+        "title": "Risk mitigation",
+        "description": "Proactive identification and mitigation of compliance risks with expert legal guidance and support. We help prevent violations before they occur.",
+        "icon": "Shield"
+      }
+    ],
+    "benefits": [
+      "80+ countries covered",
+      "Real-time monitoring",
+      "Expert legal guidance",
+      "Proactive compliance",
+      "Risk mitigation"
+    ]
+  },
+  "mainDescription": {
+    "title": "What is Compliance Services?",
+    "description": "Compliance services ensure your business adheres to all local labor laws, tax regulations, employment standards, and regulatory requirements in every country where you operate. Our compliance solutions provide comprehensive monitoring, risk assessment, and expert legal guidance to prevent violations, maintain regulatory adherence, and protect your business from penalties and legal issues across 80+ countries."
+  },
+  "services": {
+    "title": "Compliance services we provide",
+    "subtitle": "",
+    "description": "We provide end-to-end compliance services covering all aspects of labor law, tax, and regulatory compliance. From assessment to ongoing monitoring, we handle everything.",
+    "items": [
+      {
+        "title": "Labor law compliance",
+        "description": "Full compliance with employment laws, working conditions, and employee rights. We ensure all employment practices meet legal requirements.",
+        "icon": "Scale",
+        "features": [
+          "Employment contracts",
+          "Working hours compliance",
+          "Leave entitlements",
+          "Termination procedures"
+        ]
+      },
+      {
+        "title": "Tax compliance",
+        "description": "Complete tax compliance including calculations, filings, and reporting requirements. We handle all tax obligations and ensure timely submissions.",
+        "icon": "Receipt",
+        "features": [
+          "Tax calculations",
+          "Tax filings",
+          "Reporting compliance",
+          "Year-end processing"
+        ]
+      },
+      {
+        "title": "Regulatory monitoring",
+        "description": "Continuous monitoring of regulatory changes and compliance requirements. We track changes in real-time and provide instant notifications.",
+        "icon": "Bell",
+        "features": [
+          "Change monitoring",
+          "Update notifications",
+          "Impact assessment",
+          "Implementation support"
+        ]
+      },
+      {
+        "title": "Audit & reporting",
+        "description": "Compliance audits, reporting, and documentation for regulatory requirements. We provide comprehensive compliance documentation and audit support.",
+        "icon": "FileCheck",
+        "features": [
+          "Compliance audits",
+          "Regulatory reporting",
+          "Documentation",
+          "Certification support"
+        ]
+      }
+    ]
+  },
+  "coverage": {
+    "title": "Compliance areas we cover",
+    "subtitle": "",
+    "description": "We provide compliance coverage across all critical areas of employment, tax, and regulatory requirements. Our comprehensive approach ensures nothing is overlooked.",
+    "categories": [
+      {
+        "category": "Employment law",
+        "icon": "Scale",
+        "items": [
+          "Employment contracts and agreements",
+          "Working hours and overtime regulations",
+          "Leave entitlements and policies",
+          "Termination and severance procedures",
+          "Employee rights and protections",
+          "Discrimination and harassment compliance"
+        ]
+      },
+      {
+        "category": "Tax compliance",
+        "icon": "Receipt",
+        "items": [
+          "Income tax withholding and reporting",
+          "Social security contributions",
+          "Payroll tax compliance",
+          "Tax filing and remittance",
+          "Year-end tax reporting",
+          "Tax audit support"
+        ]
+      },
+      {
+        "category": "Benefits & statutory",
+        "icon": "Heart",
+        "items": [
+          "Health insurance requirements",
+          "Pension and retirement contributions",
+          "Unemployment insurance",
+          "Workers' compensation",
+          "Statutory leave management",
+          "Local benefit mandates"
+        ]
+      },
+      {
+        "category": "Regulatory updates",
+        "icon": "Bell",
+        "items": [
+          "Real-time regulatory monitoring",
+          "Change notifications and alerts",
+          "Proactive compliance updates",
+          "Legal consultation support",
+          "Risk assessment and mitigation",
+          "Compliance training and education"
+        ]
+      }
+    ],
+    "guarantee": "99.9% compliance rate with full legal protection and ongoing support"
+  },
+  "process": {
+    "title": "How our compliance process works",
+    "subtitle": "",
+    "description": "Our streamlined compliance process ensures comprehensive coverage and ongoing protection. From initial assessment to continuous monitoring, we guide you through every step.",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Compliance assessment",
+        "description": "We assess your current compliance status, identify gaps, and create a comprehensive compliance roadmap for your operations across all jurisdictions.",
+        "icon": "FileSearch",
+        "details": [
+          "Current state assessment",
+          "Gap identification",
+          "Risk evaluation",
+          "Compliance roadmap"
+        ]
+      },
+      {
+        "number": 2,
+        "title": "Implementation & setup",
+        "description": "We implement compliance measures, update policies, and ensure all requirements are met. Our team handles all documentation and process updates.",
+        "icon": "Settings",
+        "details": [
+          "Policy updates",
+          "Process implementation",
+          "Documentation",
+          "Training support"
+        ]
+      },
+      {
+        "number": 3,
+        "title": "Ongoing monitoring",
+        "description": "Continuous monitoring of regulatory changes, compliance status, and proactive updates. We track all changes in real-time and notify you immediately.",
+        "icon": "Eye",
+        "details": [
+          "Regulatory monitoring",
+          "Compliance tracking",
+          "Status reporting",
+          "Change notifications"
+        ]
+      },
+      {
+        "number": 4,
+        "title": "Support & guidance",
+        "description": "Expert legal guidance, audit support, and assistance with compliance issues as they arise. We provide ongoing consultation and issue resolution.",
+        "icon": "Headphones",
+        "details": [
+          "Legal consultation",
+          "Audit support",
+          "Issue resolution",
+          "Best practices"
+        ]
+      }
+    ]
+  },
+  "eorBridge": {
+    "title": "Compliance + employer of record",
+    "subtitle": "Complete Compliance Protection with EOR",
+    "description": "Combine our expert compliance services with our Employer of Record (EOR) solutions for complete protection. When you use EOR, we become the legal employer and assume full compliance responsibility, eliminating your compliance burden.",
+    "benefits": [
+      {
+        "title": "Full compliance transfer",
+        "description": "We assume complete compliance responsibility as the legal employer, eliminating your compliance burden and risk.",
+        "icon": "Shield"
+      },
+      {
+        "title": "Zero compliance risk",
+        "description": "All compliance risks transfer to us as the EOR, protecting your business from penalties, fines, and legal issues.",
+        "icon": "CheckCircle2"
+      },
+      {
+        "title": "Expert legal team",
+        "description": "Access to our team of compliance experts and legal advisors who ensure full compliance in every jurisdiction.",
+        "icon": "Users"
+      },
+      {
+        "title": "Proactive monitoring",
+        "description": "Continuous monitoring and proactive updates ensure ongoing compliance without any effort from your side.",
+        "icon": "Eye"
+      }
+    ]
+  },
+  "risks": {
+    "title": "Compliance risks without expert support",
+    "subtitle": "",
+    "description": "Operating without expert compliance support exposes your business to significant risks, penalties, and legal issues. Understanding these risks helps you make informed decisions about compliance management.",
+    "risks": [
+      {
+        "title": "Financial penalties",
+        "description": "Non-compliance can result in hefty fines, penalties, and back taxes. Regulatory authorities impose significant financial penalties for violations.",
+        "icon": "DollarSign",
+        "impact": "Fines up to millions"
+      },
+      {
+        "title": "Legal liability",
+        "description": "Violations can lead to lawsuits, legal disputes, and damage to your business reputation. Legal issues can be costly and time-consuming.",
+        "icon": "Scale",
+        "impact": "Legal exposure"
+      },
+      {
+        "title": "Business disruption",
+        "description": "Compliance issues can disrupt operations, delay projects, and impact business continuity. Regulatory actions can halt operations.",
+        "icon": "AlertTriangle",
+        "impact": "Operational risk"
+      },
+      {
+        "title": "Reputation damage",
+        "description": "Compliance violations can damage your brand reputation and affect relationships with clients, partners, and employees.",
+        "icon": "TrendingDown",
+        "impact": "Brand impact"
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Frequently asked questions",
+    "subtitle": "",
+    "items": [
+      {
+        "question": "Why is compliance important?",
+        "answer": "Compliance is critical to avoid financial penalties, legal liability, business disruption, and reputation damage. Non-compliance can result in hefty fines, lawsuits, operational shutdowns, and damage to your brand reputation. Staying compliant protects your business and ensures smooth operations."
+      },
+      {
+        "question": "How do you monitor regulatory changes?",
+        "answer": "We use advanced monitoring systems that track regulatory changes in real-time across all jurisdictions. Our team of compliance experts reviews changes, assesses their impact, and provides instant notifications with guidance on required actions. We ensure you're always up-to-date with the latest requirements."
+      },
+      {
+        "question": "What happens if I'm not compliant?",
+        "answer": "Non-compliance can result in financial penalties, legal liability, business disruption, and reputation damage. Regulatory authorities can impose fines, halt operations, and take legal action. Our compliance services help prevent these issues by ensuring ongoing compliance and proactive risk mitigation."
+      },
+      {
+        "question": "How does EOR help with compliance?",
+        "answer": "When you use our Employer of Record (EOR) service, we become the legal employer and assume full compliance responsibility. This eliminates your compliance burden and transfers all compliance risks to us. We handle all compliance requirements, ensuring full compliance without any effort from your side."
+      },
+      {
+        "question": "What countries do you cover?",
+        "answer": "We provide comprehensive compliance services across 80+ countries worldwide. Our global network and local legal expertise ensure we can support your compliance needs in almost any market. Contact us for specific country inquiries."
+      },
+      {
+        "question": "Do you help with GDPR and data privacy compliance?",
+        "answer": "Yes. We are GDPR-compliant and help with data processing agreements, privacy notices, and cross-border data flows. We ensure employee and client data is handled in line with applicable privacy laws."
+      },
+      {
+        "question": "What if we already have a local entity?",
+        "answer": "We can still support you with compliance monitoring, policy reviews, and advisory in countries where you have entities. For countries where you don't, our EOR solution removes the compliance burden entirely."
+      },
+      {
+        "question": "How do you handle works council and employee representation?",
+        "answer": "Where works councils or employee representation apply, we work within the required processes and support information and consultation obligations. Our local teams understand these requirements in each jurisdiction."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to ensure full compliance?",
+    "description": "Join hundreds of companies who trust us for their global compliance needs. Get started with expert compliance management and monitoring.",
+    "primaryButtonText": "Get started with compliance",
+    "primaryButtonReason": "compliance",
+    "features": [
+      "Expert guidance",
+      "Real-time monitoring",
+      "Full compliance",
+      "80+ countries"
+    ]
+  }
+}

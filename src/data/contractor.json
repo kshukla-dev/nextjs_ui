@@ -1,0 +1,255 @@
+{
+  "metadata": {
+    "title": "Global Contractor Management Services",
+    "description": "Seamlessly manage international contractors with automated payments, compliance monitoring, and streamlined onboarding across 80+ countries.",
+    "keywords": [
+      "Contractor management",
+      "Global contractors",
+      "International contractors",
+      "Contractor compliance",
+      "Contractor payments",
+      "Contractor onboarding",
+      "Independent contractors",
+      "Contractor services",
+      "Contractor management platform",
+      "Contractor solutions",
+      "Contractor administration",
+      "Global contractor services"
+    ],
+    "openGraph": {
+      "title": "Global Contractor Management Services",
+      "description": "Seamlessly manage international contractors with automated payments, compliance monitoring, and streamlined onboarding across 80+ countries.",
+      "url": "/contractor",
+      "siteName": "Jackson & Frank",
+      "images": [
+        {
+          "url": "/services/service-page/contract.webp",
+          "width": 1200,
+          "height": 630,
+          "alt": "Global Contractor Management Services - Jackson & Frank"
+        }
+      ],
+      "locale": "en_US",
+      "type": "website"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Global Contractor Management Services",
+      "description": "Seamlessly manage international contractors with automated payments, compliance monitoring, and streamlined onboarding across 80+ countries.",
+      "images": [
+        "/services/service-page/contract.webp"
+      ]
+    },
+    "alternates": {
+      "canonical": "/contractor"
+    }
+  },
+  "definition": {
+    "title": "Manage global contractors compliantly",
+    "subtitle": "Understanding contractor management solutions",
+    "description": "Seamlessly manage international contractors with automated payments, compliance monitoring, and streamlined onboarding across 80+ countries.",
+    "image": "/services/service-page/contract.webp",
+    "imageAlt": "Global contractor management and compliance services",
+    "keyFeatures": [
+      "Automated payments",
+      "Compliance monitoring",
+      "Streamlined onboarding"
+    ],
+    "primaryButtonText": "Start managing contractors",
+    "secondaryButtonText": "Book a  call",
+    "primaryButtonReason": "contractor",
+    "secondaryButtonReason": "consultation",
+    "trustSignals": {
+      "title": "Trusted by companies worldwide",
+      "subtitle": "Numbers that reflect our commitment to excellence and client success.",
+      "stats": [
+        {
+          "value": "80+",
+          "label": "",
+          "description": "countries in our network"
+        },
+        {
+          "value": "24h",
+          "label": "",
+          "description": "Payment processing"
+        },
+        {
+          "value": "99.5%",
+          "label": "",
+          "description": "Compliance rate"
+        },
+        {
+          "value": "50+",
+          "label": "",
+          "description": "Currencies"
+        }
+      ]
+    },
+    "keyPoints": [
+      {
+        "title": "High flexibility",
+        "description": "Contractors can manage their work hours, tasks, and projects independently, offering greater control over their professional and personal lives.",
+        "icon": "Clock"
+      },
+      {
+        "title": "Cost control for employers",
+        "description": "Contractors benefit from lower overheads since they don't need to provide employee benefits like full-time staff.",
+        "icon": "DollarSign"
+      },
+      {
+        "title": "Risk diversification for businesses",
+        "description": "Companies hiring contractors reduce job-related risks, allowing contractors to work across multiple clients for varied experience.",
+        "icon": "Shield"
+      }
+    ],
+    "benefits": [
+      "80+ countries supported",
+      "Automated payment processing",
+      "Full compliance monitoring",
+      "Streamlined onboarding",
+      "Secure documentation"
+    ]
+  },
+  "mainDescription": {
+    "title": "What is Contractor Management?",
+    "description": "Contractor management involves the comprehensive administration of independent contractors, including contract drafting, payment processing, compliance monitoring, and documentation management. Our global contractor management solutions ensure seamless, compliant, and efficient contractor relationships across 80+ countries, handling everything from onboarding to payment processing while maintaining full regulatory compliance."
+  },
+  "benefits": {
+    "title": "Contractor benefits",
+    "subtitle": "Discover the advantages of working with independent contractors globally",
+    "items": [
+      {
+        "title": "High flexibility",
+        "description": "Contractors can manage their work hours, tasks, and projects independently, offering greater control over their professional and personal lives.",
+        "icon": "Clock"
+      },
+      {
+        "title": "Cost control for employers",
+        "description": "Contractors benefit from lower overheads since they don't need to provide employee benefits like full-time staff.",
+        "icon": "DollarSign"
+      },
+      {
+        "title": "Risk diversification for businesses",
+        "description": "Companies hiring contractors reduce job-related risks, allowing contractors to work across multiple clients for varied experience.",
+        "icon": "Shield"
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Complete contractor management & compliance",
+    "subtitle": "",
+    "description": "Streamline contractor management while ensuring full compliance across borders with our comprehensive solution.",
+    "management": {
+      "title": "Management solution",
+      "description": "Streamlined contractor management with automated processes and efficient workflows.",
+      "items": [
+        {
+          "title": "Draft compliant agreements",
+          "description": "Draft compliant agreements aligned with regional labor laws.",
+          "icon": "FileText"
+        },
+        {
+          "title": "Process contractor payments",
+          "description": "Process contractor payments accurately and securely.",
+          "icon": "CreditCard"
+        },
+        {
+          "title": "Maintain documentation",
+          "description": "Maintain organized and secure documentation for contracts and records.",
+          "icon": "Folder"
+        },
+        {
+          "title": "Provide clear policies",
+          "description": "Provide clear policies and guidelines for seamless collaboration.",
+          "icon": "BookOpen"
+        },
+        {
+          "title": "Minimize administrative tasks",
+          "description": "Minimize administrative tasks with efficient management processes.",
+          "icon": "Settings"
+        }
+      ]
+    },
+    "compliance": {
+      "title": "Compliance & regulatory",
+      "description": "Ensure full compliance with regional labor laws and regulatory requirements.",
+      "items": [
+        {
+          "title": "Develop compliant contracts",
+          "description": "Develop contracts aligned with regional labor laws and regulations.",
+          "icon": "Scale"
+        },
+        {
+          "title": "Monitor compliance changes",
+          "description": "Monitor changes in compliance requirements to avoid legal risks.",
+          "icon": "Eye"
+        },
+        {
+          "title": "Ensure accurate tax reporting",
+          "description": "Ensure accurate tax reporting and filings for contract-based roles.",
+          "icon": "Receipt"
+        },
+        {
+          "title": "Maintain secure documentation",
+          "description": "Maintain secure and compliant employee documentation.",
+          "icon": "Shield"
+        },
+        {
+          "title": "Simplify regulatory adherence",
+          "description": "Simplify adherence to country-specific regulatory standards.",
+          "icon": "CheckCircle"
+        }
+      ]
+    }
+  },
+  "faqs": {
+    "title": "Frequently asked questions",
+    "subtitle": "Common questions about contractor management",
+    "items": [
+      {
+        "question": "What is contractor management?",
+        "answer": "Contractor management is the process of onboarding, paying, and ensuring compliance for independent contractors and freelancers. We handle contracts, payments, tax documentation, and compliance so you can scale your contingent workforce without legal or administrative burden."
+      },
+      {
+        "question": "How do you handle contractor payments?",
+        "answer": "We process contractor payments in local currencies with automated workflows, clear invoicing, and timely transfers. We handle tax forms (e.g. W-9, 1099 equivalents) and documentation required for compliant contractor relationships."
+      },
+      {
+        "question": "Do you ensure contractor compliance?",
+        "answer": "Yes. We help you stay compliant with classification rules, local labor laws, and tax requirements. We monitor compliance changes and support accurate tax reporting and secure documentation for contract-based roles."
+      },
+      {
+        "question": "Which countries do you support for contractor management?",
+        "answer": "We support contractor management in 80+ countries, with local expertise to navigate country-specific regulations and payment practices."
+      },
+      {
+        "question": "How do you handle contractor classification risk?",
+        "answer": "We help you stay compliant with local classification rules (employee vs. contractor) and provide clear contracts and documentation. This reduces the risk of misclassification and associated penalties."
+      },
+      {
+        "question": "Can I use contractors and employees in the same country?",
+        "answer": "Yes. Many clients use both EOR for employees and our contractor management for freelancers in the same country. We can support a mixed workforce with one point of contact."
+      },
+      {
+        "question": "What payment cycles do you support for contractors?",
+        "answer": "We support various payment cycles (e.g. monthly, bi-weekly, project-based) depending on your agreement and local norms. Invoicing and payments are processed in line with your contract terms."
+      },
+      {
+        "question": "Do you help with contractor onboarding and offboarding?",
+        "answer": "Yes. We handle contract setup, tax forms, and compliance documentation for onboarding. For offboarding, we manage contract closure and final payments in line with local requirements."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to simplify contractor management?",
+    "description": "Join hundreds of companies who trust Jackson & Frank for compliant contractor management worldwide.",
+    "primaryButtonText": "Get started today",
+    "primaryButtonReason": "contractor",
+    "features": [
+      "Expert contractor management",
+      "80+ countries supported",
+      "Automated payment processing",
+      "Full compliance guarantee"
+    ]
+  }
+}

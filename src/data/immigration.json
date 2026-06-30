@@ -1,0 +1,319 @@
+{
+  "metadata": {
+    "title": "Global Immigration Services for Work Visas & Compliance",
+    "description": "Expert immigration services for work visas, permits, and compliance across 80+ countries. Fast, reliable, and compliant immigration solutions.",
+    "keywords": [
+      "Immigration services",
+      "Work visa",
+      "Work permit",
+      "Global immigration",
+      "Visa processing",
+      "Immigration compliance",
+      "International work permits",
+      "Visa application",
+      "Immigration consulting",
+      "Global mobility",
+      "Employee relocation",
+      "Work authorization",
+      "Visa services",
+      "work visa europe",
+      "korean work visa",
+      "costa rica work visa",
+      "saudi arabia work permit",
+      "canadian work permit",
+      "work permit canada",
+      "egypt work permit",
+      "work visa switzerland",
+      "visa sponsorship",
+      "what is visa sponsorship",
+      "sponsorship for visa",
+      "digital nomad visa"
+    ],
+    "openGraph": {
+      "title": "Global Immigration Services for Work Visas & Compliance",
+      "description": "Expert immigration services for work visas, permits, and compliance across 80+ countries. Fast, reliable, and compliant immigration solutions for your global workforce.",
+      "url": "/immigration",
+      "siteName": "Jackson & Frank",
+      "images": [
+        {
+          "url": "/services/service-page/immigration.webp",
+          "width": 1200,
+          "height": 630,
+          "alt": "Global Immigration Services - Jackson & Frank"
+        }
+      ],
+      "locale": "en_US",
+      "type": "website"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Global Immigration Services for Work Visas & Compliance",
+      "description": "Expert immigration services for work visas, permits, and compliance across 80+ countries. Fast, reliable, and compliant immigration solutions for your global workforce.",
+      "images": [
+        "/services/service-page/immigration.webp"
+      ]
+    },
+    "alternates": {
+      "canonical": "/immigration"
+    }
+  },
+  "definition": {
+    "title": "Navigate global immigration with experts",
+    "subtitle": "Understanding Global Immigration Solutions",
+    "description": "Support your workforce wherever they are with the right visas and work permits to work legally.",
+    "image": "/services/service-page/immigration.webp",
+    "imageAlt": "Global immigration services",
+    "keyFeatures": [
+      "Fast setup",
+      "Global compliance",
+      "Local expertise"
+    ],
+    "primaryButtonText": "Start your application",
+    "secondaryButtonText": "Speak to expert",
+    "primaryButtonReason": "immigration",
+    "secondaryButtonReason": "consultation",
+    "trustSignals": {
+      "title": "Trusted by companies worldwide",
+      "subtitle": "Numbers that reflect our commitment to excellence and client success.",
+      "stats": [
+        {
+          "value": "80+",
+          "label": "countries",
+          "description": "in our network"
+        },
+        {
+          "value": "99.5%",
+          "label": "",
+          "description": "Success rate"
+        },
+        {
+          "value": "€110K-200K saved",
+          "label": "",
+          "description": "per country in set-up costs"
+        },
+        {
+          "value": "14",
+          "label": "Days",
+          "description": "average processing"
+        }
+      ]
+    },
+    "keyPoints": [
+      {
+        "title": "Work visa processing",
+        "description": "Complete handling of work visa applications, documentation, and approval processes for employees relocating internationally. We manage all paperwork, coordinate with embassies, and ensure timely approvals.",
+        "icon": "FileText"
+      },
+      {
+        "title": "Work permit management",
+        "description": "Expert management of work permits, renewals, and compliance requirements across multiple jurisdictions. We track expiration dates, handle renewals proactively, and maintain legal status.",
+        "icon": "FileCheck"
+      },
+      {
+        "title": "Compliance assurance",
+        "description": "Full compliance with local immigration laws, regulations, and requirements in every country. Our legal experts stay updated with regulatory changes and ensure full adherence.",
+        "icon": "Shield"
+      },
+      {
+        "title": "Family visa support",
+        "description": "Assistance with dependent visas and family reunification for employees' families. We help spouses and children obtain the necessary visas to accompany employees.",
+        "icon": "Users"
+      }
+    ],
+    "benefits": [
+      "80+ countries supported",
+      "Fast processing times",
+      "Full compliance guarantee",
+      "Expert immigration consultants"
+    ]
+  },
+  "mainDescription": {
+    "title": "What is Immigration Services?",
+    "description": "Immigration services provide expert guidance and support for obtaining work visas, permits, and legal authorization for employees to work in foreign countries. Our immigration solutions cover the entire visa application process, from initial assessment and documentation to embassy coordination and approval, ensuring compliance with immigration laws across 80+ countries while minimizing processing times and maximizing success rates."
+  },
+  "services": {
+    "title": "Immigration services we offer",
+    "subtitle": "",
+    "description": "We provide end-to-end immigration services covering all aspects of international work authorization and compliance. From initial applications to ongoing support, we handle everything.",
+    "items": [
+      {
+        "title": "Work visa processing",
+        "description": "Complete work visa applications for skilled workers, executives, and specialists. We handle all documentation, embassy coordination, and approval processes.",
+        "icon": "FileText",
+        "features": [
+          "Skilled worker visas",
+          "Executive transfer visas",
+          "Intra-company transfers",
+          "Specialist category visas"
+        ]
+      },
+      {
+        "title": "Work permit management",
+        "description": "Comprehensive work permit services including applications, renewals, and extensions. We ensure continuous legal status for your employees.",
+        "icon": "FileCheck",
+        "features": [
+          "Initial applications",
+          "Permit renewals",
+          "Status extensions",
+          "Compliance monitoring"
+        ]
+      },
+      {
+        "title": "Family visa support",
+        "description": "Assistance with dependent visas and family reunification for employees' families. We help families stay together during international assignments.",
+        "icon": "Users",
+        "features": [
+          "Spouse visas",
+          "Dependent visas",
+          "Family reunification",
+          "Documentation support"
+        ]
+      },
+      {
+        "title": "Compliance & renewal",
+        "description": "Ongoing compliance monitoring and timely renewal services to maintain legal status. We track deadlines and handle renewals proactively.",
+        "icon": "Shield",
+        "features": [
+          "Compliance monitoring",
+          "Renewal reminders",
+          "Status updates",
+          "Legal compliance"
+        ]
+      }
+    ]
+  },
+  "process": {
+    "title": "Immigration process",
+    "subtitle": "",
+    "description": "Our streamlined immigration process ensures fast, efficient, and compliant visa processing. From initial assessment to final approval, we guide you through every step.",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Initial assessment",
+        "description": "We assess your employee's eligibility, required visa type, and timeline for the target country. Our experts review qualifications, job requirements, and immigration pathways.",
+        "icon": "FileSearch",
+        "details": [
+          "Review employee qualifications",
+          "Determine visa category",
+          "Assess processing timeline",
+          "Identify required documents"
+        ]
+      },
+      {
+        "number": 2,
+        "title": "Document preparation",
+        "description": "Our immigration experts prepare and organize all required documentation, ensuring accuracy and completeness. We handle translations, certifications, and all supporting materials.",
+        "icon": "FileText",
+        "details": [
+          "Gather required documents",
+          "Prepare application forms",
+          "Organize supporting materials",
+          "Review for accuracy"
+        ]
+      },
+      {
+        "number": 3,
+        "title": "Application submission",
+        "description": "We submit the visa application to the appropriate immigration authorities and track the process. Our team handles all communications and responds to requests promptly.",
+        "icon": "Send",
+        "details": [
+          "Submit to authorities",
+          "Track application status",
+          "Handle communications",
+          "Respond to requests"
+        ]
+      },
+      {
+        "number": 4,
+        "title": "Approval & onboarding",
+        "description": "Once approved, we assist with visa collection, entry procedures, and ongoing compliance requirements. We ensure smooth transition and continued legal status.",
+        "icon": "CheckCircle2",
+        "details": [
+          "Visa approval notification",
+          "Assist with collection",
+          "Entry guidance",
+          "Ongoing compliance support"
+        ]
+      }
+    ]
+  },
+  "eorBridge": {
+    "title": "Immigration + employer of record",
+    "subtitle": "",
+    "description": "Combine our immigration services with Employer of Record (EOR) solutions for a seamless global hiring experience. While immigration handles work authorization, EOR manages employment contracts, payroll, and compliance - giving you a complete solution for international expansion.",
+    "benefits": [
+      {
+        "title": "Streamlined process",
+        "description": "Single point of contact for both immigration and employment needs. No need to coordinate between multiple vendors.",
+        "icon": "Zap"
+      },
+      {
+        "title": "Faster time to hire",
+        "description": "Coordinated approach reduces delays and accelerates the hiring process. Immigration and EOR teams work together seamlessly.",
+        "icon": "Clock"
+      },
+      {
+        "title": "Complete compliance",
+        "description": "Full compliance with both immigration and employment laws. Our integrated approach ensures no gaps in legal coverage.",
+        "icon": "Shield"
+      },
+      {
+        "title": "Cost efficiency",
+        "description": "Bundled services reduce administrative overhead and provide better pricing. One invoice, one relationship, one solution.",
+        "icon": "DollarSign"
+      }
+    ],
+    "ctaText": "Learn more about employer of record",
+    "ctaHref": "/employer-of-record"
+  },
+  "faqs": {
+    "title": "Frequently asked questions",
+    "subtitle": "",
+    "items": [
+      {
+        "question": "How long does the visa application process take?",
+        "answer": "Processing times vary by country and visa type. Typically, work visas take 2-8 weeks, but expedited processing is available for urgent cases. Our team provides realistic timelines based on your specific situation."
+      },
+      {
+        "question": "What documents are required for a work visa?",
+        "answer": "Required documents vary by country but typically include: passport, employment contract, educational certificates, professional qualifications, medical certificates, and proof of financial means. We provide a complete checklist for each country."
+      },
+      {
+        "question": "Can you help with family visas?",
+        "answer": "Yes, we assist with dependent visas for spouses and children. We handle the entire family visa application process, ensuring all family members can accompany the employee to their destination country."
+      },
+      {
+        "question": "What happens if a visa application is denied?",
+        "answer": "If an application is denied, we review the reasons, address any issues, and can assist with appeals or reapplication. Our success rate is high due to thorough preparation and expert guidance."
+      },
+      {
+        "question": "Do you handle visa renewals?",
+        "answer": "Yes, we proactively monitor visa expiration dates and handle renewals well in advance. We ensure continuous legal status for your employees and avoid any gaps in authorization."
+      },
+      {
+        "question": "How much do immigration services cost?",
+        "answer": "Costs vary based on country, visa type, and complexity. We provide transparent pricing upfront with no hidden fees. Contact us for a customized quote based on your specific needs."
+      },
+      {
+        "question": "Can you assist with document preparation and submission?",
+        "answer": "Yes. We handle document preparation, checklists, and submission for work visas and permits. We ensure applications are complete and compliant to minimize delays and rejections."
+      },
+      {
+        "question": "Do you work with companies that use an EOR for employment?",
+        "answer": "Yes. We work closely with our EOR and payroll teams so that employment contracts and visa applications are aligned. Many clients use our EOR and immigration services together for a single, coordinated solution."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to streamline your immigration process",
+    "description": "Join hundreds of companies who trust us for their global immigration needs. Get started with expert visa processing and compliance support.",
+    "primaryButtonText": "Start your visa application",
+    "primaryButtonReason": "immigration",
+    "features": [
+      "Expert consultants",
+      "Fast processing",
+      "Full compliance",
+      "80+ countries"
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "intro": {
+    "title": "Complete sitemap of Jackson & Frank",
+    "paragraphs": [
+      "Use this sitemap to find all main pages, services, country guides, contractor solutions, and blog articles on the Jackson & Frank website. We help companies hire and pay talent in 80+ countries through Employer of Record (EOR), global payroll, and compliance services.",
+      "From the main navigation you can reach our services (EOR, payroll, compliance, immigration, contractor management), insights (blog and case studies), and country-specific pages for employment and contractor solutions. If you can't find what you need, contact us for personalized support."
+    ]
+  },
+  "faqs": {
+    "title": "Frequently asked questions about our website",
+    "subtitle": "Quick answers about finding information and getting in touch",
+    "items": [
+      {
+        "question": "Where can I find information about hiring in a specific country?",
+        "answer": "Use the Country pages section in this sitemap or the main navigation to open our country guides. We have dedicated pages for the United Kingdom, Netherlands, Germany, France, Italy, Spain, Poland, India, UAE, China, Hong Kong, Belgium, and the Czech Republic, plus contractor solutions for many of these markets."
+      },
+      {
+        "question": "How do I contact Jackson & Frank?",
+        "answer": "Go to the Contact us page from the main navigation or footer. You can submit a form, email us, or call our office. We typically respond within 24 hours with tailored next steps."
+      },
+      {
+        "question": "Where are your blog and case studies?",
+        "answer": "The Blog lists all our articles on global HR, EOR, compliance, and international hiring. The Case studies page shows client success stories. Both are linked under Insights in the navigation and in this sitemap."
+      },
+      {
+        "question": "How do I find EOR, payroll, and immigration services?",
+        "answer": "Use the main navigation: Employer of records, Payroll, Immigration, and Compliance each have dedicated pages. The sitemap lists all service pages for quick access."
+      },
+      {
+        "question": "Where can I see job openings at Jackson & Frank?",
+        "answer": "Visit the Career page from the navigation or footer. We list current openings with application links. Roles are often remote-first with locations specified per job."
+      },
+      {
+        "question": "Is there a sitemap for search engines?",
+        "answer": "Yes. This page serves as a human-readable sitemap. We also provide XML sitemaps for search engines to help index our content. Contact us if you need the technical sitemap URL."
+      }
+    ]
+  }
+}

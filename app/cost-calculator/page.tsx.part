@@ -1,0 +1,174 @@
+'use client'
+
+import { useState, useMemo } from 'react'
+import Link from 'next/link'
+import cc from '@/data/cost-calculator.json'
+
+interface CalcCountry {
+  value: string
+  label: string
+  flag: string
+  currency: string
+  currencySymbol: string
+  incomeTaxRate: number
+  employeeSocialSecurityRate: number
+  employerSocialSecurityRate: number
+  benefitsPercentage: number
+  averageBenefits: number
+}
+
+export default function CostCalculatorPage() {
+  const countries = cc.countries as CalcCountry[]
+
+  const [selectedValue, setSelectedValue] = useState('')
+  const [grossSalary, setGrossSalary] = useState<number | ''>('')
+  const [benefits, setBenefits] = useState<number | ''>('')
+
+  const selected = useMemo(() => {
+    return countries.find((c) => c.value === selectedValue) ?? null
+  }, [selectedValue, countries])
+
+  const result = useMemo(() => {
+    const c = selected
+    const gross = typeof grossSalary === 'number' ? grossSalary : null
+    if (!c || !gross || gross <= 0) return null
+
+    const benefitAmount = (typeof benefits === 'number' && benefits > 0) ? benefits : c.averageBenefits
+    const incomeTax = gross * c.incomeTaxRate
+    const employeeSS = gross * c.employeeSocialSecurityRate
+    const employerSS = gross * c.employerSocialSecurityRate
+    const totalDeductions = incomeTax + employeeSS
+    const netSalary = gross - totalDeductions
+    const totalEmployerCost = gross + employerSS + benefitAmount
+
+    return { c, gross, benefitAmount, incomeTax, employeeSS, employerSS, totalDeductions, netSalary, totalEmployerCost }
+  }, [selected, grossSalary, benefits])
+
+  function fmt(n: number, symbol: string) {
+    return `${symbol}${Math.round(n).toLocaleString('en-US')}`
+  }
+
+  return (
+    <>
+      {/* VUE_CSS_PLACEHOLDER */}
+
+      <header className="container cc-hero">
+        <h1 className="section-title">Calculate <em>employment costs</em></h1>
+        <p>{cc.hero.description}</p>
+      </header>
+
+      <section className="container cc-main">
+        {/* Inputs */}
+        <div className="cc-form">
+          <h2>{cc.calculator.title}</h2>
+          <p className="cc-form-sub">{cc.calculator.subtitle}</p>
+
+          <label className="field">
+            <span>{cc.calculator.countryLabel}</span>
+            <select value={selectedValue} onChange={(e) => setSelectedValue(e.target.value)}>
+              <option value="" disabled>Select a country</option>
+              {countries.map(c => (
+                <option key={c.value} value={c.value}>{c.label}</option>
+              ))}
+            </select>
+          </label>
+
+          <label className="field">
+            <span>{cc.calculator.grossSalaryLabel} {selected && `(${selected.currency})`}</span>
+            <input 
+              value={grossSalary} 
+              onChange={(e) => setGrossSalary(e.target.value === '' ? '' : Number(e.target.value))} 
+              type="number" 
+              min="0" 
+              placeholder="e.g. 60000" 
+            />
+          </label>
+
+          <label className="field">
+            <span>{cc.calculator.benefitsLabel}</span>
+            <input 
+              value={benefits} 
+              onChange={(e) => setBenefits(e.target.value === '' ? '' : Number(e.target.value))} 
+              type="number" 
+              min="0" 
+              placeholder={cc.calculator.benefitsPlaceholder} 
+            />
+          </label>
+
+          <div className="cc-info">
+            <strong>{cc.calculator.infoBox.title}</strong>
+            <ul>
+              {cc.calculator.infoBox.items.map((item: string) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* Results */}
+        <div className="cc-results">
+          {!result ? (
+            <div className="cc-empty">
+              <span className="cc-empty-icon" aria-hidden>€</span>
+              <p>{cc.results.emptyState}</p>
+            </div>
+          ) : (
+            <>
+              <div className="cc-result-cards">
+                <div className="cc-result-card">
+                  <span className="cc-result-label">{cc.results.netSalaryLabel}</span>
+                  <strong>{fmt(result.netSalary, result.c.currencySymbol)}</strong>
+                  <span className="cc-result-sub">{cc.results.netSalarySubtext}</span>
+                </div>
+                <div className="cc-result-card cc-result-card-dark">
+                  <span className="cc-result-label">{cc.results.totalCostLabel}</span>
+                  <strong>{fmt(result.totalEmployerCost, result.c.currencySymbol)}</strong>
+                  <span className="cc-result-sub">{cc.results.totalCostSubtext}</span>
+                </div>
+              </div>
+
+              <div className="cc-breakdown">
+                <h3>{cc.results.breakdownLabel}</h3>
+                <div className="cc-row">
+                  <span>{cc.results.grossSalaryLabel}</span>
+                  <span>{fmt(result.gross, result.c.currencySymbol)}</span>
+                </div>
+                <div className="cc-row">
+                  <span>{cc.results.employerSSLabel} <em>{cc.results.employerSSNote}</em></span>
+                  <span>+ {fmt(result.employerSS, result.c.currencySymbol)}</span>
+                </div>
+                <div className="cc-row">
+                  <span>{cc.results.benefitsLabel}</span>
+                  <span>+ {fmt(result.benefitAmount, result.c.currencySymbol)}</span>
+                </div>
+                <div className="cc-row cc-row-total">
+                  <span>{cc.results.totalCostLabel}</span>
+                  <span>{fmt(result.totalEmployerCost, result.c.currencySymbol)}</span>
+                </div>
+
+                <h3 className="cc-deductions-title">{cc.results.deductionsLabel}</h3>
+                <div className="cc-row">
+                  <span>{cc.results.incomeTaxLabel}</span>
+                  <span>− {fmt(result.incomeTax, result.c.currencySymbol)}</span>
+                </div>
+                <div className="cc-row">
+                  <span>{cc.results.employeeSSLabel}</span>
+                  <span>− {fmt(result.employeeSS, result.c.currencySymbol)}</span>
+                </div>
+                <div className="cc-row cc-row-total">
+                  <span>{cc.results.totalDeductionsLabel}</span>
+                  <span>− {fmt(result.totalDeductions, result.c.currencySymbol)}</span>
+                </div>
+              </div>
+
+              <Link href="/contact?reason=payroll_services" className="btn-primary cc-cta">
+                {cc.results.ctaButton} <span className="arrow">→</span>
+              </Link>
+              <p className="cc-disclaimer">{cc.results.disclaimer}</p>
+            </>
+          )}
+        </div>
+      </section>
+    </>
+  )
+}

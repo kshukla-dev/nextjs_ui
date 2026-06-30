@@ -1,0 +1,388 @@
+'use client'
+
+import { useState, useEffect, useMemo } from 'react'
+import Link from 'next/link'
+import { useParams } from 'next/navigation'
+import caseData from '@/data/case-studies.json'
+
+export default function CaseStudyDetailPage() {
+  const params = useParams()
+  const slug = params.slug as string
+
+  const study = useMemo(() =>
+    caseData.caseStudies.find((c: any) => c.slug === slug) ?? null
+  , [slug])
+
+  const others = useMemo(() =>
+    caseData.caseStudies.filter((c: any) => c.slug !== slug).slice(0, 2)
+  , [slug])
+
+  const [activeFaq, setActiveFaq] = useState<number | null>(null)
+  const toggleFaq = (index: number) => {
+    setActiveFaq(activeFaq === index ? null : index)
+  }
+
+  const parseMd = (text: string) => {
+    if (!text) return ''
+    let parsed = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="cs-link">$1</a>')
+    parsed = parsed.replace(/\[\[([^\]]+)\]\]/g, '<strong>$1</strong>')
+    return parsed
+  }
+
+  useEffect(() => {
+    if (study) {
+      document.title = `${study.title} - Jackson & Frank`
+    }
+  }, [study])
+
+  if (!study) {
+    return (
+      <>
+        {/* VUE_CSS_PLACEHOLDER */}
+        <div className="container cs-404">
+          <h1 className="section-title">We couldn&apos;t find that <em>case study</em></h1>
+          <Link href="/case-studies" className="btn-primary">
+            All case studies <span className="arrow">→</span>
+          </Link>
+        </div>
+      </>
+    )
+  }
+
+  return (
+    <>
+      {/* VUE_CSS_PLACEHOLDER */}
+      <article className="cs-detail">
+        {study.fullContent ? (
+          <>
+            {/* HERO SECTION */}
+            <section className="cs-hero">
+              <div className="cs-hero-bg">
+                <img src={study.image} alt={study.title} className="cs-hero-img" />
+                <div className="cs-hero-overlay"></div>
+              </div>
+              <div className="container cs-hero-content">
+                <Link href="/case-studies" className="cs-back-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
+                  <span>Back to case studies</span>
+                </Link>
+                
+                <p className="cs-hero-tag">{study.industry}</p>
+                <h1 className="cs-hero-title">{study.title}</h1>
+                <p className="cs-hero-excerpt" dangerouslySetInnerHTML={{ __html: parseMd(study.excerpt) }}></p>
+                
+                <div className="cs-hero-meta">
+                  {study.date && (
+                    <span className="meta-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>
+                      {new Date(study.date).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
+                    </span>
+                  )}
+                  {study.countries && (
+                    <span className="meta-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                      {study.countries.join(', ')}
+                    </span>
+                  )}
+                  {study.duration && (
+                    <span className="meta-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
+                      {study.duration}
+                    </span>
+                  )}
+                </div>
+              </div>
+            </section>
+
+            {/* MAIN CONTENT */}
+            <div className="cs-body-wrapper">
+              <div className="container cs-body-container">
+                
+                {/* Overview (New Layout) */}
+                {study.fullContent.executiveSummary && (
+                  <section className="cs-overview-section">
+                    <div className="cs-overview-left">
+                      <span className="cs-pill">CASE STUDY</span>
+                      <h2 className="cs-section-title-large">Overview</h2>
+                      <p className="cs-text-large" dangerouslySetInnerHTML={{ __html: parseMd(study.fullContent.executiveSummary) }}></p>
+                    </div>
+                    <div className="cs-overview-right">
+                      {study.results && (
+                        <div className="cs-stats-card">
+                          {study.results.slice(0, 3).map((res: any, idx: number) => (
+                            <div key={idx} className="cs-stat-row">
+                              <div className="cs-stat-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+                              </div>
+                              <div className="cs-stat-content">
+                                <div className="cs-stat-metric">{res.metric}</div>
+                                <div className="cs-stat-label">{res.label}</div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  </section>
+                )}
+
+                {/* Client Challenge (New Layout) */}
+                {study.fullContent.businessChallenge && (
+                  <section className="cs-challenge-section">
+                    <h2 className="cs-section-title">Client challenge</h2>
+                   
+                    {study.fullContent.businessChallenge.intro && (
+                      <p className="cs-text mb-8" dangerouslySetInnerHTML={{ __html: parseMd(study.fullContent.businessChallenge.intro) }}></p>
+                    )}
+                    
+                    <div className="cs-challenge-split">
+                      {study.fullContent.businessChallenge.bullets && (
+                        <div className="cs-challenge-grid">
+                          {study.fullContent.businessChallenge.bullets.map((bullet: string, idx: number) => (
+                            <div key={idx} className="cs-challenge-item">
+                              <div className="cs-challenge-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                              </div>
+                              <div className="cs-challenge-text" dangerouslySetInnerHTML={{ __html: parseMd(bullet) }}></div>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                      <div className="cs-challenge-image">
+                        <img src={study.image || '/case-study/case.jpeg'} alt="Challenge" />
+                      </div>
+                    </div>
+                    
+                    {study.fullContent.businessChallenge.closing && (
+                      <div className="cs-challenge-bottom-bar">
+                        <div className="cs-bottom-bar-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>
+                        </div>
+                        <p className="cs-bottom-bar-text" dangerouslySetInnerHTML={{ __html: parseMd(study.fullContent.businessChallenge.closing) }}></p>
+                      </div>
+                    )}
+                  </section>
+                )}
+
+                {/* Our Solution (New Layout) */}
+                {study.fullContent.solutionIntro && (
+                  <section className="cs-solution-section">
+                    <h2 className="cs-section-title">Our solution</h2>
+                    <p className="cs-subtitle">What we delivered.</p>
+                    <p className="cs-text mb-8" dangerouslySetInnerHTML={{ __html: parseMd(study.fullContent.solutionIntro) }}></p>
+                    
+                    {study.fullContent.keyServices && (
+                      <div className="cs-stacked-cards">
+                        {study.fullContent.keyServices.map((service: any, idx: number) => (
+                          <div key={idx} className="cs-stacked-card">
+                            <div className="cs-stacked-num">{idx + 1}</div>
+                            <div className="cs-stacked-header">
+                              <h3 className="cs-stacked-title" dangerouslySetInnerHTML={{ __html: parseMd(service.title.replace(/^\d+\.\s*/, '')) }}></h3>
+                            </div>
+                            <div className="cs-stacked-body">
+                              <ul className="cs-list-custom">
+                                {service.items.map((item: string, i: number) => (
+                                  <li key={i} dangerouslySetInnerHTML={{ __html: parseMd(item) }}></li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </section>
+                )}
+
+                {/* How We Did It */}
+                {study.fullContent.implementationApproach && (
+                  <section className="cs-section">
+                    <h2 className="cs-section-title">How we did it</h2>
+                    <p className="cs-subtitle">Phased approach and timeline.</p>
+                    
+                    <div className="cs-timeline-card">
+                      {study.fullContent.implementationApproach.intro && (
+                        <p className="cs-text mb-6" dangerouslySetInnerHTML={{ __html: parseMd(study.fullContent.implementationApproach.intro) }}></p>
+                      )}
+                      {study.fullContent.implementationApproach.steps && (
+                        <div className="cs-timeline">
+                          <div className="cs-timeline-line"></div>
+                          {study.fullContent.implementationApproach.steps.map((step: string, idx: number) => (
+                            <div key={idx} className="cs-timeline-item">
+                              <div className="cs-timeline-dot">{idx + 1}</div>
+                              <div className="cs-timeline-content">
+                                <span className="cs-timeline-phase">Phase {idx + 1}</span>
+                                <p className="cs-text m-0" dangerouslySetInnerHTML={{ __html: parseMd(step.replace(/^[^:]+:\s*/, '')) }}></p>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                      {study.fullContent.implementationApproach.closing && (
+                        <p className="cs-text mt-6" dangerouslySetInnerHTML={{ __html: parseMd(study.fullContent.implementationApproach.closing) }}></p>
+                      )}
+                    </div>
+                  </section>
+                )}
+
+                {/* Results Grid */}
+                {study.results && study.results.length > 0 && (
+                  <section className="cs-section">
+                    <h2 className="cs-section-title">Results</h2>
+                    <p className="cs-subtitle">The impact of our partnership.</p>
+                    <div className="cs-results-grid">
+                      {study.results.map((res: any, idx: number) => (
+                        <div key={idx} className="cs-result-item">
+                          <div className="cs-result-metric">{res.metric}</div>
+                          <div className="cs-result-label">{res.label}</div>
+                          <div className="cs-result-desc">{res.description}</div>
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+                )}
+
+                {/* Testimonial */}
+                {study.testimonial && (
+                  <section className="cs-section">
+                    <blockquote className="cs-blockquote">
+                      <svg className="cs-quote-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 21L16.41 14.536C14.53 14.268 13.048 12.723 13.048 10.741C13.048 8.672 14.73 7 16.804 7C18.878 7 20.56 8.672 20.56 10.741C20.56 14.394 18.064 19.382 14.869 21H14.017ZM5.00403 21L7.39703 14.536C5.51703 14.268 4.03503 12.723 4.03503 10.741C4.03503 8.672 5.71703 7 7.79103 7C9.86503 7 11.547 8.672 11.547 10.741C11.547 14.394 9.05103 19.382 5.85603 21H5.00403Z"/></svg>
+                      <p className="cs-quote-text">&quot;{study.testimonial}&quot;</p>
+                      <footer className="cs-quote-footer">
+                        <div className="cs-quote-author">{study.clientName}</div>
+                        <div className="cs-quote-role">{study.clientRole}</div>
+                      </footer>
+                    </blockquote>
+                  </section>
+                )}
+              </div>
+            </div>
+
+            {/* FAQ Section */}
+            {study.faqs && (
+              <section className="section container">
+                <div className="faq-block">
+                  <div className="faq-head">
+                    <h2 className="section-title">{study.faqs.title}</h2>
+                    <p style={{ color: 'var(--ink-soft)', fontSize: '18px', marginTop: '12px' }}>{study.faqs.subtitle}</p>
+                  </div>
+                  <div className="faq-list">
+                    {study.faqs.items.map((item: any, index: number) => (
+                      <button
+                        key={index}
+                        className={`faq-item ${activeFaq === index ? 'open' : ''}`}
+                        onClick={() => toggleFaq(index)}
+                        aria-expanded={activeFaq === index}
+                      >
+                        <span className="faq-q">{item.question}</span>
+                        <span className="faq-toggle" aria-hidden>{activeFaq === index ? '−' : '+'}</span>
+                        <p style={{ display: activeFaq === index ? 'block' : 'none' }} className="faq-a" dangerouslySetInnerHTML={{ __html: parseMd(item.answer) }}></p>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </section>
+            )}
+          </>
+        ) : (
+          <>
+            {/* FALLBACK TO OLD LAYOUT IF NO fullContent */}
+            <nav className="container cs-breadcrumb">
+              <Link href="/">Home</Link>
+              <span className="sep">/</span>
+              <Link href="/case-studies">Case studies</Link>
+              <span className="sep">/</span>
+              <span className="current">{study.title}</span>
+            </nav>
+
+            <header className="container cs-detail-header">
+              <h1>{study.title}</h1>
+              <p className="cs-detail-excerpt">{study.excerpt}</p>
+            </header>
+
+            <figure className="container cs-detail-hero">
+              <img src={study.image} alt={study.title} />
+            </figure>
+
+            {study.results && (
+              <section className="stats-strip">
+                <div className="container stats-strip-inner">
+                  {study.results.map((r: any, i: number) => (
+                    <div key={i} className="stat-item">
+                      <strong>{r.metric}</strong>
+                      <span className="stat-label">{r.label}</span>
+                      <span className="stat-desc">{r.description}</span>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            <div className="container cs-detail-body">
+              {study.background && (
+                <div className="cs-section">
+                  <span className="tag">{study.background.title}</span>
+                  <p>{study.background.content}</p>
+                </div>
+              )}
+              {study.problem && (
+                <div className="cs-section">
+                  <span className="tag">{study.problem.title}</span>
+                  <p>{study.problem.content}</p>
+                </div>
+              )}
+              {study.solution && (
+                <div className="cs-section">
+                  <span className="tag">{study.solution.title}</span>
+                  <p>{study.solution.content}</p>
+                </div>
+              )}
+
+              {study.testimonial && (
+                <blockquote className="cs-quote">
+                  &quot;{study.testimonial}&quot;
+                  <footer>
+                    <strong>{study.clientName}</strong>
+                    <span>{study.clientRole}</span>
+                  </footer>
+                </blockquote>
+              )}
+            </div>
+          </>
+        )}
+
+        {/* OTHER CASE STUDIES */}
+        {others.length > 0 && (
+          <section className="section container">
+            <h2 className="section-title">More <em>stories</em></h2>
+            <div className="cs-other-grid">
+              {others.map((o: any) => (
+                <Link key={o.id} href={`/case-studies/${o.slug}`} className="cs-other-card">
+                  <div className="cs-other-img"><img src={o.image} alt={o.title} loading="lazy" /></div>
+                  <div className="cs-other-body">
+                    <span className="cs-other-meta">{o.industry}</span>
+                    <h3>{o.title}</h3>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* GLOBAL CTA */}
+        <section className="cta-warm-wrap">
+          <div className="cta-warm">
+            <span className="cta-tag">Get started</span>
+            <h2>Ready for a similar <em>outcome?</em></h2>
+            <p>Tell us your expansion plan and we&apos;ll outline a tailored approach.</p>
+            <div className="cta-warm-buttons">
+              <Link href="/contact" className="btn-primary">
+                Get a proposal <span className="arrow">→</span>
+              </Link>
+              <Link href="/case-studies" className="btn-secondary">All case studies</Link>
+            </div>
+          </div>
+        </section>
+      </article>
+    </>
+  )
+}

@@ -1,0 +1,356 @@
+{
+  "metadata": {
+    "title": "Global Payroll Services with Local Expertise",
+    "description": "Comprehensive global payroll solutions for 80+ countries. Accurate, compliant, and timely payroll processing with local expertise and advanced technology.",
+    "keywords": [
+      "Global payroll",
+      "Payroll services",
+      "International payroll",
+      "Payroll processing",
+      "Multi-country payroll",
+      "Payroll compliance",
+      "Payroll outsourcing",
+      "Global payroll management",
+      "Payroll solutions",
+      "International payroll services",
+      "Payroll technology",
+      "Payroll reporting",
+      "Payroll automation",
+      "gp payroll",
+      "13th month pay",
+      "compute 13th month pay",
+      "payslip",
+      "uk payslip",
+      "french payroll",
+      "german payroll",
+      "spain payroll"
+    ],
+    "openGraph": {
+      "title": "Global Payroll Services with Local Expertise",
+      "description": "Comprehensive global payroll solutions for 80+ countries. Accurate, compliant, and timely payroll processing with local expertise and advanced technology.",
+      "url": "/payroll",
+      "siteName": "Jackson & Frank",
+      "images": [
+        {
+          "url": "/services/service-page/payroll.webp",
+          "width": 1200,
+          "height": 630,
+          "alt": "Global Payroll Services with Local Expertise - Jackson & Frank"
+        }
+      ],
+      "locale": "en_US",
+      "type": "website"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Global Payroll Services with Local Expertise",
+      "description": "Comprehensive global payroll solutions for 80+ countries. Accurate, compliant, and timely payroll processing with local expertise and advanced technology.",
+      "images": [
+        "/services/service-page/payroll.webp"
+      ]
+    },
+    "alternates": {
+      "canonical": "/payroll"
+    }
+  },
+  "definition": {
+    "title": "Global payroll made simple",
+    "subtitle": "Understanding global payroll solutions",
+    "description": "Streamline payroll processing across multiple countries with automated compliance, real-time reporting, and seamless currency management.",
+    "image": "/services/service-page/payroll.webp",
+    "imageAlt": "Global payroll and payment services",
+    "keyFeatures": [
+      "Automated compliance",
+      "Real-time reporting",
+      "Multi-currency support"
+    ],
+    "primaryButtonText": "Start your payroll",
+    "secondaryButtonText": "Request demo",
+    "primaryButtonReason": "payroll",
+    "secondaryButtonReason": "consultation",
+    "trustSignals": {
+      "title": "Trusted by companies worldwide",
+      "subtitle": "Numbers that reflect our commitment to excellence and client success.",
+      "stats": [
+        {
+          "value": "80+",
+          "label": "",
+          "description": "Countries covered"
+        },
+        {
+          "value": "99.9%",
+          "label": "",
+          "description": "Accuracy rate"
+        },
+        {
+          "value": "24h",
+          "label": "",
+          "description": "Processing time"
+        },
+        {
+          "value": "50+",
+          "label": "",
+          "description": "Currencies"
+        }
+      ]
+    },
+    "keyPoints": [
+      {
+        "title": "Multi-country processing",
+        "description": "Unified payroll processing across 80+ countries with local currency support and compliance. Process all your global payrolls from a single platform.",
+        "icon": "Globe"
+      },
+      {
+        "title": "Tax compliance",
+        "description": "Automatic tax calculations, withholdings, and filings according to local tax regulations in each country. Stay compliant with all tax requirements.",
+        "icon": "Receipt"
+      },
+      {
+        "title": "Accurate calculations",
+        "description": "Precise salary calculations including overtime, bonuses, deductions, and statutory benefits. Ensure every employee is paid correctly.",
+        "icon": "Calculator"
+      },
+      {
+        "title": "Timely payments",
+        "description": "On-time salary payments in local currencies with proper banking and payment processing. Never miss a payroll deadline.",
+        "icon": "Clock"
+      }
+    ],
+    "benefits": [
+      "80+ countries supported",
+      "Real-time payroll visibility",
+      "Full tax compliance",
+      "Multi-currency processing",
+      "Automated calculations"
+    ]
+  },
+  "mainDescription": {
+    "title": "What is Payroll Services?",
+    "description": "Payroll services involve the comprehensive management of employee compensation, including salary calculations, tax withholdings, benefits administration, and compliance with local labor and tax regulations. Our global payroll solutions ensure accurate, timely, and compliant payroll processing across 80+ countries, handling everything from data collection to final payment disbursement."
+  },
+  "services": {
+    "title": "Payroll services we offer",
+    "subtitle": "",
+    "description": "We provide end-to-end payroll services covering all aspects of global payroll management and compliance. From processing to reporting, we handle everything.",
+    "items": [
+      {
+        "title": "Payroll Processing",
+        "description": "Comprehensive payroll processing including accurate salary calculations, overtime, bonuses, and deductions management.",
+        "icon": "Calculator",
+        "features": [
+          "Salary calculations",
+          "Overtime processing",
+          "Bonus calculations",
+          "Deduction management"
+        ]
+      },
+      {
+        "title": "Tax Management",
+        "description": "Complete tax management services including calculations, withholdings, filings, and year-end reporting.",
+        "icon": "Receipt",
+        "features": [
+          "Tax calculations",
+          "Withholding management",
+          "Tax filings",
+          "Year-end reporting"
+        ]
+      },
+      {
+        "title": "Benefits Administration",
+        "description": "Full benefits administration covering health insurance, pensions, statutory benefits, and voluntary benefits.",
+        "icon": "Heart",
+        "features": [
+          "Health insurance",
+          "Pension contributions",
+          "Statutory benefits",
+          "Voluntary benefits"
+        ]
+      },
+      {
+        "title": "Reporting & Analytics",
+        "description": "Advanced reporting and analytics with payroll reports, cost analytics, compliance reports, and custom reporting.",
+        "icon": "BarChart",
+        "features": [
+          "Payroll reports",
+          "Cost analytics",
+          "Compliance reports",
+          "Custom reporting"
+        ]
+      }
+    ]
+  },
+  "process": {
+    "title": "How our payroll process works",
+    "subtitle": "",
+    "description": "Our streamlined payroll process ensures accurate, efficient, and compliant payroll processing. From data collection to final payment, we guide you through every step.",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Sign service agreement",
+        "description": "We establish a service agreement outlining the terms, responsibilities, and scope of our payroll services for your global workforce.",
+        "icon": "FileText",
+        "details": [
+          "Define service scope and countries",
+          "Establish pricing and payment terms",
+          "Set up communication protocols",
+          "Review compliance requirements"
+        ]
+      },
+      {
+        "number": 2,
+        "title": "Employee onboarding",
+        "description": "We handle all employment documentation, local contracts, and onboarding processes according to each country's legal requirements.",
+        "icon": "Calculator",
+        "details": [
+          "Prepare local employment contracts",
+          "Collect required documentation",
+          "Set up payroll and benefits",
+          "Complete tax registrations"
+        ]
+      },
+      {
+        "number": 3,
+        "title": "Ongoing management",
+        "description": "We manage payroll, taxes, benefits, compliance, and all administrative tasks while you focus on your business operations.",
+        "icon": "CheckCircle2",
+        "details": [
+          "Monthly payroll processing",
+          "Tax calculations and filings",
+          "Benefits administration",
+          "Compliance monitoring and updates"
+        ]
+      },
+      {
+        "number": 4,
+        "title": "Compliance monitoring",
+        "description": "We monitor compliance with local tax regulations, labor laws, and statutory requirements in every country. Our local tax experts stay updated with regulatory changes and ensure all payroll processing meets compliance standards.",
+        "icon": "FileCheck",
+        "details": [
+          "Compliance monitoring",
+          "Renewal reminders",
+          "Status updates",
+          "Legal compliance"
+        ]
+      }
+    ]
+  },
+  "eorComparison": {
+    "title": "Payroll vs EOR",
+    "subtitle": "Understanding the differences to choose the right solution",
+    "description": "While payroll services handle payment processing, Employer of Record (EOR) provides complete employment management. Understanding the differences helps you choose the right solution for your needs.",
+    "options": [
+      {
+        "type": "Payroll services",
+        "icon": "Calculator",
+        "description": "Payroll processing only. You remain the legal employer with full compliance responsibility.",
+        "features": [
+          "You remain legal employer",
+          "Local entity required",
+          "You handle compliance",
+          "Payroll processing only",
+          "Full risk with you",
+          "Ideal for: Companies with compliance teams"
+        ],
+        "bestFor": "Companies with local entities and compliance expertise"
+      },
+      {
+        "type": "EOR (Employer of record)",
+        "icon": "Building2",
+        "description": "We become the legal employer. Perfect when you don't have a local entity.",
+        "features": [
+          "Legal employer of record",
+          "No local entity required",
+          "Full compliance responsibility",
+          "Employment contracts in our name",
+          "Complete risk transfer",
+          "Ideal for: Market entry, remote teams, quick expansion"
+        ],
+        "bestFor": "Companies without local entities, market testing, rapid expansion"
+      }
+    ]
+  },
+  "technology": {
+    "title": "Payroll technology & reporting",
+    "subtitle": "Advanced payroll platform",
+    "description": "Our advanced payroll technology platform provides real-time visibility, automated processing, and comprehensive reporting. Access your payroll data anytime, anywhere.",
+    "features": [
+      {
+        "title": "Real-time dashboard",
+        "description": "Monitor payroll status, costs, and compliance in real-time. Get instant insights into your global payroll operations.",
+        "icon": "Monitor"
+      },
+      {
+        "title": "Automated processing",
+        "description": "Fully automated payroll calculations and processing. Reduce manual errors and save time with intelligent automation.",
+        "icon": "Zap"
+      },
+      {
+        "title": "Comprehensive reporting",
+        "description": "Generate detailed payroll reports, analytics, and insights. Export data in multiple formats for your accounting systems.",
+        "icon": "FileBarChart"
+      },
+      {
+        "title": "Multi-currency support",
+        "description": "Process payroll in multiple currencies with real-time exchange rates. Handle currency conversions seamlessly.",
+        "icon": "DollarSign"
+      }
+    ],
+    "benefits": [
+      "Cloud-based platform",
+      "Mobile app access",
+      "API integrations",
+      "Data security",
+      "24/7 support"
+    ]
+  },
+  "faqs": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "",
+    "items": [
+      {
+        "question": "How long does payroll processing take?",
+        "answer": "Payroll processing typically takes 2-3 business days from data submission to payment. We offer expedited processing for urgent cases. Our automated system ensures fast and accurate processing."
+      },
+      {
+        "question": "Can you integrate with our HR systems?",
+        "answer": "Yes, we offer API integrations with major HR systems, accounting software, and time-tracking tools. Our platform can seamlessly integrate with your existing systems for automated data transfer."
+      },
+      {
+        "question": "What reporting capabilities do you provide?",
+        "answer": "We provide comprehensive reporting including payroll summaries, tax reports, cost analytics, and custom reports. All reports can be exported in multiple formats (PDF, Excel, CSV) and accessed through our dashboard or API."
+      },
+      {
+        "question": "How do you handle payroll compliance?",
+        "answer": "We ensure full compliance with local tax regulations, labor laws, and statutory requirements in every country. Our local tax experts stay updated with regulatory changes and ensure all payroll processing meets compliance standards."
+      },
+      {
+        "question": "In which currencies can you pay employees?",
+        "answer": "We process payroll in local currencies in each country. Employees are paid in the currency of their country of employment, in line with local regulations and your employment contracts."
+      },
+      {
+        "question": "Do you handle year-end tax forms and reporting?",
+        "answer": "Yes. We prepare and file required year-end tax forms, P60/P45 equivalents, and statutory reports in each jurisdiction. You and your employees receive the documentation needed for personal tax filing."
+      },
+      {
+        "question": "What if an employee has multiple roles or countries?",
+        "answer": "We can support split payrolls and multi-country arrangements where legally permitted. Share your situation with our team and we'll outline the compliant approach and any limitations."
+      },
+      {
+        "question": "How do I submit payroll data each cycle?",
+        "answer": "You can submit via our portal, API, or templates. We support one-off uploads and automated integrations with your HRIS or time-tracking tools. Deadlines and instructions are provided per country."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to streamline your global payroll?",
+    "description": "Join hundreds of companies who trust us for their global payroll needs. Get started with accurate, compliant payroll processing.",
+    "primaryButtonText": "Get started with payroll",
+    "primaryButtonReason": "payroll",
+    "features": [
+      "Accurate processing",
+      "Full compliance",
+      "Real-time visibility",
+      "80+ countries"
+    ]
+  }
+}

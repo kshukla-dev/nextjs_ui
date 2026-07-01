@@ -664,7 +664,6 @@ export default function EORPage() {
 
       <section className="eor-section eor-container">
         <div className="eor-compare-header">
-          <span className="eor-eyebrow">Why EOR?</span>
           <h2>EOR vs. Setting Up a Local Entity</h2>
           <p className="eor-compare-sub">Establishing your own entity takes months and hundreds of thousands in setup costs. EOR gets you there in days.</p>
         </div>

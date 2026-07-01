@@ -149,7 +149,7 @@ export default function GlobalHiringGuidePage() {
   display: block;
   background-color: #0E0F3B;
   background-image: linear-gradient(90deg, #0e0f3b 0%, rgba(14, 15, 59, 0.75) 40%, rgba(14, 15, 59, 0.17) 70%, transparent 100%), url(/case-study/global-hiring-guide.png);
-  background-size: 72% auto;
+  background-size: 85% auto;
   background-position: right;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -929,6 +929,7 @@ export default function GlobalHiringGuidePage() {
 /* Coming soon section */
 .coming-soon-section {
   margin-top: 48px;
+  margin:1rem;
 }
 .cs-title {
   font-size: 11px;

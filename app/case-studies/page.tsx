@@ -64,20 +64,20 @@ export default function CaseStudiesPage() {
   function onCarouselWheel(e: React.WheelEvent) {
     if (!testiCarousel.current) return
     const el = testiCarousel.current
-    
+
     const isAtLeftEdge = el.scrollLeft <= 0
     const isAtRightEdge = Math.ceil(el.scrollLeft + el.clientWidth) >= el.scrollWidth
 
     if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
       if ((e.deltaY > 0 && !isAtRightEdge) || (e.deltaY < 0 && !isAtLeftEdge)) {
         e.preventDefault()
-        
+
         if (Math.abs(e.deltaY) > 20) {
           if (!wheelTimeout.current) {
             const cardWidth = el.children[0].clientWidth + 24
             const direction = e.deltaY > 0 ? 1 : -1
             el.scrollBy({ left: direction * cardWidth, behavior: 'smooth' })
-            
+
             wheelTimeout.current = setTimeout(() => {
               wheelTimeout.current = null
             }, 500)
@@ -910,7 +910,7 @@ export default function CaseStudiesPage() {
     padding: 32px 32px 0 32px;
   }
   .why-right {
-    padding: 32px;
+    padding: 20px 0;
   }
   
   .intro-block { grid-template-columns: 1fr; gap: 32px; }
@@ -997,38 +997,38 @@ export default function CaseStudiesPage() {
       <header className="cs-dark-hero">
         <div className="cs-dark-hero-inner container">
           <div className="cs-hero-content">
-            <h1 className="hero-title">Real success stories.<br/>Real business <em>impact.</em></h1>
+            <h1 className="hero-title">Real success stories.<br />Real business <em>impact.</em></h1>
             <p className="hero-desc">
               Discover how businesses around the world simplified global hiring, ensured compliance, and scaled faster with Jackson &amp; Frank.
             </p>
             <button className="btn-outline-gold">
               <span className="btn-icon">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
               </span>
               See how we make an impact
             </button>
           </div>
-          
+
           <div className="cs-hero-stats">
             <div className="stat-glass-card">
-              <div className="stat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
+              <div className="stat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17" /><polyline points="16 7 22 7 22 13" /></svg></div>
               <div className="stat-value">160+</div>
-              <div className="stat-label">Countries<br/>covered</div>
+              <div className="stat-label">Countries<br />covered</div>
             </div>
             <div className="stat-glass-card">
-              <div className="stat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+              <div className="stat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg></div>
               <div className="stat-value">50,000+</div>
-              <div className="stat-label">Employees<br/>onboarded globally</div>
+              <div className="stat-label">Employees<br />onboarded globally</div>
             </div>
             <div className="stat-glass-card">
-              <div className="stat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+              <div className="stat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg></div>
               <div className="stat-value">99.5%</div>
-              <div className="stat-label">Client satisfaction<br/>rate</div>
+              <div className="stat-label">Client satisfaction<br />rate</div>
             </div>
             <div className="stat-glass-card">
-              <div className="stat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+              <div className="stat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg></div>
               <div className="stat-value">10+</div>
-              <div className="stat-label">Years of global<br/>HR expertise</div>
+              <div className="stat-label">Years of global<br />HR expertise</div>
             </div>
           </div>
         </div>
@@ -1042,7 +1042,7 @@ export default function CaseStudiesPage() {
           </div>
           <div className="why-right">
             <div className="why-tag">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
               WHY IT MATTERS
             </div>
             <h2 className="why-heading">{introHeading}</h2>
@@ -1072,10 +1072,10 @@ export default function CaseStudiesPage() {
                   {cs.results.slice(0, 4).map((stat: any, i: number) => (
                     <div className="cs-stat" key={i}>
                       <div className="cs-stat-icon">
-                        {i === 0 && <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#143369" strokeWidth="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>}
-                        {i === 1 && <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#143369" strokeWidth="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>}
-                        {i === 2 && <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#143369" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>}
-                        {i > 2 && <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#143369" strokeWidth="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>}
+                        {i === 0 && <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#143369" strokeWidth="2"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>}
+                        {i === 1 && <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#143369" strokeWidth="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>}
+                        {i === 2 && <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#143369" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>}
+                        {i > 2 && <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#143369" strokeWidth="2"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>}
                       </div>
                       <div className="cs-stat-info">
                         <strong>{stat.metric}</strong>
@@ -1085,7 +1085,7 @@ export default function CaseStudiesPage() {
                   ))}
                 </div>
               </div>
-              
+
               {/* IMAGE SIDE */}
               <div className="cs-item-img-wrap">
                 <img src={cs.image} alt={cs.title} loading="lazy" />
@@ -1103,29 +1103,29 @@ export default function CaseStudiesPage() {
       <section className="section impact-section container">
         <div className="impact-inner">
           <div className="impact-left">
-            <h2>The impact<br/>we create</h2>
-            <p>Real results. Measurable impact.<br/>Stronger businesses.</p>
+            <h2>The impact<br />we create</h2>
+            <p>Real results. Measurable impact.<br />Stronger businesses.</p>
           </div>
           <div className="impact-right">
             <div className="impact-stat">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#143369" strokeWidth="1.5"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#143369" strokeWidth="1.5"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17" /><polyline points="16 7 22 7 22 13" /></svg>
               <strong>+250%</strong>
-              <span>Average growth in<br/>team capacity</span>
+              <span>Average growth in<br />team capacity</span>
             </div>
             <div className="impact-stat">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#143369" strokeWidth="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#143369" strokeWidth="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
               <strong>-70%</strong>
-              <span>Reduction in<br/>compliance risk</span>
+              <span>Reduction in<br />compliance risk</span>
             </div>
             <div className="impact-stat">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#143369" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#143369" strokeWidth="1.5"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>
               <strong>3x</strong>
-              <span>Faster time<br/>to hire</span>
+              <span>Faster time<br />to hire</span>
             </div>
             <div className="impact-stat">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#143369" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#143369" strokeWidth="1.5"><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg>
               <strong>100%</strong>
-              <span>Focus on core<br/>business</span>
+              <span>Focus on core<br />business</span>
             </div>
           </div>
         </div>
@@ -1137,13 +1137,13 @@ export default function CaseStudiesPage() {
           <h2>What our clients say</h2>
           <Link href="/testimonials" className="view-all-link">View all testimonials <span>&rarr;</span></Link>
         </div>
-        
+
         <div className="testi-carousel" ref={testiCarousel} onScroll={onCarouselScroll} onWheel={onCarouselWheel}>
           {testimonials.map((t: any, index: number) => (
             <div className={`testi-card ${centerCardIndex === index ? 'is-center' : ''}`} key={t.id}>
               <div className="quote-mark">“</div>
               <p className="testi-text">{t.testimonial}</p>
-              
+
               <div className="testi-footer">
                 <div className="testi-author">
                   <div className="author-avatar">
@@ -1154,7 +1154,7 @@ export default function CaseStudiesPage() {
                     <span>{t.clientRole}</span>
                   </div>
                 </div>
-                
+
                 <div className="testi-company-logo">
                   <span className="t-logo-letter" style={{ color: ['#7b2cbf', '#0b80a1', '#2e8b57', '#d97706'][index % 4] }}>
                     {t.clientName ? t.clientName.charAt(0).toUpperCase() : 'C'}
@@ -1169,7 +1169,7 @@ export default function CaseStudiesPage() {
         {testimonials.length > 0 && (
           <div className="testi-dots">
             {testimonials.map((_: any, index: number) => (
-              <button 
+              <button
                 key={index}
                 className={`dot ${activeDot === index ? 'active' : ''}`}
                 onClick={() => scrollToDot(index)}

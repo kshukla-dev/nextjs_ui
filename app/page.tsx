@@ -95,7 +95,7 @@ export default function HomePage() {
         const icons = ["shield", "chart", "people"]
         const texts = [
           "Saved <strong>$15,000+</strong> in local entity setup fees",
-          "Managed payroll in <strong>150+ currencies</strong> seamlessly",
+          "Managed payroll in <strong>90+ currencies</strong> seamlessly",
           "Onboarded in <strong>less than 48 hours</strong> compliantly"
         ]
         metricText = texts[idx % texts.length]
@@ -3339,7 +3339,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="ge-map-stats">
-                <div className="ge-map-stat"><strong>80+</strong><span>Countries</span></div>
+                <div className="ge-map-stat"><strong>160+</strong><span>Countries</span></div>
                 <div className="ge-map-stat-divider"></div>
                 <div className="ge-map-stat"><strong>700+</strong><span>Businesses</span></div>
                 <div className="ge-map-stat-divider"></div>
@@ -3417,7 +3417,7 @@ export default function HomePage() {
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" /><path d="M2 12H22" /><path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z" /></svg>
                   </div>
                   <div>
-                    <strong>80+</strong>
+                    <strong>160+</strong>
                     <span className="sa-stat-label">Countries</span>
                     <span className="sa-stat-sub">Global coverage</span>
                   </div>
@@ -3588,7 +3588,7 @@ export default function HomePage() {
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
                 </div>
                 <h4>Immigration Insights</h4>
-                <p>Visa, work permits, and immigration policies across 150+ countries.</p>
+                <p>Visa, work permits, and immigration policies across 160+ countries.</p>
                 <span className="rcc-link">Explore insights <span className="arrow">→</span></span>
               </div>
             </Link>

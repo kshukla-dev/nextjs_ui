@@ -54,7 +54,7 @@ export default function CountryPage() {
   }
 
   const stats = [
-    { value: '80+', label: 'Countries', desc: 'we serve', icon: 'globe' },
+    { value: '160+', label: 'Countries', desc: 'we serve', icon: 'globe' },
     { value: '12+', label: 'Years of global', desc: 'experience', icon: 'experience' },
     { value: '50,000+', label: 'Employees', desc: 'onboarded globally', icon: 'users' },
     { value: '2–3 days', label: 'Average', desc: 'onboarding time', icon: 'clock' },

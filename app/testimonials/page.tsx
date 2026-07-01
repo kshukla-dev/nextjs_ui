@@ -44,7 +44,7 @@ export default function TestimonialsPage() {
         const icons = ["shield", "chart", "people"]
         const texts = [
           "Saved <strong>$15,000+</strong> in local entity setup fees",
-          "Managed payroll in <strong>150+ currencies</strong> seamlessly",
+          "Managed payroll in <strong>90+ currencies</strong> seamlessly",
           "Onboarded in <strong>less than 48 hours</strong> compliantly"
         ]
         metricText = texts[idx % texts.length]

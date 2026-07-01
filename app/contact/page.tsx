@@ -1792,7 +1792,7 @@ form.was-validated .custom-checkbox input:invalid + .checkmark {
 
           <div className="stats-overlay-card">
             <span className="operating-label">Operating in</span>
-            <div className="countries-count">80+</div>
+            <div className="countries-count">160+</div>
             <span className="countries-label">countries</span>
             <p className="desc">Supporting companies worldwide with local expertise.</p>
           </div>

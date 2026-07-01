@@ -1012,7 +1012,7 @@ export default function CaseStudiesPage() {
           <div className="cs-hero-stats">
             <div className="stat-glass-card">
               <div className="stat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
-              <div className="stat-value">150+</div>
+              <div className="stat-value">160+</div>
               <div className="stat-label">Countries<br/>covered</div>
             </div>
             <div className="stat-glass-card">

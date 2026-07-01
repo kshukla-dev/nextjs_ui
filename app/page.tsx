@@ -401,7 +401,7 @@ export default function HomePage() {
   font-size: 28px;
   line-height: 1.35;
   color: var(--ink);
-  max-width: 1200px;
+  max-width: 1100px;
 }
 .intro-blurb p em {
   font-style: italic;
@@ -582,14 +582,14 @@ export default function HomePage() {
   max-width: 300px;
 }
 .foundation-card-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 18px;
-  background:linear-gradient(135deg, #f39c12 0%, #e67e2296 100%);
-  border-radius: 999px;
-  padding: 7px 14px 7px 7px;
-  box-shadow: 0 4px 14px rgba(243, 156, 18, 0.45);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 18px;
+    background:linear-gradient(281deg, #b8b9c400 0%, #0e0f3b 100%);
+    border-radius: 999px;
+    padding: 7px 14px 7px 7px;
+    box-shadow: 0 4px 14px rgb(43 46 75);
 }
 .eyebrow-icon {
   width: 50px;

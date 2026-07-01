@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Global Immigration Services for Work Visas & Compliance",
-    "description": "Expert immigration services for work visas, permits, and compliance across 80+ countries. Fast, reliable, and compliant immigration solutions.",
+    "description": "Expert immigration services for work visas, permits, and compliance across 160+ countries. Fast, reliable, and compliant immigration solutions.",
     "keywords": [
       "Immigration services",
       "Work visa",
@@ -31,7 +31,7 @@
     ],
     "openGraph": {
       "title": "Global Immigration Services for Work Visas & Compliance",
-      "description": "Expert immigration services for work visas, permits, and compliance across 80+ countries. Fast, reliable, and compliant immigration solutions for your global workforce.",
+      "description": "Expert immigration services for work visas, permits, and compliance across 160+ countries. Fast, reliable, and compliant immigration solutions for your global workforce.",
       "url": "/immigration",
       "siteName": "Jackson & Frank",
       "images": [
@@ -48,7 +48,7 @@
     "twitter": {
       "card": "summary_large_image",
       "title": "Global Immigration Services for Work Visas & Compliance",
-      "description": "Expert immigration services for work visas, permits, and compliance across 80+ countries. Fast, reliable, and compliant immigration solutions for your global workforce.",
+      "description": "Expert immigration services for work visas, permits, and compliance across 160+ countries. Fast, reliable, and compliant immigration solutions for your global workforce.",
       "images": [
         "/services/service-page/immigration.webp"
       ]
@@ -121,7 +121,7 @@
       }
     ],
     "benefits": [
-      "80+ countries supported",
+      "160+ countries supported",
       "Fast processing times",
       "Full compliance guarantee",
       "Expert immigration consultants"
@@ -129,7 +129,7 @@
   },
   "mainDescription": {
     "title": "What is Immigration Services?",
-    "description": "Immigration services provide expert guidance and support for obtaining work visas, permits, and legal authorization for employees to work in foreign countries. Our immigration solutions cover the entire visa application process, from initial assessment and documentation to embassy coordination and approval, ensuring compliance with immigration laws across 80+ countries while minimizing processing times and maximizing success rates."
+    "description": "Immigration services provide expert guidance and support for obtaining work visas, permits, and legal authorization for employees to work in foreign countries. Our immigration solutions cover the entire visa application process, from initial assessment and documentation to embassy coordination and approval, ensuring compliance with immigration laws across 160+ countries while minimizing processing times and maximizing success rates."
   },
   "services": {
     "title": "Immigration services we offer",
@@ -313,7 +313,7 @@
       "Expert consultants",
       "Fast processing",
       "Full compliance",
-      "80+ countries"
+      "160+ countries"
     ]
   }
 }

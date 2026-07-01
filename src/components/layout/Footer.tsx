@@ -517,12 +517,12 @@ export default function Footer() {
                 <img src="/logo-dark.svg" alt="Jackson & Frank" className="footer-logo-img" />
               </Link>
               <p className="footer-desc">
-                Jackson & Frank simplifies global workforce management with compliant, scalable solutions across 80+ countries.
+                Jackson & Frank simplifies global workforce management with compliant, scalable solutions across 160+ countries.
               </p>
               <ul className="footer-checks">
                 <li>
                   <svg viewBox="0 0 24 24" fill="currentColor" className="check-icon" stroke="none"><circle cx="12" cy="12" r="10"></circle><path d="M9 12l2 2 4-4" stroke="var(--dark)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none"></path></svg>
-                  Global Coverage in 80+ Countries
+                  Global Coverage in 160+ countries
                 </li>
                 <li>
                   <svg viewBox="0 0 24 24" fill="currentColor" className="check-icon" stroke="none"><circle cx="12" cy="12" r="10"></circle><path d="M9 12l2 2 4-4" stroke="var(--dark)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none"></path></svg>

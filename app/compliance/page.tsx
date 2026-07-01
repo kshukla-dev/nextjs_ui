@@ -742,7 +742,7 @@ export default function CompliancePage() {
                 ))}
               </div>
               <span className="trust-text">
-                <strong>99.9%</strong> compliance rate across 80+ countries
+                <strong>99.9%</strong> compliance rate across 160+ countries
               </span>
             </div>
           </div>

@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Global Payroll Services with Local Expertise",
-    "description": "Comprehensive global payroll solutions for 80+ countries. Accurate, compliant, and timely payroll processing with local expertise and advanced technology.",
+    "description": "Comprehensive global payroll solutions for 160+ countries. Accurate, compliant, and timely payroll processing with local expertise and advanced technology.",
     "keywords": [
       "Global payroll",
       "Payroll services",
@@ -27,7 +27,7 @@
     ],
     "openGraph": {
       "title": "Global Payroll Services with Local Expertise",
-      "description": "Comprehensive global payroll solutions for 80+ countries. Accurate, compliant, and timely payroll processing with local expertise and advanced technology.",
+      "description": "Comprehensive global payroll solutions for 160+ countries. Accurate, compliant, and timely payroll processing with local expertise and advanced technology.",
       "url": "/payroll",
       "siteName": "Jackson & Frank",
       "images": [
@@ -44,7 +44,7 @@
     "twitter": {
       "card": "summary_large_image",
       "title": "Global Payroll Services with Local Expertise",
-      "description": "Comprehensive global payroll solutions for 80+ countries. Accurate, compliant, and timely payroll processing with local expertise and advanced technology.",
+      "description": "Comprehensive global payroll solutions for 160+ countries. Accurate, compliant, and timely payroll processing with local expertise and advanced technology.",
       "images": [
         "/services/service-page/payroll.webp"
       ]
@@ -97,7 +97,7 @@
     "keyPoints": [
       {
         "title": "Multi-country processing",
-        "description": "Unified payroll processing across 80+ countries with local currency support and compliance. Process all your global payrolls from a single platform.",
+        "description": "Unified payroll processing across 160+ countries with local currency support and compliance. Process all your global payrolls from a single platform.",
         "icon": "Globe"
       },
       {
@@ -117,7 +117,7 @@
       }
     ],
     "benefits": [
-      "80+ countries supported",
+      "160+ countries supported",
       "Real-time payroll visibility",
       "Full tax compliance",
       "Multi-currency processing",
@@ -126,7 +126,7 @@
   },
   "mainDescription": {
     "title": "What is Payroll Services?",
-    "description": "Payroll services involve the comprehensive management of employee compensation, including salary calculations, tax withholdings, benefits administration, and compliance with local labor and tax regulations. Our global payroll solutions ensure accurate, timely, and compliant payroll processing across 80+ countries, handling everything from data collection to final payment disbursement."
+    "description": "Payroll services involve the comprehensive management of employee compensation, including salary calculations, tax withholdings, benefits administration, and compliance with local labor and tax regulations. Our global payroll solutions ensure accurate, timely, and compliant payroll processing across 160+ countries, handling everything from data collection to final payment disbursement."
   },
   "services": {
     "title": "Payroll services we offer",
@@ -350,7 +350,7 @@
       "Accurate processing",
       "Full compliance",
       "Real-time visibility",
-      "80+ countries"
+      "160+ countries"
     ]
   }
 }

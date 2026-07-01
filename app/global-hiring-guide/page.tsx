@@ -263,7 +263,7 @@ export default function GlobalHiringGuidePage() {
    ============================================================ */
 .trust-banner-wrap {
   
-  margin-top: 12rem;
+  margin-top: 10vh;
 }
 
 .trust-banner {
@@ -517,7 +517,7 @@ export default function GlobalHiringGuidePage() {
 }
 
 .entities-section {
-  padding: 100px 0;
+  padding: 100px;
 
 }
 .entities-header-row {
@@ -941,7 +941,7 @@ export default function GlobalHiringGuidePage() {
 }
 .cs-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 16px;
 }
 .cs-card {
@@ -1361,7 +1361,7 @@ export default function GlobalHiringGuidePage() {
 
 /* ============= HOW IT WORKS ============= */
 .hiw-section {
-  padding: 100px 0;
+  padding: 100px;
 }
 .hiw-header {
   margin-bottom: 60px;
@@ -1484,7 +1484,7 @@ export default function GlobalHiringGuidePage() {
           <div className="ghg-hero-copy">
             <h1 className="hero-title">Global <br /><em>hiring guide</em></h1>
             <p className="hero-desc">
-              Streamline global operations by managing payroll in over 80+ countries under one roof, thereby eliminating the ongoing administrative burdens of local compliance, taxes, benefits, and other complexities.
+              Streamline global operations by managing payroll in over 160+ countries under one roof, thereby eliminating the ongoing administrative burdens of local compliance, taxes, benefits, and other complexities.
             </p>
             <ul className="hero-checklist">
               <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9 12l2 2 4-4"></path></svg> Global compliance</li>
@@ -1658,7 +1658,7 @@ export default function GlobalHiringGuidePage() {
         <div className="entities-header-row">
           <div className="entities-title-block">
             <h2 className="entities-main-title">A truly global presence.<br /><span className="gold-text">Built for borderless teams.</span></h2>
-            <p className="entities-subtitle">Our own legal entities in 80+ countries allow you to hire, pay, and support talent compliantly-wherever your business grows.</p>
+            <p className="entities-subtitle">Our own legal entities in 160+ countries allow you to hire, pay, and support talent compliantly-wherever your business grows.</p>
           </div>
           <Link href="/contact" className="btn-outline-gold">View all locations <span aria-hidden>→</span></Link>
         </div>

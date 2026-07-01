@@ -3219,7 +3219,7 @@ export default function HomePage() {
             <div className="hero-features-inline">
               <div className="hf-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" /><path d="M2 12H22" /><path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z" /></svg>
-                Hire in 80+ countries
+                Hire in 160+ countries
               </div>
               <div className="hf-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="M9 12l2 2 4-4" /></svg>
@@ -3227,7 +3227,7 @@ export default function HomePage() {
               </div>
               <div className="hf-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10" /><path d="M16 8H8V16H16" /><path d="M12 8V16" /><path d="M8 12H16" /></svg>
-                Payroll in 150+ currencies
+                Payroll in 90+ currencies
               </div>
             </div>
 
@@ -3253,7 +3253,7 @@ export default function HomePage() {
 
       <section className="brand-strip">
         <div className="brand-strip-inner">
-          <span className="brand-label">Trusted in 80+ countries</span>
+          <span className="brand-label">Trusted in 160+ countries</span>
           <div className="marquee" aria-label="Countries we operate in">
             <div className="marquee-track" aria-hidden="false">
               {countries.map(c => <span key={`a-${c}`} className="brand-logo">{c}</span>)}

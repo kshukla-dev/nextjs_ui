@@ -205,7 +205,7 @@
       {
         "icon": "DollarSign",
         "title": "Gross wages",
-        "description": "Base salary calculations with accurate currency conversions for 80+ countries."
+        "description": "Base salary calculations with accurate currency conversions for 160+ countries."
       },
       {
         "icon": "Shield",
@@ -235,7 +235,7 @@
       },
       {
         "icon": "Globe",
-        "title": "80+ countries",
+        "title": "160+ countries",
         "description": "Compare employment costs across major markets worldwide with country-specific data."
       },
       {
@@ -259,7 +259,7 @@
       },
       {
         "question": "Which countries are supported?",
-        "answer": "The calculator currently covers 12 major markets. We support employment and payroll in 80+ countries-contact us for a detailed quote for any country."
+        "answer": "The calculator currently covers 12 major markets. We support employment and payroll in 160+ countries-contact us for a detailed quote for any country."
       },
       {
         "question": "How do I get a detailed quote?",

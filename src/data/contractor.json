@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Global Contractor Management Services",
-    "description": "Seamlessly manage international contractors with automated payments, compliance monitoring, and streamlined onboarding across 80+ countries.",
+    "description": "Seamlessly manage international contractors with automated payments, compliance monitoring, and streamlined onboarding across 160+ countries.",
     "keywords": [
       "Contractor management",
       "Global contractors",
@@ -18,7 +18,7 @@
     ],
     "openGraph": {
       "title": "Global Contractor Management Services",
-      "description": "Seamlessly manage international contractors with automated payments, compliance monitoring, and streamlined onboarding across 80+ countries.",
+      "description": "Seamlessly manage international contractors with automated payments, compliance monitoring, and streamlined onboarding across 160+ countries.",
       "url": "/contractor",
       "siteName": "Jackson & Frank",
       "images": [
@@ -35,7 +35,7 @@
     "twitter": {
       "card": "summary_large_image",
       "title": "Global Contractor Management Services",
-      "description": "Seamlessly manage international contractors with automated payments, compliance monitoring, and streamlined onboarding across 80+ countries.",
+      "description": "Seamlessly manage international contractors with automated payments, compliance monitoring, and streamlined onboarding across 160+ countries.",
       "images": [
         "/services/service-page/contract.webp"
       ]
@@ -47,7 +47,7 @@
   "definition": {
     "title": "Manage global contractors compliantly",
     "subtitle": "Understanding contractor management solutions",
-    "description": "Seamlessly manage international contractors with automated payments, compliance monitoring, and streamlined onboarding across 80+ countries.",
+    "description": "Seamlessly manage international contractors with automated payments, compliance monitoring, and streamlined onboarding across 160+ countries.",
     "image": "/services/service-page/contract.webp",
     "imageAlt": "Global contractor management and compliance services",
     "keyFeatures": [
@@ -103,7 +103,7 @@
       }
     ],
     "benefits": [
-      "80+ countries supported",
+      "160+ countries supported",
       "Automated payment processing",
       "Full compliance monitoring",
       "Streamlined onboarding",
@@ -112,7 +112,7 @@
   },
   "mainDescription": {
     "title": "What is Contractor Management?",
-    "description": "Contractor management involves the comprehensive administration of independent contractors, including contract drafting, payment processing, compliance monitoring, and documentation management. Our global contractor management solutions ensure seamless, compliant, and efficient contractor relationships across 80+ countries, handling everything from onboarding to payment processing while maintaining full regulatory compliance."
+    "description": "Contractor management involves the comprehensive administration of independent contractors, including contract drafting, payment processing, compliance monitoring, and documentation management. Our global contractor management solutions ensure seamless, compliant, and efficient contractor relationships across 160+ countries, handling everything from onboarding to payment processing while maintaining full regulatory compliance."
   },
   "benefits": {
     "title": "Contractor benefits",
@@ -220,7 +220,7 @@
       },
       {
         "question": "Which countries do you support for contractor management?",
-        "answer": "We support contractor management in 80+ countries, with local expertise to navigate country-specific regulations and payment practices."
+        "answer": "We support contractor management in 160+ countries, with local expertise to navigate country-specific regulations and payment practices."
       },
       {
         "question": "How do you handle contractor classification risk?",
@@ -247,7 +247,7 @@
     "primaryButtonReason": "contractor",
     "features": [
       "Expert contractor management",
-      "80+ countries supported",
+      "160+ countries supported",
       "Automated payment processing",
       "Full compliance guarantee"
     ]

@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Global Employment Compliance Services",
-    "description": "Comprehensive employment compliance solutions for labor laws, tax regulations, and employment standards across 80+ countries.",
+    "description": "Comprehensive employment compliance solutions for labor laws, tax regulations, and employment standards across 160+ countries.",
     "keywords": [
       "Employment compliance",
       "Labor law compliance",
@@ -20,7 +20,7 @@
     ],
     "openGraph": {
       "title": "Global Employment Compliance Services",
-      "description": "Comprehensive employment compliance solutions for labor laws, tax regulations, and employment standards across 80+ countries. Expert compliance management and monitoring.",
+      "description": "Comprehensive employment compliance solutions for labor laws, tax regulations, and employment standards across 160+ countries. Expert compliance management and monitoring.",
       "url": "/compliance",
       "siteName": "Jackson & Frank",
       "images": [
@@ -37,7 +37,7 @@
     "twitter": {
       "card": "summary_large_image",
       "title": "Global Employment Compliance Services",
-      "description": "Comprehensive employment compliance solutions for labor laws, tax regulations, and employment standards across 80+ countries. Expert compliance management and monitoring.",
+      "description": "Comprehensive employment compliance solutions for labor laws, tax regulations, and employment standards across 160+ countries. Expert compliance management and monitoring.",
       "images": [
         "/services/service-page/compliances.webp"
       ]
@@ -49,11 +49,11 @@
   "definition": {
     "title": "Stay compliant wherever you operate",
     "subtitle": "Understanding global employment compliance",
-    "description": "Ensure your business adheres to all local labor laws, tax regulations, and employment standards across 80+ countries with expert compliance management and monitoring.",
+    "description": "Ensure your business adheres to all local labor laws, tax regulations, and employment standards across 160+ countries with expert compliance management and monitoring.",
     "image": "/services/service-page/compliances.webp",
     "imageAlt": "Global employment compliance and regulatory services",
     "keyFeatures": [
-      "80+ countries covered",
+      "160+ countries covered",
       "Real-time monitoring",
       "Expert legal guidance"
     ],
@@ -110,7 +110,7 @@
       }
     ],
     "benefits": [
-      "80+ countries covered",
+      "160+ countries covered",
       "Real-time monitoring",
       "Expert legal guidance",
       "Proactive compliance",
@@ -119,7 +119,7 @@
   },
   "mainDescription": {
     "title": "What is Compliance Services?",
-    "description": "Compliance services ensure your business adheres to all local labor laws, tax regulations, employment standards, and regulatory requirements in every country where you operate. Our compliance solutions provide comprehensive monitoring, risk assessment, and expert legal guidance to prevent violations, maintain regulatory adherence, and protect your business from penalties and legal issues across 80+ countries."
+    "description": "Compliance services ensure your business adheres to all local labor laws, tax regulations, employment standards, and regulatory requirements in every country where you operate. Our compliance solutions provide comprehensive monitoring, risk assessment, and expert legal guidance to prevent violations, maintain regulatory adherence, and protect your business from penalties and legal issues across 160+ countries."
   },
   "services": {
     "title": "Compliance services we provide",
@@ -363,7 +363,7 @@
       },
       {
         "question": "What countries do you cover?",
-        "answer": "We provide comprehensive compliance services across 80+ countries worldwide. Our global network and local legal expertise ensure we can support your compliance needs in almost any market. Contact us for specific country inquiries."
+        "answer": "We provide comprehensive compliance services across 160+ countries worldwide. Our global network and local legal expertise ensure we can support your compliance needs in almost any market. Contact us for specific country inquiries."
       },
       {
         "question": "Do you help with GDPR and data privacy compliance?",
@@ -388,7 +388,7 @@
       "Expert guidance",
       "Real-time monitoring",
       "Full compliance",
-      "80+ countries"
+      "160+ countries"
     ]
   }
 }

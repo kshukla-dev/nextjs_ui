@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "About Us - Global Workforce Solutions ",
-    "description": "Learn about Jackson & Frank's mission, values, and global workforce solutions. EOR, payroll, and compliance services across 80+ countries worldwide.",
+    "description": "Learn about Jackson & Frank's mission, values, and global workforce solutions. EOR, payroll, and compliance services across 160+ countries worldwide.",
     "keywords": [
       "about Jackson & Frank",
       "global workforce provider",
@@ -16,7 +16,7 @@
     ],
     "openGraph": {
       "title": "About Us - Global Workforce Solutions",
-      "description": "Learn about Jackson & Frank's mission, values, and global workforce solutions. EOR, payroll, and compliance services across 80+ countries worldwide.",
+      "description": "Learn about Jackson & Frank's mission, values, and global workforce solutions. EOR, payroll, and compliance services across 160+ countries worldwide.",
       "url": "/about-us",
       "siteName": "Jackson & Frank",
       "images": [
@@ -33,7 +33,7 @@
     "twitter": {
       "card": "summary_large_image",
       "title": "About Us - Global Workforce Solutions",
-      "description": "Learn about Jackson & Frank's mission, values, and global workforce solutions. EOR, payroll, and compliance services across 80+ countries worldwide.",
+      "description": "Learn about Jackson & Frank's mission, values, and global workforce solutions. EOR, payroll, and compliance services across 160+ countries worldwide.",
       "images": [
         "/services/service-page/about.webp"
       ]
@@ -90,7 +90,7 @@
     "items": [
       {
         "question": "Where is Jackson & Frank headquartered?",
-        "answer": "Jackson & Frank is headquartered in Arnhem, The Netherlands, with offices at 15+ countries and partners in 80+ countries and the ability to employ and pay talent in 80+ countries worldwide."
+        "answer": "Jackson & Frank is headquartered in Arnhem, The Netherlands, with offices at 15+ countries and partners in 160+ countries and the ability to employ and pay talent in 160+ countries worldwide."
       },
       {
         "question": "How long has Jackson & Frank been in business?",
@@ -110,7 +110,7 @@
       },
       {
         "question": "Do you have local offices or only partners?",
-        "answer": "We have offices in 15+ countries and a partner network across 80+ countries. Where we have an office, you get direct local support; elsewhere we work with vetted local partners to ensure the same quality."
+        "answer": "We have offices in 15+ countries and a partner network across 160+ countries. Where we have an office, you get direct local support; elsewhere we work with vetted local partners to ensure the same quality."
       },
       {
         "question": "How do you ensure data security and privacy?",

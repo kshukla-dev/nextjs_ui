@@ -657,7 +657,7 @@ export default function ImmigrationPage() {
                 ))}
               </div>
               <span className="trust-text">
-                <strong>99.5%</strong> visa approval rate across 80+ countries
+                <strong>99.5%</strong> visa approval rate across 160+ countries
               </span>
             </div>
           </div>

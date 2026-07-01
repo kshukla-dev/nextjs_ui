@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     question: 'Which countries do you support?',
-    answer: 'We deliver Employer of Record and global hiring support in 80+ countries, including major European and APAC hubs. Contact us for your specific locations.'
+    answer: 'We deliver Employer of Record and global hiring support in 160+ countries, including major European and APAC hubs. Contact us for your specific locations.'
   },
   {
     question: 'Who manages day-to-day work?',
@@ -292,7 +292,7 @@ export default function EORPage() {
             <h1>
               Hire <em>employees<br />globally</em><br />without entities
             </h1>
-            <p className="service-hero-lede">Quickly expand your global workforce across 80+ countries without establishing a local entity. We become your local HR partner.</p>
+            <p className="service-hero-lede">Quickly expand your global workforce across 160+ countries without establishing a local entity. We become your local HR partner.</p>
 
             <ul className="eor-hero-checklist">
               <li>
@@ -795,7 +795,7 @@ export default function EORPage() {
         <div className="eor-container">
           <div className="eor-countries-header">
             <h2>Where we employ through Employer of Record</h2>
-            <p className="eor-countries-sub">We support Employer of Record and global hiring in 80+ countries. Below are markets where our own entities and specialists are especially active.</p>
+            <p className="eor-countries-sub">We support Employer of Record and global hiring in 160+ countries. Below are markets where our own entities and specialists are especially active.</p>
           </div>
           <div className="eor-countries-grid">
             {topCountries.map((country) => (

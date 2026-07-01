@@ -1647,7 +1647,7 @@ form.was-validated .custom-checkbox input:invalid + .checkmark {
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
                 </div>
                 <h5>Local Expertise, Global Reach</h5>
-                <p>Our teams in 80+ countries understand local markets, laws, and business culture.</p>
+                <p>Our teams in 160+ countries understand local markets, laws, and business culture.</p>
               </div>
 
               <div className="feature-item col-3 row-1">

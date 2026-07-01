@@ -20,14 +20,14 @@ const previewMap: Record<Exclude<DropdownKey, null>, Preview> = {
   services: {
     eyebrow: 'Featured service',
     title: 'Employer of record',
-    blurb: 'Hire across 80+ countries - without setting up a local entity.',
+    blurb: 'Hire across 160+ countries - without setting up a local entity.',
     image: '/services/service-page/eor-hero2.png',
     href: '/employer-of-record',
     cta: 'Explore EOR',
   },
   about: {
     eyebrow: 'Our story',
-    title: '50+ years, 80+ countries',
+    title: '50+ years, 160+ countries',
     blurb: 'From the Netherlands to every continent - the team behind 700+ global hires.',
     image: '/services/service-page/about2.png',
     href: '/about-us',

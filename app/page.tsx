@@ -1664,6 +1664,11 @@ export default function HomePage() {
   .blog-row {
     grid-template-columns: 96px 1fr;
   }
+  .brand-strip-inner {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 16px;
+  }
   .cta-block {
     padding: 40px 28px;
   }

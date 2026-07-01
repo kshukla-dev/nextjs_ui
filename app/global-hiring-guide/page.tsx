@@ -1144,6 +1144,33 @@ export default function GlobalHiringGuidePage() {
   .entities-main-grid {
     grid-template-columns: 1fr;
   }
+  .map-stats-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .map-stat-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+  .process-flow {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    text-align: left;
+  }
+  .process-line {
+    display: none;
+  }
+  .process-step {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "icon num"
+      "icon title"
+      "icon desc";
+    gap: 0 16px;
+    align-items: start;
+  }
   .btn-outline-gold {
     position: static;
     margin-top: 24px;

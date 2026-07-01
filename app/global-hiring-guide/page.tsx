@@ -929,7 +929,6 @@ export default function GlobalHiringGuidePage() {
 /* Coming soon section */
 .coming-soon-section {
   margin-top: 48px;
-  margin:1rem;
 }
 .cs-title {
   font-size: 11px;
@@ -1120,24 +1119,7 @@ export default function GlobalHiringGuidePage() {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (max-width: 1024px) {
-  .how-grid-4 { grid-template-columns: 1fr 1fr; }
-  .borderless-teams-wrap { grid-template-columns: 1fr; }
-  .borderless-image { height: 400px; }
-  .entities-main-grid {
-    grid-template-columns: 1fr;
-  }
-  .btn-outline-gold {
-    position: static;
-    margin-top: 24px;
-  }
-  .entities-header-row {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  
+
 @media (min-width: 641px) and (max-width: 1024px) {
   .ghg-hero {
     padding: 80px 0 80px;
@@ -1155,6 +1137,23 @@ export default function GlobalHiringGuidePage() {
     margin-top: 30px;
   }
 }
+
+@media (max-width: 1024px) {
+  .how-grid-4 { grid-template-columns: 1fr 1fr; }
+  .borderless-teams-wrap { grid-template-columns: 1fr; }
+  .borderless-image { height: 400px; }
+  .entities-main-grid {
+    grid-template-columns: 1fr;
+  }
+  .btn-outline-gold {
+    position: static;
+    margin-top: 24px;
+  }
+  .entities-header-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
   .trust-banner {
     flex-direction: column;
     gap: 24px;
@@ -1238,7 +1237,7 @@ export default function GlobalHiringGuidePage() {
     font-size: 13px;
   }
   .how-grid-4 { grid-template-columns: 1fr; }
-  .cs-grid { grid-template-columns: -1fr; }
+  .cs-grid { grid-template-columns: 1fr; }
   .cs-card {
     min-height: 170px;
     padding: 16px;
@@ -1258,8 +1257,7 @@ export default function GlobalHiringGuidePage() {
   .borderless-feature:last-child { border-bottom: none; padding-bottom: 0; }
   
   .borderless-card { padding: 24px 20px; }
-  .borderless-header { flex-direction: column; text-align: center; gap: 12px; margin-bottom: 32px; 
-  padding-inline: clamp(32px, 8vw, 96px);}
+  .borderless-header { flex-direction: column; text-align: center; gap: 12px; margin-bottom: 32px; }
   .borderless-header h2 { font-size: 28px; }
   .borderless-header-icon { width: 48px; height: 48px; }
   .bf-icon { width: 40px; height: 40px; }
@@ -1301,7 +1299,7 @@ export default function GlobalHiringGuidePage() {
 
   .ghg-hero {
     min-height: auto;
-    padding: 260px 20px 60px;
+    padding: 160px 0 40px;
     background-size: cover;
     background-position: center;
     background-image: none;
@@ -1313,18 +1311,21 @@ export default function GlobalHiringGuidePage() {
     top: 0;
     left: 0;
     right: 0;
-    height: 280px;
+    height: 180px;
     background-image: url(/case-study/global-hiring-guide.png);
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
-    -webkit-mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 45%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 45%, transparent 100%);
     pointer-events: none;
   }
   .ghg-hero-inner {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hero-checklist li {
+    font-size: 16px;
   }
   .trust-banner-wrap {
     margin-top: 20px;
@@ -1333,19 +1334,27 @@ export default function GlobalHiringGuidePage() {
     padding: 24px 16px;
   }
   .trust-logos {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px 20px;
     width: 100%;
-    padding-bottom: 12px;
-    scrollbar-width: none; /* Firefox */
-  }
-  .trust-logos::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
   }
   .t-logo {
     flex-shrink: 0;
+  }
+  .map-stats-card {
+    min-height: 260px;
+    background-size: 100% auto;
+    background-position: center 8%;
+    padding: 12px;
+    justify-content: flex-end;
+  }
+  .entities-section {
+    padding: 60px 0;
+  }
+  .coming-soon-section {
+    margin-top: 32px;
+    padding: 0 20px;
   }
 }
 
@@ -1452,6 +1461,9 @@ export default function GlobalHiringGuidePage() {
 }
 
 @media (max-width: 1024px) {
+  .hiw-section {
+    padding-inline: 20px;
+  }
   .hiw-cards-container {
     flex-direction: column;
   }

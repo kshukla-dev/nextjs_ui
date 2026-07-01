@@ -34,7 +34,7 @@ export default function ContractorPage() {
     margin-right: -50vw;
     width: 100vw;
     box-sizing: border-box;
-    padding: 0px 0 96px;
+    padding: 20px 0 96px;
     display: block;
   background-color: #0E0F3B;
   background-image: linear-gradient(90deg, #0e0f3b 0%, rgb(14 15 59 / 81%) 40%, rgb(14 15 59 / 34%) 70%, #00000021 100%), url(/services/service-page/contractor-hero.png);
@@ -508,7 +508,7 @@ export default function ContractorPage() {
 
       <section className="section container">
         <div className="section-head">
-         <h2 className="section-title">{contractor.benefits.title}</h2>
+          <h2 className="section-title">{contractor.benefits.title}</h2>
           <p className="section-lead">{contractor.benefits.subtitle}</p>
         </div>
         <div className="benefits-grid">

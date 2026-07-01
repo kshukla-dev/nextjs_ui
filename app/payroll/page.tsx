@@ -34,7 +34,7 @@ export default function PayrollPage() {
   padding: 88px 0 96px;
   display: block;
   background-color: #0E0F3B;
-  background-image: linear-gradient(90deg, #0e0f3b 0%, rgb(14 15 59 / 0%) 40%, rgb(14 15 59 / 0%) 70%, transparent 100%), url('https://cdn.craft.cloud/019cb01a-1d95-731f-9bc4-3a2fec394116/assets/images/Z_DELETE/Temp/608c78a14f189da3e50e174bca035c7fbd051996.jpg?fit=cover&format=webp&width=1280&s=cK_YnjDwH_igbP_kzd4CFxjdweGJjgJGK6Vq_7weuxE');
+  background-image: linear-gradient(90deg, #0e0f3b 0%, rgb(14 15 59 / 0%) 40%, rgb(14 15 59 / 0%) 70%, transparent 100%), url('/case-study/payroll-hero.webp');
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;

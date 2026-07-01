@@ -1398,7 +1398,18 @@ export default function AboutPage() {
             </button>
 
             <div className="mc-content">
-              <div key={activeMilestone} className="mc-slide fade-slide-enter-active">
+              {/* Visually hidden semantic list for SEO and Screen Readers */}
+              <div style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: 0 }}>
+                {milestones.map((m, i) => (
+                  <div key={`seo-milestone-${i}`}>
+                    <h3>Milestone {m.year}</h3>
+                    <p>{m.description}</p>
+                  </div>
+                ))}
+              </div>
+              
+              {/* Visible animated slide for users */}
+              <div key={activeMilestone} className="mc-slide fade-slide-enter-active" aria-hidden="true">
                 <div className="mc-badge">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /><circle cx="12" cy="12" r="3" /></svg>
                   {milestones[activeMilestone].year}

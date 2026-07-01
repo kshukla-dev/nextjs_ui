@@ -4,7 +4,13 @@ import type { BlogPost, Category, Tag } from '@/types/blog'
 import { mergeManualBlogPosts, getManualBlogBySlug } from '@/data/manual-blog-posts'
 import { sanityClient } from './sanity'
 
-const API_BASE = (process.env.NEXT_PUBLIC_API_BASE_URL as string | undefined) ?? '/api/v1'
+// This module is server-only ('use server'), so fetches run on the server (incl.
+// at build time) where relative URLs can't be parsed. Default to an absolute base
+// (overridable via env). The next.config `/api/*` rewrite still covers any
+// client-side usage.
+const API_BASE =
+  (process.env.NEXT_PUBLIC_API_BASE_URL as string | undefined) ??
+  'https://jacksonandfrank.com/api/v1'
 const TIMEOUT_MS = 15000
 
 async function getJson<T>(path: string): Promise<T> {

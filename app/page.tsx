@@ -482,10 +482,55 @@ export default function HomePage() {
 .foundations-head {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   margin-bottom: 40px;
   gap: 20px;
   flex-wrap: wrap;
+}
+.foundations-head-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.foundations-tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.foundations-subtitle {
+  font-size: 15px;
+  color: var(--ink-muted);
+  line-height: 1.5;
+  max-width: 420px;
+  margin-top: 8px;
+}
+.foundations-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s;
+}
+.foundations-cta:hover {
+  background: var(--ink);
+  color: #fff;
+}
+.foundations-cta svg {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.2s;
+}
+.foundations-cta:hover svg {
+  transform: translateX(3px);
 }
 .foundations-grid {
   display: grid;
@@ -496,7 +541,7 @@ export default function HomePage() {
   position: relative;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  aspect-ratio: 4 / 5;
+  min-height: 480px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -506,68 +551,111 @@ export default function HomePage() {
   background-size: cover;
   background-position: center;
   isolation: isolate;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .foundation-card::after {
   content: '';
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.9) 100%);
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
-  transition: background 0.3s, backdrop-filter 0.3s;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 15, 50, 0.25) 0%,
+    rgba(10, 15, 50, 0.55) 40%,
+    rgba(10, 15, 50, 0.92) 100%
+  );
+  transition: background 0.3s;
 }
 .foundation-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.25);
 }
 .foundation-card:hover::after {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.95) 100%);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: linear-gradient(
+    180deg,
+    rgba(10, 15, 50, 0.3) 0%,
+    rgba(10, 15, 50, 0.6) 40%,
+    rgba(10, 15, 50, 0.96) 100%
+  );
 }
 .foundation-card-body {
-  max-width: 280px;
+  max-width: 300px;
 }
 .foundation-card-eyebrow {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  background:linear-gradient(135deg, #f39c12 0%, #e67e2296 100%);
+  border-radius: 999px;
+  padding: 7px 14px 7px 7px;
+  box-shadow: 0 4px 14px rgba(243, 156, 18, 0.45);
+}
+.eyebrow-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.eyebrow-icon svg {
+  width: 15px;
+  height: 15px;
+  color: white;
+}
+.eyebrow-text {
   font-size: 10px;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 10px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3;
+  text-shadow: none;
 }
 .foundation-card h3 {
   font-family: var(--serif);
-  font-size: 28px;
+  font-size: 34px;
   line-height: 1.15;
-  font-weight: 400;
-  margin-bottom: 10px;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  font-weight: 500;
+  margin-bottom: 12px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  min-height: 80px;
+  display: flex;
+  align-items: flex-end;
+}
+.card-golden-line {
+  width: 36px;
+  height: 3px;
+  background: linear-gradient(90deg, #f39c12, #f1c40f);
+  border-radius: 2px;
+  margin-bottom: 14px;
+  display: block;
 }
 .foundation-card p {
   font-family: var(--sans);
-  font-size: 14px;
-  line-height: 1.55;
-  color: rgba(255, 255, 255, 0.9);
-  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
 }
 .card-btn {
   align-self: flex-start;
   background: white;
   color: var(--ink);
   border-radius: 999px;
-  padding: 10px 18px;
-  font-size: 13px;
+  padding: 11px 20px;
+  font-size: 13.5px;
   font-weight: 500;
   display: inline-flex;
-  gap: 6px;
+  gap: 8px;
   align-items: center;
-  transition: transform 0.2s, gap 0.2s;
+  transition: gap 0.2s, background 0.2s;
 }
 .foundation-card:hover .card-btn {
-  gap: 10px;
+  gap: 12px;
 }
 
 /* ============================================================
@@ -3179,20 +3267,38 @@ export default function HomePage() {
 
       <section className="section container">
         <div className="foundations-head">
-          <h2 className="section-title">Our <em>services</em></h2>
-          <Link href="/employer-of-record" className="btn-secondary">See all services</Link>
+          <div className="foundations-head-left">
+            <h2 className="section-title">Our <em>services</em></h2>
+            <p className="foundations-subtitle">End-to-end global workforce solutions designed to help businesses hire, manage and grow—anywhere in the world.</p>
+          </div>
+          <Link href="/employer-of-record" className="foundations-cta">
+            See all services
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+          </Link>
         </div>
         <div className="foundations-grid">
-          {topServices.map((service: any) => (
-            <Link key={service.title} href={service.href ?? '/employer-of-record'} className="foundation-card" style={{ backgroundImage: `url('${service.image}')` }}>
-              <div className="foundation-card-body">
-                <span className="foundation-card-eyebrow">{service.subtitle}</span>
-                <h3>{service.title}</h3>
-                <p>{service.description}</p>
-              </div>
-              <span className="card-btn">Learn more <span aria-hidden="true">→</span></span>
-            </Link>
-          ))}
+          {topServices.map((service: any) => {
+            const icons: Record<string, JSX.Element> = {
+              eor: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>,
+              immigration: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>,
+              payroll: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" /></svg>,
+            }
+            const icon = icons[service.id] ?? icons.eor
+            return (
+              <Link key={service.title} href={service.href ?? '/employer-of-record'} className="foundation-card" style={{ backgroundImage: `url('${service.image}')` }}>
+                <div className="foundation-card-body">
+                  <div className="foundation-card-eyebrow">
+                    <span className="eyebrow-icon">{icon}</span>
+                    <span className="eyebrow-text">{service.subtitle}</span>
+                  </div>
+                  <h3>{service.title}</h3>
+                  <span className="card-golden-line" />
+                  <p>{service.description}</p>
+                </div>
+                <span className="card-btn">Learn more <span aria-hidden="true">→</span></span>
+              </Link>
+            )
+          })}
         </div>
       </section>
 

@@ -370,7 +370,7 @@ export default function HomePage() {
     background-position: center;
     background-repeat: no-repeat;
     -webkit-mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
     pointer-events: none;
   }
   .home-hero h1 {

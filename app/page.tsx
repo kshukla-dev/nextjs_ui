@@ -1648,7 +1648,7 @@ export default function HomePage() {
     gap: 40px;
   }
   .intro-blurb {
-    padding: 40px 0 40px;
+    padding: 40px;
     gap: 20px;
   }
   .intro-blurb p {

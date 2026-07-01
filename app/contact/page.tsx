@@ -1291,7 +1291,7 @@ form.was-validated .custom-checkbox input:invalid + .checkmark {
 }
 @media (min-width: 900px) {
   .coming-soon-grid {
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(6, minmax(260px, 1fr));
     gap: 20px;
   }
 }

@@ -1071,6 +1071,9 @@ export default function PressReleasePage() {
     padding: 24px;
     gap: 20px;
   }
+  .speakers-carousel-wrapper {
+    padding: 0;
+  }
   .pr-hero {
     min-height: auto;
     padding: 260px 20px 60px;

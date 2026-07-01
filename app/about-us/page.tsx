@@ -54,7 +54,6 @@ const getCountryImage = (name: string) => {
     'Sweden': '/countries/eor-uk.webp',
     'Hungary': '/countries/eor-czech.webp',
     'Romania': '/countries/eor-poland.webp',
-    'Mexico': '/countries/eor-spain.webp'
   }
   return map[name] || '/countries/eor-spain.webp'
 }
@@ -85,7 +84,6 @@ const getFlag = (name: string) => {
     'Sweden': '🇸🇪',
     'Hungary': '🇭🇺',
     'Romania': '🇷🇴',
-    'Mexico': '🇲🇽'
   }
   return map[name] || '🌍'
 }

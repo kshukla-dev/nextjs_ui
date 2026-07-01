@@ -3666,7 +3666,7 @@ export default function HomePage() {
             <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 8.48 17 12a7 7 0 0 1-6 8Z" />
             <path d="M9 10a5 5 0 0 0 4-4" />
           </svg>
-          <span>Trusted by <strong>2,000+</strong> companies worldwide</span>
+          <span>Trusted by <strong>700+</strong> companies worldwide</span>
           <svg className="laurel-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" style={{ transform: 'scaleX(-1)' }}>
             <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 8.48 17 12a7 7 0 0 1-6 8Z" />
             <path d="M9 10a5 5 0 0 0 4-4" />

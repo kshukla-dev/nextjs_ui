@@ -46,7 +46,7 @@ export default function GlobalCTA({ title }: Props) {
               <span className="cta-eyebrow-line"></span>
             </div>
             <h2>{title}</h2>
-            <p>1,000+ companies use us for international payroll and employment compliance. <br />Most first hires go live in <span className="gold-text">48–72 hours.</span></p>
+            <p>700+ companies use us for international payroll and employment compliance. <br />Most first hires go live in <span className="gold-text">48–72 hours.</span></p>
           </div>
           <div className="cta-feature-grid-redesigned">
             {/* Card 1 */}

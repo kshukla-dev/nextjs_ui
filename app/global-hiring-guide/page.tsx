@@ -43,7 +43,6 @@ export default function GlobalHiringGuidePage() {
       'Sweden': '🇸🇪',
       'Hungary': '🇭🇺',
       'Romania': '🇷🇴',
-      'Mexico': '🇲🇽'
     }
     return map[name] || '🌍'
   }
@@ -86,7 +85,6 @@ export default function GlobalHiringGuidePage() {
       'Sweden': '/countries/eor-uk.webp',
       'Hungary': '/countries/eor-czech.webp',
       'Romania': '/countries/eor-poland.webp',
-      'Mexico': '/countries/eor-spain.webp'
     }
     return map[name] || '/countries/eor-spain.webp'
   }
@@ -1500,7 +1498,7 @@ export default function GlobalHiringGuidePage() {
           <div className="trust-banner">
             <div className="trust-left">
               <span className="trust-tag">TRUSTED BY GLOBAL COMPANIES</span>
-              <h3>Join 500+ companies<br />growing globally</h3>
+              <h3>Join 700+ companies<br />growing globally</h3>
             </div>
             <div className="trust-logos">
               <span className="t-logo klarna">Klarna.</span>

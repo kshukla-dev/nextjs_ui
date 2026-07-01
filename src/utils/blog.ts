@@ -26,11 +26,11 @@ const STAT_CORRECTIONS: ReadonlyArray<{ pattern: RegExp; replacement: string }> 
   // Footer sentence variants - "300+ companies, and 1,000+ employees across 15+ countries"
   {
     pattern: new RegExp(
-      `${S_OPEN}300\\s*\\+\\s*companies${S_CLOSE}\\s*,\\s*and\\s+${S_OPEN}1[,.]?000\\s*\\+\\s*employees${S_CLOSE}\\s+across\\s+${S_OPEN}15\\s*\\+\\s*countries${S_CLOSE}`,
+      `${S_OPEN}700\\s*\\+\\s*companies${S_CLOSE}\\s*,\\s*and\\s+${S_OPEN}1[,.]?000\\s*\\+\\s*employees${S_CLOSE}\\s+across\\s+${S_OPEN}15\\s*\\+\\s*countries${S_CLOSE}`,
       'gi'
     ),
     replacement:
-      '<strong>1,000+ companies</strong>, and <strong>2,000+ employees</strong> across <strong>12+ countries</strong>',
+      '<strong>700+ companies</strong>, and <strong>2,000+ employees</strong> across <strong>12+ countries</strong>',
   },
   {
     pattern: new RegExp(
@@ -38,7 +38,7 @@ const STAT_CORRECTIONS: ReadonlyArray<{ pattern: RegExp; replacement: string }> 
       'gi'
     ),
     replacement:
-      '<strong>1,000+ companies</strong>, and <strong>2,000+ employees</strong> across <strong>12+ countries</strong>',
+      '<strong>700+ companies</strong>, and <strong>2,000+ employees</strong> across <strong>12+ countries</strong>',
   },
   // "Employ talent in 15+ countries through our own offices"
   {

@@ -51,7 +51,7 @@ export default function ContactPage() {
       'Germany': '🇩🇪', 'Italy': '🇮🇹', 'Czech Republic': '🇨🇿', 'France': '🇫🇷',
       'Belgium': '🇧🇪', 'Spain': '🇪🇸', 'UAE': '🇦🇪', 'Hong Kong': '🇭🇰',
       'China': '🇨🇳', 'Portugal': '🇵🇹', 'Sweden': '🇸🇪', 'Hungary': '🇭🇺',
-      'Romania': '🇷🇴', 'Mexico': '🇲🇽', 'Singapore': '🇸🇬', 'United States': '🇺🇸',
+      'Romania': '🇷🇴', 'Singapore': '🇸🇬', 'United States': '🇺🇸',
       'New York': '🇺🇸', 'Australia': '🇦🇺'
     }
     return map[name] || '🌍'
@@ -452,7 +452,7 @@ export default function ContactPage() {
           
           <div className="stats-overlay-card">
             <span className="operating-label">Operating in</span>
-            <div className="countries-count">80+</div>
+            <div className="countries-count">160+</div>
             <span className="countries-label">countries</span>
             <p className="desc">Supporting companies worldwide with local expertise.</p>
           </div>

@@ -25,7 +25,7 @@ export default function PressReleasePage() {
     const totalLength = speakersLength * 3
     if (index >= 0 && index < totalLength) {
       setActiveIndex(index)
-      
+
       // 1. Smooth scroll to the targeted item
       setTimeout(() => {
         const track = carouselRef.current
@@ -36,7 +36,7 @@ export default function PressReleasePage() {
             const offsetLeft = activeCard.offsetLeft
             const trackWidth = track.clientWidth
             const cardWidth = activeCard.clientWidth
-            
+
             track.scrollTo({
               left: offsetLeft - (trackWidth / 2) + (cardWidth / 2),
               behavior: 'smooth'
@@ -50,7 +50,7 @@ export default function PressReleasePage() {
         const track = carouselRef.current
         if (track) {
           const cards = track.querySelectorAll('.sp-card-new')
-          
+
           let newIndex = index
           // If we scrolled into the first copy, jump instantly to the middle copy
           if (index < speakersLength) {
@@ -1105,7 +1105,9 @@ export default function PressReleasePage() {
 
 /* --- ARTICLE BODY --- */
 .pr-speakers-section {
-  padding-bottom: 20px !important;
+      padding-top: 80px;
+    padding-bottom: 80px;
+    padding-inline: clamp(32px, 8vw, 96px);
 }
 .pr-article-body {
   padding: 40px 20px 60px;
@@ -1272,11 +1274,11 @@ export default function PressReleasePage() {
         <div className="pr-hero-inner container">
           {/* Left side */}
           <div className="pr-hero-copy">
-           <h1 className="pr-hero-title">China to Europe 2026:<br/><span className="gold-text">Scaling Beyond Borders</span></h1>
+            <h1 className="pr-hero-title">China to Europe 2026:<br /><span className="gold-text">Scaling Beyond Borders</span></h1>
             <p className="pr-hero-desc">
               A one-day exclusive event bringing together business leaders, investors, and experts to explore opportunities, navigate complexities, and scale your business from China to Europe.
             </p>
-            
+
             <div className="pr-details-grid">
               <div className="pr-detail-item">
                 <div className="pr-detail-icon">
@@ -1288,7 +1290,7 @@ export default function PressReleasePage() {
                   <span>9:00 AM - 5:30 PM</span>
                 </div>
               </div>
-              
+
               <div className="pr-detail-item">
                 <div className="pr-detail-icon">
                   {/* Pin icon */}
@@ -1318,7 +1320,7 @@ export default function PressReleasePage() {
               </Link>
             </div>
           </div>
-          
+
           {/* Right side */}
           <div className="pr-hero-visual">
             <img src="/case-study/china-europe.png" alt="China to Europe 2026 event" />
@@ -1380,7 +1382,7 @@ export default function PressReleasePage() {
             <button className="carousel-arrow prev" onClick={scrollLeft} aria-label="Previous Slide">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
             </button>
-            
+
             <div className="speakers-carousel-track" ref={carouselRef}>
               {displayedSpeakers.map((sp, idx) => (
                 <div key={idx} className={`sp-card-new ${sp.featured ? 'featured-card' : ''}`} onClick={() => selectSpeaker(idx)}>
@@ -1397,7 +1399,7 @@ export default function PressReleasePage() {
                         <h3 className="sp-name">{sp.name}</h3>
                         <p className="sp-role-comp">{sp.role}</p>
                         <p className="sp-company-name">{sp.company}</p>
-                        
+
                         <div className="sp-meta-row">
                           <span className="sp-meta-item">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="meta-icon"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
@@ -1443,7 +1445,7 @@ export default function PressReleasePage() {
                         <h3 className="sp-name">{sp.name}</h3>
                         <p className="sp-role-comp">{sp.role}</p>
                         <p className="sp-company-name">{sp.company}</p>
-                        
+
                         <div className="sp-meta-row">
                           <span className="sp-meta-item">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="meta-icon"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
@@ -1491,10 +1493,10 @@ export default function PressReleasePage() {
               <span className="pr-section-num">01</span>
               <h2>Setting the Stage</h2>
             </div>
-            
+
             <p>The forum opened with a keynote address by Pawel Michalkiewicz, Managing Partner of Jackson &amp; Frank, who framed the European expansion challenge through a navigation analogy drawn from his time in Dubai. In a city of constantly shifting roads and overnight construction, digital maps routinely fail to keep pace with physical reality. The lesson for companies entering Europe is identical: platforms and automation are essential tools, but local knowledge and human judgement remain indispensable.</p>
             <p>Michalkiewicz outlined a three-stage framework — Plan, Set Up, Scale — and was direct about where most companies go wrong. Mistakes made at the planning stage typically cost three times as much to correct later. He highlighted five pain points consistently reported by Chinese CEOs: geopolitical and market-access risk, regulatory complexity, supply-chain pressure, the need for genuine localisation, and talent capability. &quot;HR strategy is rarely the headline,&quot; he acknowledged, &quot;but it is the system that prevents friction, delays, and risk.&quot;</p>
-            
+
             <figure className="pr-figure">
               <img src="/case-study/pawel-speech.avif" alt="Pawel Michalkiewicz presenting" />
               <figcaption>Pawel Michalkiewicz, Managing Partner, Jackson &amp; Frank, presenting the Plan, Set Up, Scale framework.</figcaption>
@@ -1517,10 +1519,10 @@ export default function PressReleasePage() {
               <span className="pr-section-num">02</span>
               <h2>The Netherlands as Safe Harbour</h2>
             </div>
-            
+
             <p>Xin Shi, Partner and Head of the China Desk at AMICE Advocaten, drew on a decade of experience advising Chinese clients to walk attendees through the practicalities of establishing a Dutch B.V. entity. The Netherlands has become a well-established gateway into the EU for Chinese companies, and Shi explained why: the incorporation process is more flexible and smoother than in most other EU member states, though it demands attention to sequencing. The civil notary is the central institution in the process; shareholder composition, director BSN (Burgerservicenummer) requirements, and documentation must all be in order before the procedure can advance. A typical timeline runs between two and six weeks.</p>
             <p>Shi walked through the ecosystem of advisers required for a successful setup, covering the respective roles of the notary, tax adviser, and accountant. He also addressed the most common blockers: obtaining a Dutch address, securing the director&apos;s residency permit or citizenship documentation, and the downstream consequences these have on IBAN and VAT registration. His closing point was unambiguous: incorporation is the beginning of governance, not the conclusion of it.</p>
-            
+
             <figure className="pr-figure">
               <img src="/case-study/xin-shi-speech.avif" alt="Xin Shi presenting" />
               <figcaption>Xin Shi, Partner, AMICE Advocaten, on establishing a Dutch B.V. and the key blockers to resolve.</figcaption>
@@ -1538,10 +1540,10 @@ export default function PressReleasePage() {
               <span className="pr-section-num">03</span>
               <h2>Tax: Structure Must Match Reality</h2>
             </div>
-            
+
             <p>Paul Halprin, attorney at law and founder of Halprin Law, focused his session on the three areas that generate the most costly surprises for Chinese companies in Europe: unintended corporate tax exposure, withholding tax leakage on cross-border payments, and transfer pricing disputes. His central argument was that most tax mistakes are not caused by high rates; they result from a failure to plan before operations begin.</p>
             <p>Halprin identified four recurring pitfalls. First, local sales teams that effectively close deals in Europe while contracts are nominally signed in China, creating taxable presence. Second, European entities that exist on paper while all decision-making remains at headquarters, making treaty benefits impossible to defend. Third, cash repatriation routes that have not been mapped in advance, resulting in unexpected withholding tax costs. Fourth, intercompany charges that cannot survive scrutiny because the narrative and the numbers are inconsistent. His practical guidance centred on three disciplines: mapping where value is actually created, ensuring that legal structure matches operational reality, and setting clear authority matrices that define who negotiates, approves, and signs. &quot;Tax follows the business,&quot; he concluded. &quot;People, contracts, decisions, and cash routes need to align with a structure that is credible and real.&quot;</p>
-            
+
             <figure className="pr-figure">
               <img src="/case-study/paul-harpin.avif" alt="Paul Halprin presenting" />
               <figcaption>Paul Halprin, Founder, Halprin Law, on permanent establishment risk and cross-border tax planning.</figcaption>
@@ -1559,10 +1561,10 @@ export default function PressReleasePage() {
               <span className="pr-section-num">04</span>
               <h2>Legal Risk: Investment Screening and Competition Law</h2>
             </div>
-            
+
             <p>Martijn van de Hel, Founding Partner of Maverick Advocaten, examined the two EU regulatory frameworks that Chinese investors most frequently underestimate: the Foreign Direct Investment screening regime and the EU Foreign Subsidies Regulation. He explained the thresholds at which each applies and used the 2026 Kyndryl/Solvinity case as a live illustration. In that transaction, the Dutch Competition Authority cleared the acquisition of a Dutch IT supplier, yet the Investment Screening Bureau opened a separate investigation on grounds of sensitive technology and national security. The case demonstrated that regulatory clearance from one authority provides no guarantee of clearance from another.</p>
             <p>Van de Hel also addressed an area of growing enforcement focus that receives less attention in boardroom discussions: the application of EU competition law to human resources practices. Agreements between companies on compensation levels, hiring restrictions, or non-compete arrangements can constitute cartel conduct under EU rules, regardless of whether they are formal or informal. The 2025 European Commission decision imposing a combined fine of 329 million euros on Delivery Hero and Glovo for labour market cartel conduct was cited as a landmark signal of enforcement direction. Potential penalties reach ten percent of global annual turnover.</p>
-            
+
             <figure className="pr-figure">
               <img src="/case-study/Foreign.avif" alt="Martijn van de Hel presenting on EU investment screening" />
               <figcaption>Martijn van de Hel, Maverick Advocaten, on EU FDI screening and the Foreign Subsidies Regulation.</figcaption>
@@ -1575,22 +1577,22 @@ export default function PressReleasePage() {
               <span className="pr-section-num">05</span>
               <h2>Panel Discussion: Confronting the Real Challenges</h2>
             </div>
-            
+
             <p>The forum concluded with a structured panel discussion in which all seven speakers addressed the five pain points identified at the outset of the programme. The discussion brought together perspectives spanning legal practice, tax law, human resources, intellectual property, and academic research, with questions submitted by the audience driving the agenda.</p>
             <p>Professor Kai Yao of Fudan University&apos;s School of Management observed that talent strategies for overseas expansion are evolving toward an ecosystem model, with companies placing increasingly high demands on the cross-functional capability of individuals deployed internationally. Jacqueline Chen, Partner at Ferrante IP, emphasised that intellectual property protection must be treated as a parallel workstream to market entry, not a subsequent consideration. Questions from attendees ranged from the mechanics of setting up a collective pension scheme in the Netherlands for a small headcount, to the legal boundaries on end-client authority to terminate employment agreements, to the enforceability of non-compete clauses across EU jurisdictions. The consensus among panellists was consistent: there are no universal answers, but there are replicable methodologies, and the companies that succeed are those that build a structured, country-specific action plan before they need one.</p>
-            
+
             <figure className="pr-figure">
               <img src="/case-study/panel-discussion.avif" alt="Panel discussion on stage" />
               <figcaption>The full expert panel assembled for the open discussion segment.</figcaption>
             </figure>
 
             <p>The event drew sustained engagement from attendees, many of whom remained to continue discussions with speakers after the formal programme closed. Catrina Yang, Executive Director of Jackson &amp; Frank Greater China, observed that the day&apos;s consistent theme was the shift from reactive compliance to proactive planning, and that this shift is what separates companies that struggle in Europe from those that scale with confidence.</p>
-            
+
             <figure className="pr-figure">
               <img src="/case-study/networking.avif" alt="Attendees networking at the event" />
               <figcaption>Delegates networking during the event.</figcaption>
             </figure>
-            
+
             <p>Jackson &amp; Frank will continue its China-to-Europe forum series through 2026, with future events addressing sector-specific expansion challenges and country-level market entry considerations. Chinese enterprises planning European expansion are welcome to contact the Jackson &amp; Frank team directly.</p>
           </div>
 

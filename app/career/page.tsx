@@ -70,6 +70,7 @@ export default function CareerPage() {
 .careers-hero .service-hero-copy {
   max-width: 720px;
   animation: fade-slide-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  padding-top: 8vh;
 }
 
 @keyframes fade-slide-up {

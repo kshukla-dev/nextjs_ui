@@ -155,7 +155,7 @@ export default function GlobalHiringGuidePage() {
   color: #ffffff;
   min-height: 700px;
   overflow: hidden;
-  padding: 88px 0 96px;
+  padding: 0px;
 }
 
 .ghg-hero::before {
@@ -222,7 +222,7 @@ export default function GlobalHiringGuidePage() {
   line-height: 1.1;
   
   color: #ffffff;
-  margin-bottom: 24px;
+  margin: 24px 0px;
 }
 
 .hero-title em {
@@ -1110,7 +1110,7 @@ export default function GlobalHiringGuidePage() {
 }
 @media (max-width: 1280px) {
   .ghg-hero {
-    background-size: 90% auto;
+    background-size: 100% auto;
     background-position: right -15% center;
   }
 }

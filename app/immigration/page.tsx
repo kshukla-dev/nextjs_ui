@@ -1,12 +1,23 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import Link from 'next/link'
 import GlobalCTA from '@/components/sections/GlobalCTA'
 import immigration from '@/data/immigration.json'
 
 export default function ImmigrationPage() {
   const [openFaq, setOpenFaq] = useState(0)
+  const processScrollRef = useRef<HTMLDivElement>(null)
+
+  const scrollProcess = (direction: 'left' | 'right') => {
+    if (processScrollRef.current) {
+      const scrollAmount = 384; // Card width + gap
+      processScrollRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  }
 
   function toggleFaq(i: number) {
     setOpenFaq(prev => prev === i ? -1 : i)
@@ -93,75 +104,134 @@ export default function ImmigrationPage() {
 }
 
 .how-grid-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 24px;
+  padding: 10px 10px 30px;
+  margin: -10px -10px 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.how-grid-4::-webkit-scrollbar {
+  display: none;
+}
+.how-grid-4 > .how-card {
+  width: 360px;
+  max-width: 85vw;
+  flex-shrink: 0;
+  scroll-snap-align: start;
 }
 .how-card {
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid rgba(9, 64, 123, 0.14);
-  border-radius: var(--radius-lg);
+  background: #ffffff;
+  border: 1px solid rgba(9, 64, 123, 0.08);
+  border-radius: 16px;
   padding: 34px 32px;
-  box-shadow: 0 18px 40px rgba(9, 64, 123, 0.08);
+  box-shadow: none;
   position: relative;
   overflow: hidden;
-  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
   height: 100%;
+  opacity: 1;
 }
-.how-card:hover {
-  transform: translateY(-3px);
+.how-grid-4:hover .how-card {
+  opacity: 0.4;
+  transform: scale(0.98);
+}
+.how-grid-4 .how-card:hover {
+  opacity: 1;
+  transform: scale(1.05) translateY(-4px);
   box-shadow: 0 24px 48px rgba(9, 64, 123, 0.12);
+  border-color: #1e3a8a; /* strong blue border */
+  z-index: 10;
 }
-.how-card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  left: auto;
-  width: 6px;
-  background: linear-gradient(180deg, var(--accent), #7FCDEE);
-  border-radius: 999px;
+.how-card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
 }
 .how-card-num {
-  position: relative;
-  z-index: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  background: var(--bg);
+  background: rgba(9, 64, 123, 0.06);
   color: var(--accent);
   font-family: var(--serif);
   font-style: italic;
   font-size: 20px;
-  margin-bottom: 18px;
+  flex-shrink: 0;
+  transition: all 0.4s ease;
+}
+.how-card:hover .how-card-num {
+  background: #1e3a8a;
+  color: #fff;
 }
 .how-card h3 {
   font-family: var(--serif);
   font-size: 22px;
-  font-weight: 400;
-  margin-bottom: 12px;
+  font-weight: 500;
+  margin: 0;
   color: var(--ink);
-  position: relative;
-  z-index: 1;
 }
 .how-card p {
   font-size: 14px;
   color: var(--ink-soft);
   line-height: 1.75;
-  margin-bottom: 18px;
-  position: relative;
-  z-index: 1;
-  flex-grow: 1;
+  margin-bottom: 24px;
+}
+.how-card-badge {
+  margin-top: auto;
+  background: #f4f7fa;
+  border-radius: 8px;
+  padding: 16px;
+  transition: all 0.4s ease;
+}
+.how-card:hover .how-card-badge {
+  background: #eef2f6;
+}
+.carousel-nav {
+  display: none;
+}
+.carousel-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(9, 64, 123, 0.14);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(9, 64, 123, 0.05);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+}
+.carousel-btn.arrow-left {
+  left: -24px;
+}
+.carousel-btn.arrow-right {
+  right: -24px;
+}
+.carousel-btn:hover {
+  background: #f4f7fa;
+  border-color: rgba(9, 64, 123, 0.25);
 }
 .how-card ul {
   list-style: none;
   padding: 0;
   display: grid;
   gap: 10px;
-  position: relative;
-  z-index: 1;
+  margin: 0;
 }
 .how-card li {
   font-size: 13px;
@@ -173,9 +243,9 @@ export default function ImmigrationPage() {
   content: '•';
   position: absolute;
   left: 0;
-  top: 3px;
+  top: 2px;
   color: var(--accent);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* EOR bridge */
@@ -651,19 +721,32 @@ export default function ImmigrationPage() {
             </p>
           )}
         </div>
-        <div className="how-grid how-grid-4">
+        <div style={{ position: 'relative' }}>
+          <button onClick={() => scrollProcess('left')} className="carousel-btn arrow-left" aria-label="Previous">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <button onClick={() => scrollProcess('right')} className="carousel-btn arrow-right" aria-label="Next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+          
+          <div className="how-grid how-grid-4" ref={processScrollRef}>
           {immigration.process.steps.map((step: any) => (
             <div key={step.number} className="how-card">
-              <span className="how-card-num">0{step.number}</span>
-              <h3>{step.title}</h3>
+              <div className="how-card-header">
+                <span className="how-card-num">0{step.number}</span>
+                <h3>{step.title}</h3>
+              </div>
               <p>{step.description}</p>
-              <ul>
-                {step.details.map((d: string) => (
-                  <li key={d}>{d}</li>
-                ))}
-              </ul>
+              <div className="how-card-badge">
+                <ul>
+                  {step.details.map((d: string) => (
+                    <li key={d}>{d}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
           ))}
+        </div>
         </div>
       </section>
 

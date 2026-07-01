@@ -67,7 +67,7 @@ export default function AdvantagesPage() {
         .advantages-hero .trust-text{color:rgba(255,255,255,0.8)}
         .advantages-hero .avatar{border-color:#fdfbf7;box-shadow:0 10px 20px rgba(0,0,0,0.08)}
         @media(max-width:1440px){.advantages-hero{background-size:65% auto}}
-        @media(max-width:1280px){.advantages-hero{background-size:75% auto;background-position:right -5% center}}
+        @media(max-width:1280px){.advantages-hero{background-size:85% auto;background-position:right -5% center}}
         @media(max-width:1024px){.advantages-hero{background-size:85% auto;background-position:right -15% center}}
         @media(max-width:960px){.advantages-hero{padding:72px 24px 72px;background-size:100% auto;background-position:top 20% center}}
         @media(max-width:640px){.advantages-hero{min-height:auto;padding:260px 20px 60px;background-image:none;background-color:#0E0F3B}.advantages-hero::before{content:'';position:absolute;top:0;left:0;right:0;height:280px;background-image:url(/services/service-page/advantages.png);background-size:cover;background-position:center;background-repeat:no-repeat;-webkit-mask-image:linear-gradient(to bottom,black 55%,transparent 100%);mask-image:linear-gradient(to bottom,black 55%,transparent 100%);pointer-events:none}.advantages-hero-inner{padding-left:0;padding-right:0}.advantages-hero .service-hero-copy h1{font-size:clamp(36px,8vw,48px)}.advantages-hero .cta-row{flex-direction:column;gap:16px}.advantages-hero .btn-primary,.advantages-hero .btn-secondary{width:100%;justify-content:center}}

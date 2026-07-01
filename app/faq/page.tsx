@@ -61,7 +61,9 @@ export default function FaqPage() {
                 aria-expanded={openFaq === i}
               >
                 <span className="faq-q">{item.question}</span>
-                <span className="faq-toggle" aria-hidden="true">{openFaq === i ? '−' : '+'}</span>
+                <span className="faq-toggle-circle" aria-hidden="true" style={{ transform: openFaq === i ? 'rotate(180deg)' : 'rotate(0deg)' }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </span>
                 {openFaq === i && <p className="faq-a">{item.answer}</p>}
               </button>
             ))}

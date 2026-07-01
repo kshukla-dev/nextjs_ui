@@ -1538,7 +1538,7 @@ export default function HomePage() {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   background: transparent;
   font-family: var(--sans);

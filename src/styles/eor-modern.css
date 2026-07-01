@@ -442,7 +442,9 @@
 }
 
 .faq-item {
-  display: block !important;
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: flex-start;
   border-bottom: 1px solid #6b728078;
 }
 

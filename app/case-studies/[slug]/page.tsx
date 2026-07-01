@@ -1720,7 +1720,9 @@ export default function CaseStudyDetailPage() {
                         aria-expanded={activeFaq === index}
                       >
                         <span className="faq-q">{item.question}</span>
-                        <span className="faq-toggle" aria-hidden>{activeFaq === index ? '−' : '+'}</span>
+                        <span className="faq-toggle-circle" aria-hidden="true" style={{ transform: activeFaq === index ? 'rotate(180deg)' : 'rotate(0deg)' }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </span>
                         <p style={{ display: activeFaq === index ? 'block' : 'none' }} className="faq-a" dangerouslySetInnerHTML={{ __html: parseMd(item.answer) }}></p>
                       </button>
                     ))}

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { fetchAllBlogs } from '@/services/blog'
 
 export const metadata: Metadata = {
   title: 'Sitemap',
@@ -81,7 +82,15 @@ const groups = [
   },
 ]
 
-export default function SitemapPage() {
+export default async function SitemapPage() {
+  const blogs = await fetchAllBlogs()
+  const blogLinks = blogs
+    .filter((blog) => blog?.slug && typeof blog.slug === 'string')
+    .map((blog) => ({
+      label: blog.title || blog.slug,
+      to: `/blog/${blog.slug}`,
+    }))
+
   return (
     <>
       <style>{`
@@ -92,6 +101,11 @@ export default function SitemapPage() {
         .sm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
         .sm-group h2{font-family:var(--serif);font-size:22px;margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid var(--border)}
         .sm-group ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:10px}
+        .sm-group ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:10px}
+        .blog-links{list-style:none;padding:0;display:flex;flex-direction:column;gap:10px}
+        .blog-links li{margin-left:0}
+        .blog-links a{font-size:13px;color:var(--ink-muted);transition:color 0.2s,padding-left 0.2s}
+        .blog-links a:hover{color:var(--accent);padding-left:4px}
         .sm-group a{font-size:14px;color:var(--ink-soft);transition:color 0.2s,padding-left 0.2s}
         .sm-group a:hover{color:var(--accent);padding-left:4px}
         @media(max-width:900px){.sm-grid{grid-template-columns:1fr 1fr}}
@@ -119,6 +133,21 @@ export default function SitemapPage() {
           ))}
         </div>
       </section>
+
+      {blogLinks.length > 0 && (
+        <section className="section container">
+          <div className="sm-group">
+            <h2>Blog posts</h2>
+            <ul className="blog-links">
+              {blogLinks.map((blog) => (
+                <li key={blog.to}>
+                  <Link href={blog.to}>{blog.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
     </>
   )
 }

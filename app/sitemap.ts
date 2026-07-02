@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 import { SITE_CONFIG } from '@/lib/constants'
 import { fetchAllBlogs } from '@/services/blog'
-import { COUNTRY_CONFIG } from '@/data/country-config'
+
 import caseStudiesData from '@/data/case-studies.json'
 
 // Static routes that exist as real pages in this repo.
@@ -28,9 +28,32 @@ const STATIC_ROUTES = [
   '/resources/events/china-europe-2026',
 ]
 
-// Country + contractor pages are served by the dynamic [country] route;
-// derive their slugs from the single source of truth.
-const COUNTRY_ROUTES = Object.keys(COUNTRY_CONFIG).map((slug) => `/${slug}`)
+const COUNTRY_ROUTES = [
+  '/united-kingdom',
+  '/poland',
+  '/germany',
+  '/italy',
+  '/india',
+  '/czech-republic',
+  '/france',
+  '/belgium',
+  '/spain',
+  '/uae',
+  '/netherlands',
+  '/china',
+  '/hong-kong',
+  '/netherlands-contractor',
+  '/united-kingdom-contractor',
+  '/poland-contractor',
+  '/germany-contractor',
+  '/italy-contractor',
+  '/india-contractor',
+  '/czech-republic-contractor',
+  '/france-contractor',
+  '/belgium-contractor',
+  '/spain-contractor',
+  '/uae-contractor',
+]
 
 const INSIGHT_INDEX = new Set(['/blog', '/case-studies', '/global-hiring-guide', '/events'])
 

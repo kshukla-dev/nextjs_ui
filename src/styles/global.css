@@ -1,3 +1,7 @@
+@import "tailwindcss";
+@source "../../app";
+@source "../../src";
+
 /* ============================================================
    jf-vue global styles - Halden Miller aesthetic, JF content.
    Deep Navy, Royal Blue, Sky Blue, Orange, White brand theme.
@@ -24,6 +28,10 @@
   --radius-lg: 22px;
   --serif: 'DM Serif Display', serif;
   --sans: 'DM Sans', sans-serif;
+
+  /* Tailwind v4 color tokens */
+  --color-primary: #09407B;
+  --color-secondary: #F7931E;
 }
 
 * {
@@ -290,4 +298,23 @@ small,
   --dark: #090A22;
   --dark-soft: #09407B;
   --border: #1d216d;
+}
+/* === EOR country page section spacing === */
+.eor-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+@media (min-width: 768px) {
+  .eor-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .eor-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
 }

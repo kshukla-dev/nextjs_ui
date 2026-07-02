@@ -399,28 +399,9 @@ export default function BlogPage() {
 }
 
 /* FAQ Typography Standardizations */
-.faq-toggle-circle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  border: 1px solid var(--border);
-  color: var(--ink-muted);
-  flex-shrink: 0;
-  margin-left: auto;
-  transition: color 0.3s, border-color 0.3s;
-}
-
-.faq-item.open .faq-toggle-circle {
-  color: var(--accent);
-  border-color: var(--accent);
-}
-
 .faq-q {
   font-family: var(--sans);
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.3;
   color: var(--ink);
@@ -429,8 +410,15 @@ export default function BlogPage() {
 .faq-item.open .faq-q {
   color: var(--accent);
 }
-
-.faq-item.open 
+.faq-toggle {
+  font-size: 24px;
+  color: var(--ink-muted);
+  line-height: 1;
+  transition: color 0.2s;
+}
+.faq-item.open .faq-toggle {
+  color: var(--accent);
+}
 .faq-a {
   grid-column: 1 / -1;
   margin-top: 14px;
@@ -986,7 +974,7 @@ export default function BlogPage() {
 }
 .faq-q {
   font-family: var(--serif);
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.3;
   color: var(--ink);
   transition: color 0.2s, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
@@ -998,8 +986,15 @@ export default function BlogPage() {
 .faq-item.open .faq-q {
   color: var(--accent);
 }
-
-.faq-item.open 
+.faq-toggle {
+  font-size: 24px;
+  color: var(--ink-muted);
+  line-height: 1;
+  transition: color 0.2s;
+}
+.faq-item.open .faq-toggle {
+  color: var(--accent);
+}
 .faq-a {
   grid-column: 1 / -1;
   margin-top: 14px;
@@ -1335,9 +1330,7 @@ export default function BlogPage() {
                   aria-expanded={openFaq === i}
                 >
                   <span className="faq-q">{faq.question}</span>
-                  <span className="faq-toggle-circle" aria-hidden="true" style={{ transform: openFaq === i ? 'rotate(180deg)' : 'rotate(0deg)' }}>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                </span>
+                  <span className="faq-toggle">{openFaq === i ? '−' : '+'}</span>
                   <p style={{ display: openFaq === i ? 'block' : 'none' }} className="faq-a">{faq.answer}</p>
                 </button>
               ))}

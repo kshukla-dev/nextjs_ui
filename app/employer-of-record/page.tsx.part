@@ -491,7 +491,7 @@ export default function EORPage() {
 
       <section className="eor-section eor-container">
         <div className="eor-audience-header">
-          <h2>Employer of Record vs PEO, and payroll outsourcing</h2>
+          <h2>Employer of Record vs PEO, and Payroll Outsourcing</h2>
           <p style={{ marginTop: '12px', color: 'var(--gh-on-surface-variant)', fontSize: '18px', maxWidth: '600px', marginInline: 'auto' }}>Same talent goal, different legal setups. Use this to see when Employer of Record fits global hiring without a local company.</p>
         </div>
         <div className="eor-audience-grid">

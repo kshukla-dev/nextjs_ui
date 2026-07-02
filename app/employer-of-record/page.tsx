@@ -682,7 +682,7 @@ export default function EORPage() {
             <div className="ect-row">
               <div className="ect-label">Upfront cost</div>
               <div className="ect-col eor-col"><span className="ect-good">✓ No setup fees</span></div>
-              <div className="ect-col entity-col"><span className="ect-bad">✗ $20,000–$50,000+</span></div>
+              <div className="ect-col entity-col"><span className="ect-bad">✗ €20,000–€50,000+</span></div>
             </div>
             <div className="ect-row">
               <div className="ect-label">Local entity required</div>
@@ -710,7 +710,7 @@ export default function EORPage() {
 
       <section className="eor-section eor-container">
         <div className="eor-audience-header">
-          <h2>Employer of Record vs PEO, and payroll outsourcing</h2>
+          <h2>Employer of Record vs PEO, and Payroll Outsourcing</h2>
           <p style={{ marginTop: '12px', color: 'var(--gh-on-surface-variant)', fontSize: '18px', maxWidth: '600px', marginInline: 'auto' }}>Same talent goal, different legal setups. Use this to see when Employer of Record fits global hiring without a local company.</p>
         </div>
         <div className="eor-audience-grid">

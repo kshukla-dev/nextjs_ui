@@ -1460,6 +1460,201 @@ form.was-validated .custom-checkbox input:invalid + .checkmark {
   cursor: pointer;
   font-family: inherit;
   width: 100%;
+}
+}
+
+/* COMING SOON SECTION */
+.coming-soon-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+.coming-soon-title {
+  color: #0E0F3B;
+  font-size: clamp(22px, 4vw, 32px);
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.coming-soon-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+@media (min-width: 580px) {
+  .coming-soon-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .coming-soon-grid {
+    grid-template-columns: repeat(6, minmax(260px, 1fr));
+    gap: 20px;
+  }
+}
+.coming-soon-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  color: #fff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  min-height: 240px;
+}
+.cs-bg-image {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  transition: transform 0.4s ease;
+}
+.cs-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to bottom, rgba(71, 85, 105, 0.95), rgba(51, 65, 85, 0.98));
+  z-index: 1;
+  transition: background 0.4s ease, opacity 0.4s ease;
+}
+.coming-soon-card:hover .cs-bg-image {
+  transform: scale(1.05);
+}
+.coming-soon-card:hover .cs-overlay {
+  background: linear-gradient(to bottom, rgba(15, 23, 42, 0.2), rgba(15, 23, 42, 0.8));
+}
+.cs-card-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.cs-country-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.cs-icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 8px;
+}
+.cs-icon-wrap svg {
+  width: 16px;
+  height: 16px;
+}
+.cs-country-name {
+  font-size: 20px;
+  font-weight: 600;
+}
+.cs-desc {
+  font-size: 14px;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.5;
+  flex-grow: 1;
+}
+.cs-contact-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.cs-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.2);
+  font-weight: 600;
+  font-size: 14px;
+  z-index: 3;
+  white-space: nowrap;
+  backdrop-filter: blur(4px);
+  opacity: 1;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+.coming-soon-card:hover .cs-badge {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.learn-more-link {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 16px;
+  width: 100%;
+}
+.learn-more-link span {
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+}
+
+/* ============= FAQ ============= */
+.faq-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.faq-block {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+}
+@media (max-width: 900px) {
+  .faq-block {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+.faq-head .section-title {
+  font-family: var(--serif);
+  font-size: clamp(22px, 4vw, 32px);
+  color: var(--ink);
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+.faq-head .section-lead {
+  font-size: 16px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+.faq-list {
+  display: flex;
+  flex-direction: column;
+}
+.faq-item {
+  text-align: left;
+  background: transparent;
+  border: none;
+  border-top: 1px solid var(--border);
+  display: block;
+  cursor: pointer;
+  font-family: inherit;
+  width: 100%;
   padding: 20px 0;
 }
 .faq-item:last-child {
@@ -1467,10 +1662,30 @@ form.was-validated .custom-checkbox input:invalid + .checkmark {
 }
 .faq-q-row {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
+  width: 100%;
   gap: 16px;
 }
+.faq-toggle-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  color: var(--ink-muted);
+  flex-shrink: 0;
+  margin-left: auto;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.faq-item.open .faq-toggle-circle {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
 .faq-q {
   font-family: var(--serif);
   font-size: clamp(17px, 3vw, 22px);
@@ -1485,16 +1700,8 @@ form.was-validated .custom-checkbox input:invalid + .checkmark {
 .faq-item.open .faq-q {
   color: var(--accent);
 }
-.faq-toggle {
-  font-size: 24px;
-  color: var(--ink-muted);
-  line-height: 1;
-  flex-shrink: 0;
-  transition: color 0.2s;
-}
-.faq-item.open .faq-toggle {
-  color: var(--accent);
-}
+
+.faq-item.open 
 .faq-a {
   margin-top: 14px;
   font-size: 15px;
@@ -1816,7 +2023,9 @@ form.was-validated .custom-checkbox input:invalid + .checkmark {
               >
                 <div className="faq-q-row">
                   <span className="faq-q">{item.question}</span>
-                  <span className="faq-toggle" aria-hidden>{openFaq === i ? '−' : '+'}</span>
+                  <span className="faq-toggle-circle" aria-hidden="true" style={{ transform: openFaq === i ? 'rotate(180deg)' : 'rotate(0deg)' }}>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </span>
                 </div>
                 {openFaq === i && <p className="faq-a">{item.answer}</p>}
               </button>

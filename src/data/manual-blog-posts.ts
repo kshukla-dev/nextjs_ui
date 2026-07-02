@@ -189,7 +189,7 @@ const nlPublicHolidays2026Content = `
 <h2>What this means for international employers</h2>
 <p>If you employ people based in the Netherlands (for example from the UK, US, or elsewhere in the EU), Dutch employment law applies in full, including CAO rules where they bind your sector.</p>
 <p>Roughly <strong>80% of Dutch employees</strong> work under a sector-specific CAO. Without knowing which CAO applies, you cannot determine actual public-holiday entitlement, substitute-day rules, or overtime treatment. The Boxing Day Saturday case is a typical year-end edge case to plan for.</p>
-<p>Companies without a Dutch legal entity often use an <strong>Employer of Record (EOR)</strong> or outsourced payroll to stay aligned with CAO requirements, <em>vakantiegeld</em>, and the holiday calendar. For context on hiring without your own entity, see our guide on <a href="/blog/hire-in-the-netherlands-without-an-entity-eor-netherlands">hiring in the Netherlands with an EOR</a>.</p>
+<p>Companies without a Dutch legal entity often use an <strong>Employer of Record (EOR)</strong> or outsourced payroll to stay aligned with CAO requirements, <em>vakantiegeld</em>, and the holiday calendar. For context on hiring without your own entity, see our guide on <a href="/netherlands">hiring in the Netherlands with an EOR</a>.</p>
 
 <div class="highlight">
 <p><strong>Hiring in the Netherlands?</strong></p>
@@ -601,14 +601,14 @@ const peTrapBlogContent = `
 </div>
 
 <h2>The 183 day myth: Why day counting alone fails</h2>
-<p>Here's a scenario that plays out more often than you'd think. Your VP of Sales spends two weeks working from a rented apartment in Lisbon. She takes a few client calls, signs off on a partnership agreement, and flies home. No big deal, right? She was there for 10 days well under the magic 183 day number. This type of cross border setup often appears alongside broader <a href="/blog/global hr solutions">global HR structuring decisions</a>.</p>
+<p>Here's a scenario that plays out more often than you'd think. Your VP of Sales spends two weeks working from a rented apartment in Lisbon. She takes a few client calls, signs off on a partnership agreement, and flies home. No big deal, right? She was there for 10 days well under the magic 183 day number. This type of cross border setup often appears alongside broader <a href="/blog/europe-hiring-routes-entity-eor-payroll-decision-matrix">global HR structuring decisions</a>.</p>
 <p>Except there's no magic number. And your company may have just created a taxable presence in Portugal.</p>
 <p><strong>Permanent establishment</strong> or PE is the concept in international tax law that determines whether a foreign country can tax your company's profits. If your business triggers a PE in another jurisdiction, you're looking at corporate income tax, profit attribution obligations under Article 7 of the applicable tax treaty, potential payroll withholding requirements, and penalties for non compliance. It's the single biggest tax risk hiding inside most work from anywhere policies.</p>
 <p>The widespread belief that employees can work abroad for up to six months without creating PE exposure comes from a misunderstanding. The 183 day threshold that appears in many tax treaties relates to <strong>personal income tax residency</strong>, not corporate permanent establishment. These are fundamentally different concepts, and conflating them is where companies get into trouble.</p>
 <p>Under the UN Model Tax Convention, a services PE can be triggered when employees furnish services in a foreign country for more than 183 days within any 12 month period. But many bilateral treaties set that bar even lower some at 90 to 120 days. And for certain types of PE, there's no day threshold at all. It's purely about what the employee is doing.</p>
-<p>That last point is worth sitting with. A study by Grant Thornton across 21 countries found that 85% of digital nomad visas provide no corporate tax exemption whatsoever. The visa lets your employee in the door it doesn't protect your company from PE exposure. Mobility permission and employer compliance are separate tracks, as we also discuss in our <a href="/blog/work visa europe guide 2025">Europe work visa guide</a>.</p>
+<p>That last point is worth sitting with. A study by Grant Thornton across 21 countries found that 85% of digital nomad visas provide no corporate tax exemption whatsoever. The visa lets your employee in the door it doesn't protect your company from PE exposure. Mobility permission and employer compliance are separate tracks, as we also discuss in our <a href="/blog/work-visa-europe-guide">Europe work visa guide</a>.</p>
 <div class="info">
-  For a broader overview of cross border compliance risks beyond PE, read our article on <a href="/blog/global hr solutions">global HR solutions and international compliance planning</a>.
+  For a broader overview of cross border compliance risks beyond PE, read our article on <a href="/blog/europe-hiring-routes-entity-eor-payroll-decision-matrix">global HR solutions and international compliance planning</a>.
 </div>
 
 <h2>Fixed Place of Business PE vs. Dependent Agent PE: The distinction that matters most</h2>
@@ -621,7 +621,7 @@ const peTrapBlogContent = `
 <p>There's an important caveat here. If the employee is effectively <em>the</em> business a founder, sole consultant, or primary operator their home office is likely to be treated as the enterprise's place of business regardless of these tests. The OECD commentary makes this quite clear: the more central the individual is to the enterprise, the higher the scrutiny.</p>
 <h3>Dependent Agent PE (Article 5(5))</h3>
 <p>This is the one that catches people off guard. A dependent agent PE arises when someone acting on behalf of your enterprise <strong>habitually concludes contracts</strong> or plays the principal role in getting contracts to the finish line in a foreign jurisdiction. It doesn't matter whether your company has an office there. It doesn't matter how many days the person has been in the country.</p>
-<p>And here's the critical gap: <strong>the 2025 OECD update did not revise dependent agent PE guidance at all.</strong> The new 50% benchmark and commercial reason test apply only to fixed place of business PE. For anyone with contract signing authority sales directors, regional managers, business development leads the existing, stricter principles still govern. In many remote work scenarios involving revenue generating roles, dependent agent PE actually presents the greater risk. This is one reason many teams evaluate <a href="/blog/hire in the netherlands without an entity eor netherlands">EOR operating models without local entities</a> before approving long term remote arrangements.</p>
+<p>And here's the critical gap: <strong>the 2025 OECD update did not revise dependent agent PE guidance at all.</strong> The new 50% benchmark and commercial reason test apply only to fixed place of business PE. For anyone with contract signing authority sales directors, regional managers, business development leads the existing, stricter principles still govern. In many remote work scenarios involving revenue generating roles, dependent agent PE actually presents the greater risk. This is one reason many teams evaluate <a href="/employer-of-record">EOR operating models without local entities</a> before approving long term remote arrangements.</p>
 <blockquote>
   <p>The 2025 OECD update clarified when a home office creates a fixed place of business. But it left the dependent agent question often the bigger risk for sales and leadership roles working abroad completely untouched.</p>
 </blockquote>
@@ -662,7 +662,7 @@ const peTrapBlogContent = `
   </tbody>
 </table>
 <div class="info">
-  Understanding the interplay between PE types is critical when structuring global hiring. Read our breakdown of <a href="/blog/hire in the netherlands without an entity eor netherlands">hiring without a local entity using an EOR model</a>.
+  Understanding the interplay between PE types is critical when structuring global hiring. Read our breakdown of <a href="/employer-of-record">hiring without a local entity using an EOR model</a>.
 </div>
 
 <h2>The PE risk decision tree: A practical framework for CFOs</h2>
@@ -679,7 +679,7 @@ const peTrapBlogContent = `
 <div class="highlight">
   <p><strong>Download the PE risk decision tree</strong></p>
   <p>Get the full printable framework including country specific treaty variations and a risk scoring matrix for your HR and finance teams.</p>
-  <p><a href="https://jafuploads.s3.eu west 1.amazonaws.com/prod/document/PE Risk Decision Tree Framework_J%26F.pdf">Download PDF</a></p>
+  <p><a href="https://jafuploads.s3.eu-west-1.amazonaws.com/prod/document/PE_Risk_Decision_Tree_Framework_J%26F.pdf">Download PDF</a></p>
 </div>
 
 <h2>What CFOs should do now</h2>
@@ -691,7 +691,7 @@ const peTrapBlogContent = `
 <p><strong>Brief your board.</strong> If directors or senior executives regularly work from foreign jurisdictions, the PE exposure isn't theoretical. It's the kind of risk that deserves a line item in your compliance reporting.</p>
 <p><strong>Consider Employer of Record structures</strong> for high risk jurisdictions where you have employees working on an ongoing basis. An EOR creates legal separation between your company and the local activities, reducing though not eliminating PE exposure.</p>
 <div class="info">
-  Jackson & Frank helps companies navigate cross border tax and compliance risk. Explore related insights in our <a href="/blog/work visa europe guide 2025">work visa and mobility guide for Europe</a>, or get in touch with our team.
+  Jackson & Frank helps companies navigate cross border tax and compliance risk. Explore related insights in our <a href="/blog/work-visa-europe-guide">work visa and mobility guide for Europe</a>, or get in touch with our team.
 </div>
 
 `;

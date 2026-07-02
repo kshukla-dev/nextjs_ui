@@ -90,7 +90,7 @@ const getFlag = (name: string) => {
 
 const getShortAddress = (name: string) => {
   const map: Record<string, string> = {
-    'The Netherlands': 'Amsterdam, Netherlands',
+    'The Netherlands': 'Arnhem, Netherlands',
     'India': 'Nagpur, Mumbai',
     'Poland': 'Warsaw',
     'United Kingdom': 'London',
@@ -104,10 +104,7 @@ const getShortAddress = (name: string) => {
 const getOffices = (name: string) => {
   if (name === 'The Netherlands') {
     return [
-      { city: 'Amsterdam', address: 'Nieuwe Stationsstraat 10, 6811 KS' },
-      { city: 'Rotterdam', address: 'Business Center, 3011 WZ' },
-      { city: 'The Hague', address: 'Central District 5, 2511 AB' },
-      { city: 'Utrecht', address: 'Innovation Park, 3584 CH' }
+      { city: 'Arnhem', address: 'Nieuwe Stationsstraat 10, 6811 KS' }
     ]
   } else if (name === 'India') {
     return [
@@ -797,7 +794,7 @@ export default function AboutPage() {
   display: block;
   background-color: #0E0F3B;
   background-image: linear-gradient(90deg, #0e0f3b 0%, rgb(14 15 59 / 0%) 40%, rgb(14 15 59 / 0%) 70%, transparent 100%), url(/services/service-page/about2.png);
-  background-size: 55% auto;
+  background-size: 85% auto;
   background-position: right 0% center;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -1407,7 +1404,7 @@ export default function AboutPage() {
                   </div>
                 ))}
               </div>
-              
+
               {/* Visible animated slide for users */}
               <div key={activeMilestone} className="mc-slide fade-slide-enter-active" aria-hidden="true">
                 <div className="mc-badge">
@@ -1477,7 +1474,7 @@ export default function AboutPage() {
 
         <div className="map-and-featured">
           <div className="dotted-map-area">
-            <div className="dotted-map-bg" style={{ backgroundImage: "url('/case-study/allOffice.png')" }}></div>
+            <div className="dotted-map-bg" style={{ backgroundImage: "url('/case-study/contact-bg.png')" }}></div>
           </div>
 
           <div className="featured-country-card">

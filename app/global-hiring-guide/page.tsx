@@ -91,7 +91,7 @@ export default function GlobalHiringGuidePage() {
 
   const getShortAddress = (name: string) => {
     const map: Record<string, string> = {
-      'The Netherlands': 'Amsterdam, Netherlands',
+      'The Netherlands': 'Arnhem, Netherlands',
       'India': 'Bengaluru, Karnataka, India',
       'Poland': 'Poznań, Poland',
       'United Kingdom': 'London, United Kingdom',

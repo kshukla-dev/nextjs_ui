@@ -1731,25 +1731,6 @@ form.was-validated .custom-checkbox input:invalid + .checkmark {
                 </div>
               </a>
 
-              <a href="tel:+442045722467" className="info-card">
-                <div className="icon-circle">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                </div>
-                <div className="info-card-text">
-                  <span className="label">Call us</span>
-                  <strong className="value">+44 20 4572 2467</strong>
-                </div>
-              </a>
-
-              <div className="info-card no-hover">
-                <div className="icon-circle">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                </div>
-                <div className="info-card-text">
-                  <span className="label">Business hours</span>
-                  <strong className="value">Mon – Fri, 9:00 AM – 6:00 PM (CET)</strong>
-                </div>
-              </div>
             </div>
           </div>
 

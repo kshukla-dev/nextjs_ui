@@ -1,5 +1,6 @@
 'use client'
 
+import { SectionTitle } from '@/components/ui/SectionTitle'
 import Image from 'next/image'
 import Link from 'next/link'
 import {
@@ -17,7 +18,7 @@ import {
   FileCheck,
 } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
-import { SectionTitle } from '@/components/ui/SectionTitle'
+
 import FAQSection from '@/components/templates/FAQSection'
 import netherlandsContractorData from '@/data/netherlands-contractor.json'
 
@@ -81,56 +82,51 @@ export default function NetherlandsContractorPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative flex flex-col items-center justify-center text-white overflow-hidden min-h-[60vh] sm:min-h-[70vh] lg:min-h-[75vh] pt-32 pb-24">
-        <div className="absolute inset-0 z-0">
+      <section className="hero-section">
+        <div className="hero-bg-wrapper">
           <Image
             src="/countries/eor-netherlands.webp"
             alt="Netherlands Contractor Employer of Record"
             fill
-            className="object-cover object-center scale-105"
+            className="hero-bg-img"
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-linear-to-b from-black/10 via-black/50 to-black/90" />
-          <div className="absolute inset-0 bg-linear-to-r from-black/40 via-transparent to-black/40" />
-          <div className="absolute inset-0 bg-linear-to-t from-[#f7931e]/15 via-transparent to-transparent" />
+          <div className="hero-overlay"></div>
         </div>
 
-        <div className="relative z-10 w-full max-w-300 mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
-          <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
+        <div className="hero-content">
+          <div className="center-align">
             <div className="mb-6 sm:mb-8">
-              <h1 className="font-bold text-white leading-[1.1] tracking-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl drop-shadow-2xl">
-                Hire in <span className="text-[#f7931e] relative">Netherlands</span>
+              <h1 className="hero-title">
+                Hire in <span>Netherlands</span>
               </h1>
             </div>
 
-            <p className="text-lg sm:text-xl lg:text-2xl text-gray-100 leading-relaxed font-medium max-w-2xl mx-auto drop-shadow-lg mb-4">
+            <p className="hero-subtitle">
               Hire contractors in Netherlands without opening an entity.
             </p>
-            <p className="text-base sm:text-lg text-white/90 leading-relaxed max-w-xl mx-auto drop-shadow-md mb-10 sm:mb-12">
+            <p className="hero-desc">
               Employer of Record Netherlands: compliant payroll, local contracts, fast payments. Onboard in 2–3 days. No local entity required.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full sm:w-auto mb-12 sm:mb-14">
-              <Button
-                size="lg"
-                variant="outline"
-                className="w-full sm:w-auto border-2 border-white/90 text-white hover:bg-white/15 hover:border-white transition-all duration-300 rounded-lg px-8 py-3 text-base font-semibold"
+            <div className="center-btn-wrapper">
+              <Link className="btn-outline"
                 href="/contact?reason=contractor_management"
               >
                 Hire in Netherlands
-              </Button>
+              </Link>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
+            <div className="trust-badges">
               {trustBadges.map((b) => {
                 const Icon = b.icon
                 return (
                   <span
                     key={b.label}
-                    className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white/95 text-sm font-medium"
+                    className="badge"
                   >
-                    <Icon className="w-4 h-4 text-[#f7931e] shrink-0" />
+                    <Icon className="badge-icon" />
                     {b.label}
                   </span>
                 )
@@ -139,7 +135,7 @@ export default function NetherlandsContractorPage() {
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 h-32 sm:h-48 bg-linear-to-t from-white via-white/80 to-transparent pointer-events-none z-10" aria-hidden />
+        
       </section>
 
       {/* What is Contractor Management */}
@@ -187,7 +183,7 @@ export default function NetherlandsContractorPage() {
           </div>
           <p className="text-center mt-8 w-full ">
             <Link href="/netherlands" className="text-primary font-medium hover:underline inline-flex items-center gap-1 ">
-              Need to hire employees instead? See Netherlands EOR <ArrowRight className="w-4 h-4" />
+              Need to hire employees instead? See Netherlands EOR <ArrowRight className="check-icon" />
             </Link>
           </p>
         </div>
@@ -213,7 +209,7 @@ export default function NetherlandsContractorPage() {
               Mastering Contractor Classification for Business Expansion in the Netherlands
             </h2>
             
-            <div className="space-y-4">
+            <div >
               <p className="text-sm sm:text-base  text-gray-600 leading-relaxed">
                 Unleash your business potential in the Netherlands with strategic hiring. Learn the intricacies of classifying independent contractors to sidestep fines and penalties.
               </p>
@@ -325,7 +321,7 @@ export default function NetherlandsContractorPage() {
             <h2 className="section-title text-3xl sm:text-4xl  font-bold text-primary mb-5 leading-tight">
               Why use contractor management in the Netherlands?
             </h2>
-            <div className="space-y-4">
+            <div >
                   <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 The Netherlands has strict rules on contractor classification. The Dutch tax authority (Belastingdienst) actively enforces rules against &quot;schijnzelfstandigheid&quot; (false self-employment). Misclassifying an employee as a contractor can lead to back taxes, social security liabilities, and penalties.
               </p>
@@ -354,7 +350,7 @@ export default function NetherlandsContractorPage() {
               return (
                 <div key={s.title} className="rounded-2xl border border-gray-200 bg-white p-6 flex flex-col hover:border-primary/25 hover:shadow-md transition-all">
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4">
-                    <Icon className="w-5 h-5" />
+                    <Icon className="globe-icon" />
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2 ">{s.title}</h3>
                   <p className="text-gray-600 flex-1 text-base">{s.desc}</p>
@@ -418,7 +414,7 @@ export default function NetherlandsContractorPage() {
             {compliancePoints.map((item) => (
               <div key={item.title} className="rounded-2xl bg-white border border-gray-200 p-6 text-center hover:border-primary/25 hover:shadow-md transition-all">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <AlertTriangle className="w-6 h-6 text-primary" />
+                  <AlertTriangle className="icon" />
                 </div>
                 <h3 className="font-semibold text-gray-900 text-lg sm:text-xl mb-2">{item.title}</h3>
                 <p className="text-gray-600 text-base">{item.desc}</p>
@@ -429,7 +425,7 @@ export default function NetherlandsContractorPage() {
       </section>
 
       {/* Learn more – EOR */}
-      <section className="eor-section md:py-16 bg-white">
+      <section className="section">
         <div className="max-w-300 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-gray-600 mb-4">Need to hire full employees in the Netherlands?</p>
@@ -437,8 +433,8 @@ export default function NetherlandsContractorPage() {
               Learn more about Netherlands EOR
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
+            </div>
           </div>
-        </div>
       </section>
 
       {/* FAQs */}

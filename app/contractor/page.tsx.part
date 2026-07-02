@@ -56,7 +56,7 @@ export default function ContractorPage() {
                 ))}
               </div>
               <span className="trust-text">
-                Pay contractors in <strong>50+</strong> currencies, across 160+ countries
+                Pay contractors in <strong>90+</strong> currencies, across 160+ countries
               </span>
             </div>
           </div>

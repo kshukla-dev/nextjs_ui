@@ -13,15 +13,12 @@ const services = [
   { name: 'Compliance', href: '/compliance' },
   { name: 'Contractor', href: '/contractor' },
 ]
-const insights = [
+const resources = [
   { name: 'Blog', href: '/blog' },
   { name: 'Success stories', href: '/case-studies' },
   { name: 'Global hiring guide', href: '/global-hiring-guide' },
   { name: 'Press release', href: '/resources/events/china-europe-2026' },
-]
-const resources = [
   { name: 'FAQs', href: '/faq' },
-  { name: 'Press release — China to Europe 2026', href: '/resources/events/china-europe-2026' },
 ]
 const year = new Date().getFullYear()
 
@@ -209,7 +206,7 @@ export default function Footer() {
            ============================================================ */
         .footer-links-grid {
           display: grid;
-          grid-template-columns: repeat(4, 1fr) 1.5fr;
+          grid-template-columns: repeat(4, 1fr);
           gap: 24px;
         }
 
@@ -558,10 +555,6 @@ export default function Footer() {
             <div className="fl-col">
               <h4>Services</h4>
               {services.map(link => <Link key={link.name} href={link.href}>{link.name}</Link>)}
-            </div>
-            <div className="fl-col">
-              <h4>Insights</h4>
-              {insights.map(link => <Link key={link.name} href={link.href}>{link.name}</Link>)}
             </div>
             <div className="fl-col">
               <h4>Company</h4>
